@@ -1,0 +1,44 @@
+field: 777ccf12-c571-4f11-b650-31b24ab49244 # Authors
+fieldLayouts:
+  d9b5a2fd-4ccd-495e-b236-b4401b69d202:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 1c6db527-9fb3-4119-925a-f351f983bc30 # Lab Member Author
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  1c6db527-9fb3-4119-925a-f351f983bc30: # Lab Member Author
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: labMemberAuthor
+    instructions: 'Please select a lab member to add as an author.'
+    name: 'Lab Member Author'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: 'Add a Lab Member'
+      showSiteMenu: true
+      source: null
+      sources:
+        - 'section:89443b3d-3eed-4c1b-9784-ffb1f0efc9e6' # Lab Member Profile
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+handle: labMember
+name: 'Lab Member'
+sortOrder: 1

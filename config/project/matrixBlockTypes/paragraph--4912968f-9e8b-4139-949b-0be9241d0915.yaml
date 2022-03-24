@@ -1,0 +1,41 @@
+field: c7a66b7a-c22b-47da-a554-d76b783988d5 # Text 
+fieldLayouts:
+  0160f9f6-6c31-455b-81ff-a99afcf71033:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 1977ac0b-6643-4aaf-a275-6764c98378a2 # Paragraph Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  1977ac0b-6643-4aaf-a275-6764c98378a2: # Paragraph Text
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: paragraphText
+    instructions: 'Please add some paragraph text.'
+    name: 'Paragraph Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: paragraph
+name: Paragraph
+sortOrder: 2

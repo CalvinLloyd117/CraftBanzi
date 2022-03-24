@@ -1,0 +1,19 @@
+{% if entries %}
+{# <p>{{entries[0].text[0].paragraphText}}</p> #}
+<div class="slideshow-container fade" ontouchmove="handleTouchMove()" ontouchstart="handleTouchStart()">
+    <!-- Full images with numbers and message Info -->
+    {% for en in entries %}
+    {% include "modules/_carouselSlide" with {entry: en, align: en.align} %}
+    {% endfor %}
+    <!-- Back and forward buttons -->
+    {% if count > 1 %}
+    <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+    <div class="dotContainer" style="z-index: 500;">
+        {% for item in entries %}
+        <span class="dots" onclick="currentSlide({{loop.index}})"></span>
+        {% endfor %}
+    </div>
+    {% endif %}
+</div>
+{% endif %}

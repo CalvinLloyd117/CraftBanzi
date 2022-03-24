@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: labMemberProfile
+name: 'Lab Member Profile'
+propagationMethod: all
+siteSettings:
+  c7ed12fe-7739-44e3-accd-f279f495d152: # banzi-lab
+    enabledByDefault: true
+    hasUrls: true
+    template: lab-member-profile/_entry
+    uriFormat: 'lab-member-profile/{slug}'
+structure:
+  maxLevels: null
+  uid: 334cbb11-761c-482c-b725-a9de5f70317e
+type: structure

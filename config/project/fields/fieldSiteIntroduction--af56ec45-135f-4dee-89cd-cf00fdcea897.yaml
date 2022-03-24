@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 3dc3c38e-60a7-412d-95ca-fc02ead5f8b7 # Field Site
+handle: fieldSiteIntroduction
+instructions: 'Add custom blocks of text to introduce the Field Site. Order matters here, as it will determine the order of the content on the site. You can always modify the order of the blocks later.'
+name: 'Field Site Introduction'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_fieldsiteintroduction}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,24 @@
+columnSuffix: ghsphwta
+contentColumnType: string
+fieldGroup: e8cbc24d-b6e1-4380-8372-151d82625c0d # Lab Member
+handle: labMemberDepartment
+instructions: 'Please add your department.'
+name: 'Lab Member Department'
+searchable: false
+settings:
+  allowLimit: false
+  allowMultipleSources: false
+  allowSelfRelations: false
+  branchLimit: '1'
+  limit: null
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: true
+  source: 'group:79cdab4a-7886-4333-ab3f-af6a642ac9a2' # Department
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Categories

@@ -1,0 +1,34 @@
+columnSuffix: trzfnidc
+contentColumnType: string
+fieldGroup: f0e50402-de48-431e-b603-d7b66f86fdc2 # Carousel Entry
+handle: align
+instructions: 'Select the text alignment option for the entry.'
+name: Align
+searchable: false
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Text Align Left'
+        -
+          - value
+          - textAlignLeft
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - 'Text Align Right'
+        -
+          - value
+          - textAlignRight
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\RadioButtons

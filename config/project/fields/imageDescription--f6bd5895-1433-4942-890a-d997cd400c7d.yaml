@@ -1,0 +1,19 @@
+columnSuffix: jicijiju
+contentColumnType: string(600)
+fieldGroup: 3fd9d9ff-b43e-4111-8a4c-89c469bf59cd # Global
+handle: imageDescription
+instructions: 'Please add a brief description for the image.'
+name: 'Image Description'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 150
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

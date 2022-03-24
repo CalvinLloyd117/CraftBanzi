@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 49755225-eb07-496e-ab57-e34cbbd891a1 # Current Collaborators
+handle: project
+instructions: 'What project are they involved in?'
+name: Project
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_project}}'
+  maxBlocks: '1'
+  minBlocks: '1'
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

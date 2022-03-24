@@ -1,0 +1,65 @@
+fieldLayouts:
+  263490ec-4c29-4d26-a242-47e8b8b06c90:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: ''
+            label: Name
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: d9e3215c-14d5-42fa-a9b1-3dd9dfd53c42 # Lab Member Department
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: d60c02ae-5b29-4899-85f9-9a111c66e884 # University
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: 635f1fbf-d596-48f9-b69e-9bb9b3620676 # Project
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: currentCollaboratorsForm
+hasTitleField: true
+name: 'Current Collaborators Form'
+section: 98343663-6eba-416b-b74d-5615fdd16c77 # Current Collaborators 
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

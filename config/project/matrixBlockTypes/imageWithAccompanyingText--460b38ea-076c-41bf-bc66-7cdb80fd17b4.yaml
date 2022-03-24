@@ -1,0 +1,113 @@
+field: 135c1e00-7e1f-4252-b411-90819ab248d9 # Field Site Detailed Description
+fieldLayouts:
+  7fffab02-4bd0-4166-88f4-c2256d09df51:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: e180c952-bc6d-43ed-9438-db06869deeae # Image
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 94de021f-114d-4e83-af88-95221a2adbaa # Header
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 5b223ae3-2597-419e-955e-37fb3c46cb52 # Paragraph
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  5b223ae3-2597-419e-955e-37fb3c46cb52: # Paragraph
+    columnSuffix: ilnbzesb
+    contentColumnType: text
+    fieldGroup: null
+    handle: paragraph
+    instructions: 'Please add a paragraph to accompany the image.'
+    name: Paragraph
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  94de021f-114d-4e83-af88-95221a2adbaa: # Header
+    columnSuffix: swiqlsge
+    contentColumnType: text
+    fieldGroup: null
+    handle: header
+    instructions: 'Please add a header to accompany the image, if you would like.'
+    name: Header
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  e180c952-bc6d-43ed-9438-db06869deeae: # Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: 'Please add an image.'
+    name: Image
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:e6732067-02ef-47db-8371-405b77fee1f6' # Images
+      defaultUploadLocationSubpath: 'fieldSites/{owner.entry.title}'
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:e6732067-02ef-47db-8371-405b77fee1f6' # Images
+      singleUploadLocationSubpath: ''
+      source: null
+      sources:
+        - 'volume:e6732067-02ef-47db-8371-405b77fee1f6' # Images
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: imageWithAccompanyingText
+name: 'Image with accompanying text'
+sortOrder: 3

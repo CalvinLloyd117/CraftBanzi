@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: aboutCarouselEntry
+name: 'About Carousel Entry'
+propagationMethod: all
+siteSettings:
+  c7ed12fe-7739-44e3-accd-f279f495d152: # banzi-lab
+    enabledByDefault: true
+    hasUrls: true
+    template: about-carousel-entry/_entry
+    uriFormat: 'about-carousel-entry/{slug}'
+structure:
+  maxLevels: null
+  uid: 96f79161-3b26-418f-b906-53137933c7e8
+type: structure

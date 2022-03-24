@@ -1,0 +1,44 @@
+field: 635f1fbf-d596-48f9-b69e-9bb9b3620676 # Project
+fieldLayouts:
+  26f800b0-92f4-446f-a519-ada95cabac44:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 819381a6-3d06-4ff6-a1e1-cccc64de5177 # Project Entry Selection
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  819381a6-3d06-4ff6-a1e1-cccc64de5177: # Project Entry Selection
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: projectEntrySelection
+    instructions: 'If the project they are involved in has a project entry, select it here.'
+    name: 'Project Entry Selection'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: false
+      source: null
+      sources:
+        - 'section:ced9ebe6-9130-453c-9358-58b6e1809ff7' # Project
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+handle: projectEntry
+name: 'Project Entry'
+sortOrder: 1

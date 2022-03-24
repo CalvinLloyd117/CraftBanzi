@@ -1,0 +1,41 @@
+field: c7a66b7a-c22b-47da-a554-d76b783988d5 # Text 
+fieldLayouts:
+  32e09b3a-f971-4bba-b866-9c48aaa963d8:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 6be7f743-49c1-4f82-87a3-44c189846138 # Subheader Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  6be7f743-49c1-4f82-87a3-44c189846138: # Subheader Text
+    columnSuffix: null
+    contentColumnType: string(400)
+    fieldGroup: null
+    handle: subheaderText
+    instructions: 'Please add a subheader, if you would like.'
+    name: 'Subheader Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: 100
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: subheader
+name: Subheader
+sortOrder: 1

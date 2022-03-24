@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: pastLabMembers
+name: 'Past Lab Members'
+propagationMethod: all
+siteSettings:
+  c7ed12fe-7739-44e3-accd-f279f495d152: # banzi-lab
+    enabledByDefault: true
+    hasUrls: true
+    template: past-lab-members/_entry
+    uriFormat: 'past-lab-members/{slug}'
+structure:
+  maxLevels: null
+  uid: 7a69a2e8-9abd-4244-b570-071d07981761
+type: structure

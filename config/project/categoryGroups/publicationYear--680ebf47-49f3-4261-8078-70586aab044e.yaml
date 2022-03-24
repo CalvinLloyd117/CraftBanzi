@@ -1,0 +1,41 @@
+defaultPlacement: end
+fieldLayouts:
+  9c2d0361-285b-47d0-92a9-87d70ec4f1d6:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: publicationYear
+name: 'Publication Year'
+siteSettings:
+  c7ed12fe-7739-44e3-accd-f279f495d152: # banzi-lab
+    hasUrls: true
+    template: null
+    uriFormat: 'publication-year/{slug}'
+structure:
+  maxLevels: 1
+  uid: 3a9e979c-371e-4ec6-aea0-2a407cd8675d

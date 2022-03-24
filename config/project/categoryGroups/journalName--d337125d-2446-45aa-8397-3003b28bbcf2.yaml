@@ -1,0 +1,50 @@
+defaultPlacement: end
+fieldLayouts:
+  c14aea9c-e1fa-4002-9715-188fa041a999:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: aaedfcb9-1256-4124-8db6-12848cdc37b0 # Default Publication Cover Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: journalName
+name: 'Journal Name'
+siteSettings:
+  c7ed12fe-7739-44e3-accd-f279f495d152: # banzi-lab
+    hasUrls: true
+    template: null
+    uriFormat: 'journal-name/{slug}'
+structure:
+  maxLevels: null
+  uid: 633f7d93-0dd5-4bc4-9c5c-774139be07f6

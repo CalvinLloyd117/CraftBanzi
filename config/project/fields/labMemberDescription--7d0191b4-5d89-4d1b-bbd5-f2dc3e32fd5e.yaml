@@ -1,0 +1,16 @@
+columnSuffix: bnrcoiqx
+contentColumnType: string
+fieldGroup: e8cbc24d-b6e1-4380-8372-151d82625c0d # Lab Member
+handle: labMemberDescription
+instructions: 'Brief description of yourself, and elevator pitch of your research / role in the lab (100 -250 words):'
+name: 'Lab Member Description'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_labmemberdescription}}'
+  maxBlocks: '4'
+  minBlocks: ''
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,15 @@
+columnSuffix: hmaxsnph
+contentColumnType: string(500)
+fieldGroup: 2528f6a3-ba6d-407c-bd7b-98950fc26ca5 # Publication
+handle: doi
+instructions: 'Please add the complete url of the DOI for the publication.'
+name: DOI
+searchable: false
+settings:
+  maxLength: '500'
+  placeholder: null
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

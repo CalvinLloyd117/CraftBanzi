@@ -1,0 +1,37 @@
+field: 25d7610b-1934-467a-b151-c37e9890aea5 # CV
+fieldLayouts:
+  961fcffc-5cf1-4844-8b75-11ae4741eccc:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 17e70c7c-9353-4af7-8978-ecfc40c096be # CV URL
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  17e70c7c-9353-4af7-8978-ecfc40c096be: # CV URL
+    columnSuffix: null
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: cvUrl
+    instructions: ''
+    name: 'CV URL'
+    searchable: false
+    settings:
+      maxLength: '255'
+      placeholder: null
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+handle: cvLink
+name: 'CV Link'
+sortOrder: 2

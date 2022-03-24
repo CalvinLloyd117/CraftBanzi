@@ -1,0 +1,24 @@
+columnSuffix: awrcloeb
+contentColumnType: string
+fieldGroup: 2528f6a3-ba6d-407c-bd7b-98950fc26ca5 # Publication
+handle: publicationYear
+instructions: 'Please select the publication year'
+name: 'Publication Year'
+searchable: false
+settings:
+  allowLimit: false
+  allowMultipleSources: false
+  allowSelfRelations: false
+  branchLimit: '1'
+  limit: null
+  localizeRelations: false
+  selectionLabel: 'Add a Year'
+  showSiteMenu: true
+  source: 'group:680ebf47-49f3-4261-8078-70586aab044e' # Publication Year
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Categories

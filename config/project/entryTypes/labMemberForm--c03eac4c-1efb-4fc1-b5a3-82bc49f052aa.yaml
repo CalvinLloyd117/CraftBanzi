@@ -1,0 +1,141 @@
+fieldLayouts:
+  f5b47605-8723-45ff-a96f-35270c2885e8:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: ''
+            label: Name
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 4dff7f16-feaa-4e4c-b73f-661e4b851c6d # Lab Member Category
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: 8bdd8060-263b-44ce-bea8-e3adcd940942 # Lab Member Profile Picture
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: 7d0191b4-5d89-4d1b-bbd5-f2dc3e32fd5e # Lab Member Description
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 92346b8b-4c62-47cc-b648-0a442ed0324e # Lab Member Research Topic
+            instructions: ''
+            label: ''
+            required: ''
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d9e3215c-14d5-42fa-a9b1-3dd9dfd53c42 # Lab Member Department
+            instructions: ''
+            label: ''
+            required: ''
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: 8a4a50db-ea11-4802-a40f-c0538bde9134 # Lab Member Center
+            instructions: ''
+            label: ''
+            required: ''
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: 7343f53c-d2f5-4766-ae1c-5988e9fe06ae # Lab Member Field Site
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 25d7610b-1934-467a-b151-c37e9890aea5 # CV
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 36d47d31-9b71-443e-b19b-069adfad399c # Email Address
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 83803e4a-2f54-4adf-9ea6-ce5cdd8def4c # Research Gate Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: faf3afa8-b0f9-4fe0-ba37-04ba4ddc68bc # Social Media Links
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Additional Fields (Optional)'
+        sortOrder: 2
+handle: labMemberForm
+hasTitleField: true
+name: 'Lab Member Form'
+section: 89443b3d-3eed-4c1b-9784-ffb1f0efc9e6 # Lab Member Profile
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

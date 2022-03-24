@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 5a459a8a-83ed-4cb0-a0b2-fa9f83ab144f # Project
+handle: projectIntroduction
+instructions: 'Please select blocks to comprise your project''s introduction.'
+name: 'Project Introduction'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_projectintroduction}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

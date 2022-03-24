@@ -1,0 +1,32 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 2528f6a3-ba6d-407c-bd7b-98950fc26ca5 # Publication
+handle: defaultPublicationCoverImage
+instructions: 'Please upload a default cover for the Journal.'
+name: 'Default Publication Cover Image'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowUploads: true
+  allowedKinds: null
+  defaultUploadLocationSource: 'volume:e6732067-02ef-47db-8371-405b77fee1f6' # Images
+  defaultUploadLocationSubpath: 'publications/covers/{entry.title}/default'
+  limit: ''
+  localizeRelations: false
+  previewMode: full
+  restrictFiles: ''
+  selectionLabel: ''
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:e6732067-02ef-47db-8371-405b77fee1f6' # Images
+  singleUploadLocationSubpath: 'publications/{slug}/covers/default'
+  source: null
+  sources: '*'
+  targetSiteId: null
+  useSingleFolder: true
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

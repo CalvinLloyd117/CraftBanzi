@@ -1,0 +1,49 @@
+field: 7d0191b4-5d89-4d1b-bbd5-f2dc3e32fd5e # Lab Member Description
+fieldLayouts:
+  6664de06-2d71-47ad-bba1-00e0bc1a771d:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 682db527-cb2c-4d0e-a42a-bdfdb98c267a # Rich Text Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  682db527-cb2c-4d0e-a42a-bdfdb98c267a: # Rich Text Paragraph
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: richTextParagraph
+    instructions: ''
+    name: 'Rich Text Paragraph'
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: richText
+name: 'Rich Text'
+sortOrder: 3

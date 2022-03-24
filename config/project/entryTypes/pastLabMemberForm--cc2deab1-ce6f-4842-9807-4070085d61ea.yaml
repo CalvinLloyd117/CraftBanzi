@@ -1,0 +1,110 @@
+fieldLayouts:
+  aa210ac5-a245-4a0c-b82a-c8543e5a4842:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: ''
+            label: Name
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 13f038fb-f772-404e-9de0-a65ccc850f2c # Start Year
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: bff940c9-54cc-4669-ac99-cd36288cf140 # End Year
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: be5b5de2-27ea-4c26-828e-893ecaa11bea # Education Achieved
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 25
+          -
+            fieldUid: 319ca604-28e0-45ba-989a-817776169081 # Past Member Category
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 25
+          -
+            fieldUid: d9e3215c-14d5-42fa-a9b1-3dd9dfd53c42 # Lab Member Department
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 25
+          -
+            fieldUid: d60c02ae-5b29-4899-85f9-9a111c66e884 # University
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 25
+          -
+            fieldUid: 9657b4ee-aa4f-4b24-9332-a3650bd4e788 # Who are they
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a45b00bb-3fe1-418c-ab4c-c398e7a75fa0 # Now
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: pastLabMemberForm
+hasTitleField: true
+name: 'Past Lab Member Form'
+section: a02e95d9-ef74-445d-b6dc-8a3ac93c0835 # Past Lab Members
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

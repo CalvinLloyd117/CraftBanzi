@@ -1,0 +1,41 @@
+field: c26b39d7-adb1-40b6-8b29-54344ee41b21 # Abstract
+fieldLayouts:
+  0c921d35-dfa7-438d-a056-5234f4d8b6bc:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: fd06b3a3-ec1e-4e79-a0a3-1c0358ba60b3 # Paragraph Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  fd06b3a3-ec1e-4e79-a0a3-1c0358ba60b3: # Paragraph Text
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: paragraphText
+    instructions: ''
+    name: 'Paragraph Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: paragraph
+name: Paragraph
+sortOrder: 1

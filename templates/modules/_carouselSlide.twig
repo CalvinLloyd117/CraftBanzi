@@ -1,0 +1,13 @@
+<div class="slideshowItem noSlide firstSlide">
+    <img alt="{{entry.imageDescription}}" src="{{entry.backgroundImage.one.url}}" width="1920" height="1080">
+    <div class="Info {{ entry.align == 'textAlignRight' ? 'right' : 'left' }}">
+        <h1>{{entry.title}}</h1>
+        {% for item in entry.text %}
+        {% if item.type=="subheader" %}
+        <h2>{{item.subheaderText}}</h2>
+        {% elseif item.type=="paragraph" %}
+        <p>{{item.paragraphText}}</p>
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>

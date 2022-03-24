@@ -1,0 +1,15 @@
+defaultPlacement: beginning
+enableVersioning: true
+handle: fieldSite
+name: 'Field Site'
+propagationMethod: all
+siteSettings:
+  c7ed12fe-7739-44e3-accd-f279f495d152: # banzi-lab
+    enabledByDefault: true
+    hasUrls: true
+    template: field-site/_entry
+    uriFormat: 'field-site/{slug}'
+structure:
+  maxLevels: null
+  uid: d4ce368c-29cb-4cf8-94d2-4ffbb0cbbe06
+type: structure

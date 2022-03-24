@@ -1,0 +1,41 @@
+field: 635f1fbf-d596-48f9-b69e-9bb9b3620676 # Project
+fieldLayouts:
+  2ee4b52e-3753-418b-857f-9c6a208802a7:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 79bc6758-0592-4367-a19f-acba9f8319f1 # Project Name Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  79bc6758-0592-4367-a19f-acba9f8319f1: # Project Name Text
+    columnSuffix: fvlptgoa
+    contentColumnType: text
+    fieldGroup: null
+    handle: projectNameText
+    instructions: ''
+    name: 'Project Name Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: projectName
+name: 'Project Name'
+sortOrder: 2

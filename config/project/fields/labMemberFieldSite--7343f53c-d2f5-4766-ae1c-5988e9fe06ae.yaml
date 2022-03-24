@@ -1,0 +1,22 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: e8cbc24d-b6e1-4380-8372-151d82625c0d # Lab Member
+handle: labMemberFieldSite
+instructions: 'Please add a field site, if you have one.'
+name: 'Lab Member Field Site'
+searchable: false
+settings:
+  allowSelfRelations: false
+  limit: '1'
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: true
+  source: null
+  sources:
+    - 'section:c6f608be-4643-4a6c-9b38-56cfc2ce4b50' # Field Site
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

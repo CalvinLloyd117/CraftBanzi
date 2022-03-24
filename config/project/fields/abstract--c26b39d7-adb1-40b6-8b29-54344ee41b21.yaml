@@ -1,0 +1,16 @@
+columnSuffix: kkacobxe
+contentColumnType: string
+fieldGroup: 2528f6a3-ba6d-407c-bd7b-98950fc26ca5 # Publication
+handle: abstract
+instructions: 'Please add the abstract for the paper/article you are adding'
+name: Abstract
+searchable: true
+settings:
+  contentTable: '{{%matrixcontent_abstract}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,205 @@
+dateModified: 1648148042
+email:
+  fromEmail: calvin.lloyd@uleth.ca
+  fromName: banzi-lab
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    0a4d397c-10ba-4a23-95dd-413002883b3f: 'Publication Cover Image' # Publication Cover Image
+    0a83f875-8484-4264-b7f3-7dc133940203: 'Last Name' # Last Name
+    0d832f57-d388-4ac4-b35f-b0f6f09a4d6b: Paragraph # Paragraph
+    0e164ba4-3501-4b62-9d6d-b5db8439eb9e: 'Paragraph Text' # Paragraph Text
+    1b0994ad-bb7b-495d-a8a9-b3ff300983ec: 'Field Site Background Image' # Field Site Background Image
+    1c6db527-9fb3-4119-925a-f351f983bc30: 'Lab Member Author' # Lab Member Author
+    1c755c1f-83d7-4c1b-b6e1-93e4895d0ad4: 'Project End Date' # Project End Date
+    1cb6f08b-efbd-4a8d-846d-06c7b904a894: 'Detailed Description' # Detailed Description
+    2abab7a6-ba02-4526-82b7-8242ed182af1: Subheader # Subheader
+    2afe7dbf-f491-4072-a6ae-9b25934e6c3d: 'Research Topic' # Research Topic
+    2b7a1219-e12e-4a51-8834-4a4594e2861e: Topic # Topic
+    2c055fe1-39f1-48be-bc4f-bd268c972c15: 'Subheader Text' # Subheader Text
+    2cd6ff54-a4b6-47b6-b82e-f4d60581d179: 'Project Entry' # Project Entry
+    2de2d021-cfe1-48ed-bb01-75b08fed1097: 'Subheader Text' # Subheader Text
+    2e06ab0d-7c61-424c-b2cf-d15cd153f7be: 'Subheader Text' # Subheader Text
+    3b33d372-e7c6-4278-8686-4c9cd61fbaf5: 'Project Name' # Project Name
+    3c72d617-e5e0-45cd-a90e-e2bf63d521a6: 'PhD Topic' # PhD Topic
+    3dc3c38e-60a7-412d-95ca-fc02ead5f8b7: 'Field Site' # Field Site
+    3fd9d9ff-b43e-4111-8a4c-89c469bf59cd: Global # Global
+    4dff7f16-feaa-4e4c-b73f-661e4b851c6d: 'Lab Member Category' # Lab Member Category
+    4fd85cbf-0550-46eb-93e0-69d06831e29d: 'Carousel Entry' # Carousel Entry
+    5a2f5a57-27e4-4a54-864d-371675912777: 'List Item Text' # List Item Text
+    5a459a8a-83ed-4cb0-a0b2-fa9f83ab144f: Project # Project
+    5b223ae3-2597-419e-955e-37fb3c46cb52: Paragraph # Paragraph
+    5c227b2b-a7f5-472d-9cc8-2717f03a6fdd: Subheader # Subheader
+    5ee2df8c-1ac4-47a9-b38d-e781c3763aec: Paragraph # Paragraph
+    6be7f743-49c1-4f82-87a3-44c189846138: 'Subheader Text' # Subheader Text
+    6c9e5547-a960-4329-9d7c-ce9b1fd6f0fc: banzi-lab # banzi-lab
+    6c17810c-bd7c-495e-a1a1-ae33f2b32b12: 'Project Entry' # Project Entry
+    7c7e255d-4ba3-4b62-8497-ae34b177b0f4: Description # Description
+    7c67c593-c1c9-487d-a009-94abf7622ee5: Centre # Centre
+    7d0191b4-5d89-4d1b-bbd5-f2dc3e32fd5e: 'Lab Member Description' # Lab Member Description
+    07d470f1-04de-45c5-a6f8-e5c810b52903: 'Last Name' # Last Name
+    7e98da54-12c9-4ff3-b445-225eadb450de: Subheader # Subheader
+    7fc1a71f-3385-45d4-8b5c-15e2e104d611: 'Applied Study Topic' # Applied Study Topic
+    8a4a50db-ea11-4802-a40f-c0538bde9134: 'Lab Member Center' # Lab Member Center
+    8b627a98-c415-4766-8afc-e6ef3e23360d: Subheader # Subheader
+    8bc75634-ec62-494f-b147-59c8ee432590: Twitter # Twitter
+    8bdd8060-263b-44ce-bea8-e3adcd940942: 'Lab Member Profile Picture' # Lab Member Profile Picture
+    8c9ce737-2700-4450-8b2f-79e2b8b5570a: 'Past Member Category' # Past Member Category
+    8d3ee66d-b78b-4469-ab83-3d7e3a84358c: 'Carousel Entry' # Carousel Entry
+    008d461f-d53c-4ae1-9997-36ce85fb73e2: 'PhD Topic' # PhD Topic
+    8dcd1a51-b180-4e53-9df5-978b72d70072: 'First Name' # First Name
+    8e7a89e3-ac2f-4433-83bb-df0a0b395b41: Description # Description
+    8fda28c8-a828-457d-a6ca-0cb6a7f1ed55: 'Last Name' # Last Name
+    9a11b67a-14ce-499d-b4eb-2d921dd2c7ee: Topic # Topic
+    9cadba58-6635-4645-92c8-3aa83b71487f: 'Subheader Text' # Subheader Text
+    9cdd0692-b868-4b1c-a65f-40af7dfff3ba: 'List Item Number' # List Item Number
+    9de3f213-826d-4fd4-9909-338676aa15aa: Image # Image
+    13f038fb-f772-404e-9de0-a65ccc850f2c: 'Start Year' # Start Year
+    014dc0e8-a8b3-4483-a399-22ec9a607e62: 'Field Site Entry' # Field Site Entry
+    15f83211-048a-4852-840d-b48e53ef1fd0: Issue # Issue
+    17e70c7c-9353-4af7-8978-ecfc40c096be: 'CV URL' # CV URL
+    19f1c77b-fe89-4483-bfa5-8045217b04b9: Subheader # Subheader
+    24f1f6f9-ea15-4f63-afde-6af30947264c: DOI # DOI
+    25d7610b-1934-467a-b151-c37e9890aea5: CV # CV
+    28fddae8-7c66-4994-8baa-147babd98eb7: File # File
+    36ba7654-86f1-4d10-b2f4-04c2c404c4e7: 'CV Link' # CV Link
+    36c73ff4-c39e-4184-a167-5a99c29dd337: 'Paragraph Text' # Paragraph Text
+    36d47d31-9b71-443e-b19b-069adfad399c: 'Email Address' # Email Address
+    38a30e07-a6ba-40f7-baef-53dcf152cc6e: Link # Link
+    38cdf4ff-2839-4ef7-98aa-0a35351db283: 'Non-Lab Member' # Non-Lab Member
+    38e3751c-614d-4d8b-b186-8227f2c4e033: 'Rich Text' # Rich Text
+    67c00fd9-862d-4dcb-8912-ce8514e56716: Header # Header
+    71c8c4ae-b360-46b3-9ff1-8b33f6e2121c: 'Profile Picture' # Profile Picture
+    077f16cf-6eb7-4096-8f5d-5020678b41b7: Paragraph # Paragraph
+    78f35b8a-1ae5-41f1-a4c9-04ebc54c832c: Education # Education
+    79bc6758-0592-4367-a19f-acba9f8319f1: 'Project Name Text' # Project Name Text
+    79cdab4a-7886-4333-ab3f-af6a642ac9a2: Department # Department
+    81c8fc25-7c91-4551-bbf2-2e45dcd3c72d: Publication # Publication
+    84e570b4-09f8-4dbd-9548-5442ceea6cb4: Topic # Topic
+    86c559c2-c7cb-44a1-805f-9efd1340602a: 'Project Background Image' # Project Background Image
+    92fadaaf-637f-4f52-8d54-ff49e87f4ad6: Subheader # Subheader
+    94de021f-114d-4e83-af88-95221a2adbaa: Header # Header
+    135c1e00-7e1f-4252-b411-90819ab248d9: 'Field Site Detailed Description' # Field Site Detailed Description
+    153a493e-d05f-46fb-9c1f-22ea82959a9f: 'Field Site' # Field Site
+    162f0ec4-9993-4179-87d2-2884e28871ed: 'Paragraph Text' # Paragraph Text
+    270ea06a-fdfe-47e1-b6ab-aa6641ae34d9: Subheader # Subheader
+    298fc78e-73ee-4c98-b573-65d5449b42b1: Paragraph # Paragraph
+    319ca604-28e0-45ba-989a-817776169081: 'Past Member Category' # Past Member Category
+    355aca41-b3bd-462b-b2c4-75fed8e6b6de: 'Publication Authors' # Publication Authors
+    460b38ea-076c-41bf-bc66-7cdb80fd17b4: 'Image with accompanying text' # Image with accompanying text
+    492a21d1-4f8f-4c7f-a5c5-ffde414dc504: Subheader # Subheader
+    635f1fbf-d596-48f9-b69e-9bb9b3620676: Project # Project
+    669fec18-48e6-45a2-b968-5f31b47ba5e8: topic # topic
+    674ef75c-e0a1-4a97-a774-1546cae02529: 'Field Site' # Field Site
+    680ebf47-49f3-4261-8078-70586aab044e: 'Publication Year' # Publication Year
+    682db527-cb2c-4d0e-a42a-bdfdb98c267a: 'Rich Text Paragraph' # Rich Text Paragraph
+    697ed7a0-5b23-4a22-b02e-6e8b8144f921: 'Current Collaborators Form' # Current Collaborators Form
+    777ccf12-c571-4f11-b650-31b24ab49244: Authors # Authors
+    821b5002-3b31-4c59-9d58-a2e2df1dba37: Image # Image
+    1977ac0b-6643-4aaf-a275-6764c98378a2: 'Paragraph Text' # Paragraph Text
+    2528f6a3-ba6d-407c-bd7b-98950fc26ca5: Publication # Publication
+    3925b2d0-a1e8-485e-9ffa-4f3e209f91c4: 'Text with accompanying image' # Text with accompanying image
+    7179d995-15f8-40c5-8785-7f76d74918b3: 'Past Lab Members' # Past Lab Members
+    7343f53c-d2f5-4766-ae1c-5988e9fe06ae: 'Lab Member Field Site' # Lab Member Field Site
+    9657b4ee-aa4f-4b24-9332-a3650bd4e788: 'Who are they' # Who are they
+    33915d57-94b3-46b6-b4d7-34481952a583: Paragraph # Paragraph
+    36517bd9-7414-4267-b50f-0c5e6997d386: 'Image with Accompanying Text' # Image with Accompanying Text
+    69069a38-4e46-41af-acb9-9ce9856f075c: 'Publication Entry' # Publication Entry
+    83803e4a-2f54-4adf-9ea6-ce5cdd8def4c: 'Research Gate Link' # Research Gate Link
+    89443b3d-3eed-4c1b-9784-ffb1f0efc9e6: 'Lab Member Profile' # Lab Member Profile
+    92346b8b-4c62-47cc-b648-0a442ed0324e: 'Lab Member Research Topic' # Lab Member Research Topic
+    127618e2-e792-45f4-ab2b-470cb4121d00: 'Subheader Text' # Subheader Text
+    756075b1-738f-4e2b-8b06-11f12c7d5d1b: Subheader # Subheader
+    819381a6-3d06-4ff6-a1e1-cccc64de5177: 'Project Entry Selection' # Project Entry Selection
+    843371e5-3b25-4434-b860-6e433bd7cfe9: Align # Align
+    967120dc-2b65-4ba1-81d2-1d26e4978562: Image # Image
+    03727372-1009-453e-ab43-012d88c9c45b: 'Rich Text' # Rich Text
+    4912968f-9e8b-4139-949b-0be9241d0915: Paragraph # Paragraph
+    5734709f-78e7-4d74-a1a1-56afa52bf2d2: Subheader # Subheader
+    8086411d-e67e-46d7-8772-7dd16bafce75: Department # Department
+    10047719-b0b9-4c81-9afc-eda27c3d43ef: 'Background Image' # Background Image
+    49755225-eb07-496e-ab57-e34cbbd891a1: 'Current Collaborators' # Current Collaborators
+    98343663-6eba-416b-b74d-5615fdd16c77: 'Current Collaborators ' # Current Collaborators 
+    a02e95d9-ef74-445d-b6dc-8a3ac93c0835: 'Past Lab Members' # Past Lab Members
+    a45b00bb-3fe1-418c-ab4c-c398e7a75fa0: Now # Now
+    a1357f97-f717-4c2c-9b4c-2808c2fe5ea6: 'Master''s Topic' # Master's Topic
+    a4295a89-68f4-477a-a00d-d45e4ac656ca: 'Journal Name' # Journal Name
+    aa875c59-c756-45c2-a784-fc7243b7c7cd: 'Paragraph Text' # Paragraph Text
+    aaedfcb9-1256-4124-8db6-12848cdc37b0: 'Default Publication Cover Image' # Default Publication Cover Image
+    abd5f917-3b85-470d-ae92-cec74cb2d396: Paragraph # Paragraph
+    ac9811cb-bdd9-4929-a11a-a585b04df8b4: Paragraph # Paragraph
+    af56ec45-135f-4dee-89cd-cf00fdcea897: 'Field Site Introduction' # Field Site Introduction
+    b08f96ca-803f-487b-ab0d-63cfa10be006: 'First Name' # First Name
+    b46d36ab-324f-45e1-ab26-4920c3be64a6: Department # Department
+    b85c987e-cc60-464a-820c-8d1de19f421a: Paragraph # Paragraph
+    b86e6c27-6da4-4826-89fc-4ab14137916c: 'Post Doctoral Focus' # Post Doctoral Focus
+    b627bff6-21a1-4d0c-8541-ba9eef5b613d: 'Lab Member Category' # Lab Member Category
+    b843ae4a-bf19-4eaf-abc6-75798c035b7e: 'First Name' # First Name
+    be5b5de2-27ea-4c26-828e-893ecaa11bea: 'Education Achieved' # Education Achieved
+    be1794f3-5a73-4fa3-a072-d1b4df732ca4: 'Publication Year' # Publication Year
+    bff940c9-54cc-4669-ac99-cd36288cf140: 'End Year' # End Year
+    c03eac4c-1efb-4fc1-b5a3-82bc49f052aa: 'Lab Member Form' # Lab Member Form
+    c2f3d0bd-772c-4ae3-a105-4d9399c63058: Volume # Volume
+    c6f608be-4643-4a6c-9b38-56cfc2ce4b50: 'Field Site' # Field Site
+    c7a66b7a-c22b-47da-a554-d76b783988d5: 'Text ' # Text 
+    c7ed12fe-7739-44e3-accd-f279f495d152: banzi-lab # banzi-lab
+    c26b39d7-adb1-40b6-8b29-54344ee41b21: Abstract # Abstract
+    c52c448c-9699-4f29-b900-dc4d1fec8f35: 'Last Name' # Last Name
+    c716ce10-9fc7-4324-99ad-3cfd9deeeec4: 'About Carousel Entry' # About Carousel Entry
+    c775b4e8-319c-4620-886c-e4a597fe47b7: 'Journal Name' # Journal Name
+    c971dcd1-bc71-49f8-9c50-db4d4c1984de: 'Field Site' # Field Site
+    c940581e-71cc-405d-a17f-652de405c76a: 'Related Publications' # Related Publications
+    ca03862a-4ebc-4cc5-870d-049436a6a64d: Paragraph # Paragraph
+    cc2deab1-ce6f-4842-9807-4070085d61ea: 'Past Lab Member Form' # Past Lab Member Form
+    cd2b6a4e-9696-4536-92be-180e6303f89f: Centre # Centre
+    ced9ebe6-9130-453c-9358-58b6e1809ff7: Project # Project
+    d0fe22dd-8711-49df-bf40-c209647781ca: Image # Image
+    d8a0851f-70ca-4a2b-b54d-36eb4bab2ed1: 'Last Name' # Last Name
+    d9e3215c-14d5-42fa-a9b1-3dd9dfd53c42: 'Lab Member Department' # Lab Member Department
+    d60c02ae-5b29-4899-85f9-9a111c66e884: University # University
+    d722a5d1-241b-4c4b-8acd-f3981707e1b6: 'List Item' # List Item
+    d337125d-2446-45aa-8397-3003b28bbcf2: 'Journal Name' # Journal Name
+    dd6fbab9-55a4-4056-8444-fa968b3268d8: 'Post Doctoral Focus' # Post Doctoral Focus
+    dfcff989-694b-4ab2-ba1f-deb34bc4d8e1: 'Author Name' # Author Name
+    dfd57f27-fbeb-46c4-ab49-0c69a54706de: 'CV File' # CV File
+    dfd405c9-9b86-4a9b-ba5e-6859030f2f63: 'Last Name' # Last Name
+    e2e81ce3-bd91-4dba-ac31-63c8a7488a81: 'First Name' # First Name
+    e6e48943-71b9-4098-a049-cdd8937160fe: 'Publication Year' # Publication Year
+    e8cbc24d-b6e1-4380-8372-151d82625c0d: 'Lab Member' # Lab Member
+    e180c952-bc6d-43ed-9438-db06869deeae: Image # Image
+    e64956a3-5fc1-4a3f-98c7-823b49754b5e: 'First Name' # First Name
+    e75337df-2b27-4294-a156-0c1759c72770: 'First Name' # First Name
+    e6732067-02ef-47db-8371-405b77fee1f6: Images # Images
+    ecf97939-2492-467f-b9bf-5af7c99ba37d: Centre # Centre
+    ed37b108-251b-4e2d-9415-cf5b857374e4: 'First Name' # First Name
+    ede2ee3a-b4af-4a3a-9132-5ad2d291695b: 'Last Name' # Last Name
+    ee08ee16-6e77-4571-8554-d24688c902f7: Topic # Topic
+    ee3586e3-632e-42dd-b09e-7188ddf3a783: 'Profile Picture' # Profile Picture
+    ef90fa4e-b721-44f8-b7c0-5effe225924c: 'Text with Accompanying Image' # Text with Accompanying Image
+    f0e50402-de48-431e-b603-d7b66f86fdc2: 'Carousel Entry' # Carousel Entry
+    f5bfacb7-5364-4f09-8f5c-8da4fc51e7b0: 'Project Introduction' # Project Introduction
+    f6bd5895-1433-4942-890a-d997cd400c7d: 'Image Description' # Image Description
+    f7bbe91c-183c-483d-a4e9-3dfd80d86d8d: Image # Image
+    f9c0f9b8-f6b5-4321-b3f3-7c7ae24a41e1: Paragraph # Paragraph
+    f9e45224-72b9-46ca-9577-6738f33b6ad2: 'Home Carousel Entry' # Home Carousel Entry
+    f502eebb-4b9b-4dd6-a180-4cf80efcfb85: 'Lab Member' # Lab Member
+    fae60289-855b-46b6-b24e-f4594b7ded4d: 'Project Start Date' # Project Start Date
+    faf3afa8-b0f9-4fe0-ba37-04ba4ddc68bc: 'Social Media Links' # Social Media Links
+    fd06b3a3-ec1e-4e79-a0a3-1c0358ba60b3: 'Paragraph Text' # Paragraph Text
+plugins:
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+system:
+  edition: solo
+  live: true
+  name: banzi-lab
+  schemaVersion: 3.7.33
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

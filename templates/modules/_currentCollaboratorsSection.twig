@@ -1,0 +1,42 @@
+{% if collaborators %}
+<section id="current-collaborators">
+    <div style="margin-top: 0px;" class="sectionBannerText">
+        <h1>Current Collaborators</h1>
+    </div>
+    <div class="currentLabMembers">
+        <div class="labMember">
+            <div class="labMemberInfo labMemberList">
+                <ul>
+                    {% for collaborator in collaborators | reverse %}
+                    <li>
+                        <h2>{{collaborator.title}}</h2>
+                        {% if (collaborator.isFieldEmpty("labMemberDepartment") == false) and
+                        collaborator.isFieldEmpty('university') == false %}
+                        <p>{{collaborator.labMemberDepartment.one.title}}, {{collaborator.university.one.title}}</p>
+                        {% elseif (collaborator.isFieldEmpty("labMemberDepatment")) and
+                        collaborator.isFieldEmpty('university') == false %}
+                        <p>{{collaborator.university.one.title}}</p>
+                        {% elseif (collaborator.isFieldEmpty("labMemberDepartment") == false) and
+                        collaborator.isFieldEmpty('university') %}
+                        {{collaborator.labMemberDepartment.one.title}}
+                        {% endif %}
+                        <h3>Project:</h3>
+                        {% if collaborator.project %}
+                        {% for proj in collaborator.project %}
+                        {% if proj.type == "projectEntry" %}
+                        <a href="/#{{proj.projectEntrySelection.title}}">
+                            <p>{{proj.projectEntrySelection.title}}</p>
+                        </a>
+                        {% elseif proj.type == "projectName" %}
+                        <p>{{proj.projectNameText}}</p>
+                        {% endif %}
+                        {% endfor %}
+                        {% endif %}
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}

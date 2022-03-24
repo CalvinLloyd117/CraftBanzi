@@ -1,0 +1,23 @@
+{% extends "_html5" %}
+
+{% set carouselEntries = craft.entries().section('homeCarouselEntry').all() %}
+{% set elemCount = craft.entries().section('homeCarouselEntry').count() %}
+
+
+{% block body %}
+{{ parent() }}
+<!-- Header contains the image above the nav bar, and the nav bar itself-->
+{# <p>{{carouselEntries[0].text[0].paragraphText}}</p> #}
+<div class="wrapper" id="wrapper">
+    <!-- Slideshow container -->
+    {% include "modules/_carousel" with {
+    entries: carouselEntries,
+    count: elemCount,
+    }%}
+    <!-- Current Projects section. -->
+    {% include "modules/_projectsSection" %}
+    <!-- Field Sites Section -->
+    {% include "modules/_fieldsitesSection" %}
+    <!-- End Field Sites Section -->
+</div>
+{% endblock %}

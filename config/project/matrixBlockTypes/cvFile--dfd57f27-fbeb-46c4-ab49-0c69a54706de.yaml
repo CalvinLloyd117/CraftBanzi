@@ -1,0 +1,54 @@
+field: 25d7610b-1934-467a-b151-c37e9890aea5 # CV
+fieldLayouts:
+  36f53a00-7320-4634-9854-97cdff49664f:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 28fddae8-7c66-4994-8baa-147babd98eb7 # File
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  28fddae8-7c66-4994-8baa-147babd98eb7: # File
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: file
+    instructions: ''
+    name: File
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:e6732067-02ef-47db-8371-405b77fee1f6' # Images
+      defaultUploadLocationSubpath: ''
+      limit: ''
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:e6732067-02ef-47db-8371-405b77fee1f6' # Images
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: cvFile
+name: 'CV File'
+sortOrder: 1

@@ -1,0 +1,41 @@
+defaultPlacement: end
+fieldLayouts:
+  9218cd98-d81e-459d-8939-1c4f55748bab:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: centre
+name: Centre
+siteSettings:
+  c7ed12fe-7739-44e3-accd-f279f495d152: # banzi-lab
+    hasUrls: true
+    template: null
+    uriFormat: 'centre/{slug}'
+structure:
+  maxLevels: null
+  uid: 0c204f51-7726-43e3-adb8-425fed6eed63

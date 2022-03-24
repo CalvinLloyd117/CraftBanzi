@@ -1,0 +1,41 @@
+defaultPlacement: end
+fieldLayouts:
+  fb34110d-caa1-4ea9-b0e5-f48422fbfcf0:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: education
+name: Education
+siteSettings:
+  c7ed12fe-7739-44e3-accd-f279f495d152: # banzi-lab
+    hasUrls: true
+    template: null
+    uriFormat: 'education/{slug}'
+structure:
+  maxLevels: 1
+  uid: 95bf1412-64ac-4036-abeb-af39c930d467

@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-US
+name: banzi-lab
+primary: true
+siteGroup: 6c9e5547-a960-4329-9d7c-ce9b1fd6f0fc # banzi-lab
+sortOrder: 1

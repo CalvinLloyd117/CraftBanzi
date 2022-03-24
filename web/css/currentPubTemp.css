@@ -1,0 +1,245 @@
+div.currentPublications {
+  /* width: 100%; */
+  height: max-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 50px;
+  /* border: 1px solid red; */
+  gap: 50px;
+}
+
+div.currentPublications .publication {
+  /* width: 300px;
+    height: 300px; */
+  /* background: black; */
+  position: relative;
+  grid-column: 1 / span 2;
+  height: 82vh;
+  /* min-height: 100%; */
+  /* display: none; */
+  /* opacity: 0; */
+  width: 100%;
+  /* position: relative; */
+  overflow: hidden !important;
+  /* display: inline-table; */
+  display: inline-block;
+  /* border: 1px solid black; */
+  box-sizing: border-box;
+}
+
+div.currentPublications .publication img {
+  /* width: 100%; */
+  height: 100%;
+  object-fit: contain;
+  /* position: absolute;
+    top: 0; */
+}
+
+div.currentPublications .publication .publicationInfo {
+  /* z-index: ; */
+  height: 100% !important;
+
+  /* top: 0 !important; */
+  bottom: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px 40px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  /* overflow: hidden; */
+  transition: 0.5s;
+  transition-timing-function: ease-out;
+}
+div.currentPublications .publication .publicationInfo .inner {
+  transition: 0.5s;
+  /* border: 1px solid red; */
+  /* height: max-content !important; */
+  /* display: flex; */
+  height: min-content;
+  height: auto;
+  object-fit: contain;
+}
+
+div.currentPublications .publication .publicationInfo .inner iframe {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+div.currentPublications .publication .publicationInfo .inner.hidden {
+  opacity: 0;
+  transition: 0s;
+  transition: 0s;
+  display: flex;
+  /* border: 1px solid red; */
+  justify-content: center;
+  /* height: min-content; */
+  object-fit: cover !important;
+  position: relative;
+  align-items: center;
+}
+
+div.currentPublications .publication .publicationInfo .inner.visible.close {
+  opacity: 1;
+  transition: 0.5s;
+  transition: 0.5s;
+  display: flex;
+  /* border: 1px solid red; */
+  justify-content: center;
+  /* height: min-content; */
+  object-fit: cover !important;
+  position: fixed !important;
+  align-items: center;
+  top: 0;
+  right: 0;
+}
+
+div.currentPublications .publication .publicationInfo .inner.hidden.spacer {
+  opacity: 0;
+  transition: 0.5s;
+  transition: 0.5s;
+  display: flex;
+  /* border: 1px solid blue; */
+  justify-content: center;
+  /* height: min-content; */
+  object-fit: cover !important;
+  position: relative;
+  align-items: center;
+  grid-column: 1 / span 6;
+  height: 25px;
+}
+
+div.currentPublications .publication .publicationInfo .inner.visible {
+  opacity: 1;
+  transition: 0.5s;
+  /* display: flex; */
+  /* border: 1px solid red; */
+  /* justify-content: center; */
+  /* height: min-content; */
+  object-fit: cover !important;
+  position: relative;
+  align-items: center;
+}
+
+div.currentPublications .publication .publicationInfo .inner.visible.spacer {
+  opacity: 1;
+  transition: 0.5s;
+  transition: 0.5s;
+  display: flex;
+  /* border: 1px solid blue; */
+  justify-content: center;
+  /* height: min-content; */
+  object-fit: cover !important;
+  position: relative;
+  align-items: center;
+  grid-column: 1 / span 6;
+  height: 25px;
+}
+
+div.currentPublications .publication .publicationInfo .inner.visible img {
+  object-fit: cover !important;
+  width: 100%;
+  /* object-position: top; */
+}
+
+div.currentPublications .publication .publicationInfo .inner.visible p {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  /* border: 1px solid red; */
+  padding: 0;
+}
+
+div.currentPublications .publication .publicationInfo .inner.visible h2 {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  /* border: 1px solid red; */
+  padding: 0;
+}
+
+div.currentPublications .publication .publicationInfo .visible {
+  opacity: 1;
+}
+
+div.currentPublications .publication .publicationInfo.minimized {
+  width: 40%;
+  display: block;
+}
+
+div.currentPublications .publication .publicationInfo.minimized p {
+  margin: 15px 0px !important;
+}
+
+div.currentPublications .publication .publicationInfo.maximized {
+  width: 100%;
+  overflow-y: auto;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: min-content;
+}
+
+div.currentPublications .publication .publicationInfo.maximized p {
+  margin: 0px 0px;
+}
+
+div.currentPublications .publication .publicationInfo .inner.intro {
+  position: relative;
+  height: min-content;
+  opacity: 1;
+}
+
+div.currentPublications .publication .publicationInfo .inner.intro p {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+div.currentPublications .publication .publicationInfo .inner.content {
+  transition: 0.5s;
+}
+
+div.currentPublications .publication .publicationInfo.left {
+  left: 0;
+}
+
+div.currentPublications .publication .publicationInfo.right {
+  right: 0;
+}
+
+div.currentPublications .publication .publicationInfo .buttonOuter.learnMore {
+  cursor: pointer;
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+}
+
+div.currentPublications .publication .publicationInfo .buttonOuter.close {
+  position: relative;
+  grid-column: 6 / span 1;
+  justify-self: end;
+  padding: 0px 0px;
+  margin: 0px 0px;
+}
+
+div.currentPublications .publication .publicationInfo .buttonOuter .inner {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+div.currentPublications
+  .publication
+  .publicationInfo.minimized
+  .buttonOuter
+  .inner::after {
+  content: 'Learn More';
+}
+
+div.currentPublications
+  .publication
+  .publicationInfo.maximized
+  .buttonOuter
+  .inner::after {
+  content: 'Close';
+}
+
+div.currentPublications .publication .publicationInfo p {
+  color: white;
+}

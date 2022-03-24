@@ -1,0 +1,24 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: e8cbc24d-b6e1-4380-8372-151d82625c0d # Lab Member
+handle: labMemberCategory
+instructions: 'Please select the category you fall under.'
+name: 'Lab Member Category'
+searchable: false
+settings:
+  allowLimit: false
+  allowMultipleSources: false
+  allowSelfRelations: false
+  branchLimit: '1'
+  limit: null
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: true
+  source: 'group:b627bff6-21a1-4d0c-8541-ba9eef5b613d' # Lab Member Category
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: true
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Categories

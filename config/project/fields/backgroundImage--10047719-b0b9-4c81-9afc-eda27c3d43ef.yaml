@@ -1,0 +1,33 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: f0e50402-de48-431e-b603-d7b66f86fdc2 # Carousel Entry
+handle: backgroundImage
+instructions: 'Please add a background image for the carousel entry.'
+name: 'Background Image'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowUploads: true
+  allowedKinds: null
+  defaultUploadLocationSource: 'volume:e6732067-02ef-47db-8371-405b77fee1f6' # Images
+  defaultUploadLocationSubpath: 'carousel/{slug}'
+  limit: '1'
+  localizeRelations: false
+  previewMode: full
+  restrictFiles: ''
+  selectionLabel: ''
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:e6732067-02ef-47db-8371-405b77fee1f6' # Images
+  singleUploadLocationSubpath: ''
+  source: null
+  sources:
+    - 'volume:e6732067-02ef-47db-8371-405b77fee1f6' # Images
+  targetSiteId: null
+  useSingleFolder: false
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

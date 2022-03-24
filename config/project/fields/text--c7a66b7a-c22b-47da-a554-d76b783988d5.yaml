@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: f0e50402-de48-431e-b603-d7b66f86fdc2 # Carousel Entry
+handle: text
+instructions: ''
+name: 'Text '
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_text}}'
+  maxBlocks: ''
+  minBlocks: '1'
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,41 @@
+field: 7d0191b4-5d89-4d1b-bbd5-f2dc3e32fd5e # Lab Member Description
+fieldLayouts:
+  d6276b40-3779-4790-8349-f9bd481814d8:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 270ea06a-fdfe-47e1-b6ab-aa6641ae34d9 # Subheader
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  270ea06a-fdfe-47e1-b6ab-aa6641ae34d9: # Subheader
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: subheadercontent
+    instructions: 'Add a subtitle'
+    name: Subheader
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: subheader
+name: Subheader
+sortOrder: 1

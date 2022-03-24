@@ -1,0 +1,19 @@
+columnSuffix: hyrfcvxu
+contentColumnType: text
+fieldGroup: e8cbc24d-b6e1-4380-8372-151d82625c0d # Lab Member
+handle: emailAddress
+instructions: 'If you would like to include an email, add it here. Please replace @ with [at] and .com with [dot]com to prevent spam to your account.'
+name: 'Email Address'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: 'example[at]hotmail[dot]com'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

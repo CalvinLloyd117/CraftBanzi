@@ -1,0 +1,41 @@
+field: 7d0191b4-5d89-4d1b-bbd5-f2dc3e32fd5e # Lab Member Description
+fieldLayouts:
+  b99b85ce-82b6-4d6c-968b-028b643563d5:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 5ee2df8c-1ac4-47a9-b38d-e781c3763aec # Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  5ee2df8c-1ac4-47a9-b38d-e781c3763aec: # Paragraph
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: paragraphContent
+    instructions: ''
+    name: Paragraph
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: paragraph
+name: Paragraph
+sortOrder: 2

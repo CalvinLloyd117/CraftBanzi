@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: e8cbc24d-b6e1-4380-8372-151d82625c0d # Lab Member
+handle: labMemberResearchTopic
+instructions: 'Please add the research topic for the lab member.'
+name: 'Lab Member Research Topic'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_labmemberresearchtopic}}'
+  maxBlocks: '1'
+  minBlocks: '0'
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

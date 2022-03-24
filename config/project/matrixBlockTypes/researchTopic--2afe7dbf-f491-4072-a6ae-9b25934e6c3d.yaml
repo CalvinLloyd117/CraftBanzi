@@ -1,0 +1,41 @@
+field: 92346b8b-4c62-47cc-b648-0a442ed0324e # Lab Member Research Topic
+fieldLayouts:
+  e7fce882-8488-4e96-9f98-546bd192c3a7:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 2b7a1219-e12e-4a51-8834-4a4594e2861e # Topic
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  2b7a1219-e12e-4a51-8834-4a4594e2861e: # Topic
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: topic
+    instructions: 'Please add your research topic.'
+    name: Topic
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: researchTopic
+name: 'Research Topic'
+sortOrder: 1

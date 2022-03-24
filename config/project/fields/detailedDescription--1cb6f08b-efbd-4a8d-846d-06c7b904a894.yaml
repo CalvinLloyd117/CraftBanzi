@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 5a459a8a-83ed-4cb0-a0b2-fa9f83ab144f # Project
+handle: detailedDescription
+instructions: 'Please select blocks to comprise the detailed description of your project.'
+name: 'Detailed Description'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_detaileddescription}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

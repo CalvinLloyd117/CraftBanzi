@@ -1,0 +1,41 @@
+field: 92346b8b-4c62-47cc-b648-0a442ed0324e # Lab Member Research Topic
+fieldLayouts:
+  4d1a189e-9716-448b-ae8a-011d091a1929:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: ee08ee16-6e77-4571-8554-d24688c902f7 # Topic
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  ee08ee16-6e77-4571-8554-d24688c902f7: # Topic
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: topic
+    instructions: 'Please enter your topic'
+    name: Topic
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: postDoctoralFocus
+name: 'Post Doctoral Focus'
+sortOrder: 4

@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: project
+name: Project
+propagationMethod: all
+siteSettings:
+  c7ed12fe-7739-44e3-accd-f279f495d152: # banzi-lab
+    enabledByDefault: true
+    hasUrls: true
+    template: project/_entry
+    uriFormat: 'project/{slug}'
+structure:
+  maxLevels: null
+  uid: 0b239fdd-1dc5-4bda-b3f7-cb53114eaf00
+type: structure

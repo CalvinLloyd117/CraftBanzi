@@ -1,0 +1,41 @@
+defaultPlacement: end
+fieldLayouts:
+  474f004d-79ad-4343-9d0d-33af0aa18041:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: department
+name: Department
+siteSettings:
+  c7ed12fe-7739-44e3-accd-f279f495d152: # banzi-lab
+    hasUrls: true
+    template: null
+    uriFormat: 'department/{slug}'
+structure:
+  maxLevels: null
+  uid: 446f3ac5-e22d-4656-aae3-186c881ca9c8

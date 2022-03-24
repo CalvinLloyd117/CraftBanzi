@@ -1,0 +1,24 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 7179d995-15f8-40c5-8785-7f76d74918b3 # Past Lab Members
+handle: educationAchieved
+instructions: 'Select the most applicable.'
+name: 'Education Achieved'
+searchable: false
+settings:
+  allowLimit: false
+  allowMultipleSources: false
+  allowSelfRelations: false
+  branchLimit: '1'
+  limit: null
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: false
+  source: 'group:78f35b8a-1ae5-41f1-a4c9-04ebc54c832c' # Education
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Categories

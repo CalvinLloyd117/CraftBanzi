@@ -1,0 +1,55 @@
+<div class="publication">
+    {% if publication.isFieldEmpty('publicationCoverImage') == false %}
+        {% for img in publication.publicationCoverImage.all %}
+        <img alt="cover photo." src="{{ img.url }}" />
+        {% endfor %}
+    {% else %}
+    <img alt="cover photo." src="assets/Images/Publications/NoCover.svg" />
+    {% endif %}
+    <div class="publicationInfo minimized right" id="{{ publication.slug }}">
+        <div class="expand" onclick="togglePublicationInfo('{{ publication.slug }}')">
+            <div>
+                &#10094;
+            </div>
+        </div>
+        <div class="inner intro" style="grid-column: span 4;">
+            <h1>{{ publication.title }}</h1>
+            <p>
+            {% for author in publication.authors %}
+            {% if author.type == 'labMember' %}
+                <a href="/about#{{author.labMemberAuthor.one.slug}}">{% for n in author.labMemberAuthor.one.title|split(" ") %}{% if not loop.last %}{{n|first}}. {% else %}{{n}}{% endif %}{% endfor %}</a>{% if not loop.last %}, {% endif %}
+            {% elseif author.type == 'nonLabMember' %}
+            {{ author.authorName }}{% if not loop.last %}, {% endif %}
+            {% endif %}
+            {% endfor %}
+            </p>
+        </div>
+        <div class="inner hidden" style=" grid-column: 1 / span 6; ">
+        <h2>Abstract:</h2>
+        {% for elem in publication.abstract %}
+        {% if elem.type == 'paragraph' %}
+        <p>{{ elem.paragraphText }}</p>
+        {% elseif elem.type == 'subheader' %}
+        <h3>{{elem.subheaderText}}</h3>
+        {% elseif elem.type == 'listItem' %}
+        <p>Add list item rendering method<p>
+        {% endif %}
+        {% endfor %}
+            <div class="citation">
+                <h2>Citation:</h2>
+                <p>
+                {% for author in publication.authors %}
+                {% if author.type == 'labMember' %}
+                <a href="/about#{{author.labMemberAuthor.one.slug}}">{% for n in author.labMemberAuthor.one.title|split(" ") %}{% if not loop.last %}{{n|first}}. {% else %}{{n}}{% endif %}{% endfor %}</a>{% if not loop.last %}, {% else %}. {% endif %}
+                            {# {{author.labMemberAuthor.one.title|first}}. {{author.labMemberAuthor.one.title|split(" ")[1]}}</a>{% if not loop.last %}, {% else %}. {% endif %} #}
+                {% elseif author.type == 'nonLabMember' %}
+                {{author.authorName}}{% if not loop.last %}, {% else %}. {% endif %}
+                {% endif %}
+                {% endfor %}
+                {{publication.publicationYear.one}}. {{publication.title}}. <i> {{publication.journalName.one}}.</i>
+                <a rel="noopener"href="{{publication.doi}}">{{publication.doi}}</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

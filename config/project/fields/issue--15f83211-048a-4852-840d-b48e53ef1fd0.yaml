@@ -1,0 +1,20 @@
+columnSuffix: igyrhysl
+contentColumnType: integer(10)
+fieldGroup: 2528f6a3-ba6d-407c-bd7b-98950fc26ca5 # Publication
+handle: issue
+instructions: 'Please add the Issue of the journal Article.'
+name: Issue
+searchable: false
+settings:
+  decimals: 0
+  defaultValue: null
+  max: null
+  min: 0
+  prefix: 'Issue: '
+  previewCurrency: ''
+  previewFormat: decimal
+  size: null
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

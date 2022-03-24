@@ -1,0 +1,19 @@
+columnSuffix: yqjqggvi
+contentColumnType: text
+fieldGroup: 7179d995-15f8-40c5-8785-7f76d74918b3 # Past Lab Members
+handle: whoAreThey
+instructions: 'What do they do/what did they do in the lab.'
+name: 'Who are they'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

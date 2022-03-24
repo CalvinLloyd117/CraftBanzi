@@ -1,0 +1,17 @@
+columnSuffix: hkolonhw
+contentColumnType: datetime
+fieldGroup: 5a459a8a-83ed-4cb0-a0b2-fa9f83ab144f # Project
+handle: projectEndDate
+instructions: 'Please add an approximate end date for your project.'
+name: 'Project End Date'
+searchable: false
+settings:
+  max: null
+  min: null
+  minuteIncrement: '30'
+  showDate: true
+  showTime: false
+  showTimeZone: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Date

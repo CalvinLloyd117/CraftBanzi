@@ -1,0 +1,15 @@
+defaultPlacement: beginning
+enableVersioning: true
+handle: currentCollaborators
+name: 'Current Collaborators '
+propagationMethod: all
+siteSettings:
+  c7ed12fe-7739-44e3-accd-f279f495d152: # banzi-lab
+    enabledByDefault: true
+    hasUrls: true
+    template: current-collaborators/_entry
+    uriFormat: 'current-collaborators/{slug}'
+structure:
+  maxLevels: 1
+  uid: 4fc26f95-07e3-4e73-b519-e8e9e2344ae5
+type: structure

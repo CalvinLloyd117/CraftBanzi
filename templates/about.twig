@@ -1,0 +1,32 @@
+{% extends "_html5" %}
+
+{% set carouselEntries = craft.entries().section('aboutCarouselEntry').all() %}
+{% set elemCount = craft.entries().section('aboutCarouselEntry').count() %}
+
+{% set labMemberEntries = craft.entries.section('labMemberProfile') %}
+{% set pastLabMembers = craft.entries.section('pastLabMembers') %}
+{% set currentCollaborators = craft.entries.section('currentCollaborators') %}
+
+{% block body %}
+{{parent()}}
+<div class="wrapper" id="wrapper">
+    <!-- Slideshow container -->
+    {% include "modules/_carousel" with {
+    entries: carouselEntries,
+    count: elemCount,
+    } %}
+    {# Lab Members Section #}
+    {% include "modules/_labMembersSection" with {
+    labMembers: labMemberEntries
+    } %}
+    <!-- Distinguished Visiting Research Chair section -->
+    {% include "modules/_pastLabMembersSection" with {
+    pastMembers: pastLabMembers
+    }%}
+    <!-- Current Collaborators section -->
+    {% include "modules/_currentCollaboratorsSection" with {
+    collaborators: currentCollaborators
+    }%}
+    <!-- End Current Collaborators section -->
+</div>
+{% endblock %}

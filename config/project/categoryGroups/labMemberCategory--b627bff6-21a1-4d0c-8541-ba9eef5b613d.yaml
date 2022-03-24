@@ -1,0 +1,41 @@
+defaultPlacement: end
+fieldLayouts:
+  574a249e-83ff-48b3-814f-edacf84f0861:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: labMemberCategory
+name: 'Lab Member Category'
+siteSettings:
+  c7ed12fe-7739-44e3-accd-f279f495d152: # banzi-lab
+    hasUrls: true
+    template: null
+    uriFormat: 'lab-member-category/{slug}'
+structure:
+  maxLevels: 1
+  uid: a7e56a6a-5fb2-4c78-9d8f-b2b8ed04b457

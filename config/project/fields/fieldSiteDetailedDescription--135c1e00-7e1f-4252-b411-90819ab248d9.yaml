@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 3dc3c38e-60a7-412d-95ca-fc02ead5f8b7 # Field Site
+handle: fieldSiteDetailedDescription
+instructions: 'Please add a detailed description of the Field Site.'
+name: 'Field Site Detailed Description'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_fieldsitedetaileddescription}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

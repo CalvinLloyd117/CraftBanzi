@@ -1,0 +1,41 @@
+field: 92346b8b-4c62-47cc-b648-0a442ed0324e # Lab Member Research Topic
+fieldLayouts:
+  f7f4e31c-3004-46bd-99bc-ceea285e8d8e:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 9a11b67a-14ce-499d-b4eb-2d921dd2c7ee # Topic
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  9a11b67a-14ce-499d-b4eb-2d921dd2c7ee: # Topic
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: topic
+    instructions: 'Enter your topic.'
+    name: Topic
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: phdTopic
+name: 'PhD Topic'
+sortOrder: 2
