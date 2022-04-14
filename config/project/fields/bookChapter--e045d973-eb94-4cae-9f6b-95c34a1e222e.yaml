@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 2528f6a3-ba6d-407c-bd7b-98950fc26ca5 # Publication
+handle: bookChapter
+instructions: 'If the publication is a book, or a chapter in a book, please add a block below to add some additional information to the entry. Also, set the ''Journal Name'' field to be the title of the book.'
+name: 'Book Chapter'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_bookchapter}}'
+  maxBlocks: '1'
+  minBlocks: ''
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,4 +1,4 @@
-dateModified: 1648148042
+dateModified: 1649951937
 email:
   fromEmail: calvin.lloyd@uleth.ca
   fromName: banzi-lab
@@ -9,6 +9,7 @@ meta:
     0a83f875-8484-4264-b7f3-7dc133940203: 'Last Name' # Last Name
     0d832f57-d388-4ac4-b35f-b0f6f09a4d6b: Paragraph # Paragraph
     0e164ba4-3501-4b62-9d6d-b5db8439eb9e: 'Paragraph Text' # Paragraph Text
+    0f7518d6-3de5-4e47-9259-b49468417a33: Comment # Comment
     1b0994ad-bb7b-495d-a8a9-b3ff300983ec: 'Field Site Background Image' # Field Site Background Image
     1c6db527-9fb3-4119-925a-f351f983bc30: 'Lab Member Author' # Lab Member Author
     1c755c1f-83d7-4c1b-b6e1-93e4895d0ad4: 'Project End Date' # Project End Date
@@ -20,8 +21,10 @@ meta:
     2cd6ff54-a4b6-47b6-b82e-f4d60581d179: 'Project Entry' # Project Entry
     2de2d021-cfe1-48ed-bb01-75b08fed1097: 'Subheader Text' # Subheader Text
     2e06ab0d-7c61-424c-b2cf-d15cd153f7be: 'Subheader Text' # Subheader Text
+    2f740af2-bdc8-4afa-81e5-2ffab89d65aa: 'Page Range' # Page Range
     3b33d372-e7c6-4278-8686-4c9cd61fbaf5: 'Project Name' # Project Name
     3c72d617-e5e0-45cd-a90e-e2bf63d521a6: 'PhD Topic' # PhD Topic
+    3d2775f0-4784-4cf2-b07b-3566f9385ed6: Name # Name
     3dc3c38e-60a7-412d-95ca-fc02ead5f8b7: 'Field Site' # Field Site
     3fd9d9ff-b43e-4111-8a4c-89c469bf59cd: Global # Global
     4dff7f16-feaa-4e4c-b73f-661e4b851c6d: 'Lab Member Category' # Lab Member Category
@@ -68,6 +71,7 @@ meta:
     38a30e07-a6ba-40f7-baef-53dcf152cc6e: Link # Link
     38cdf4ff-2839-4ef7-98aa-0a35351db283: 'Non-Lab Member' # Non-Lab Member
     38e3751c-614d-4d8b-b186-8227f2c4e033: 'Rich Text' # Rich Text
+    43e40ea9-00f1-4d75-8d5a-21cd70142cc2: Comment # Comment
     67c00fd9-862d-4dcb-8912-ce8514e56716: Header # Header
     71c8c4ae-b360-46b3-9ff1-8b33f6e2121c: 'Profile Picture' # Profile Picture
     077f16cf-6eb7-4096-8f5d-5020678b41b7: Paragraph # Paragraph
@@ -79,9 +83,11 @@ meta:
     86c559c2-c7cb-44a1-805f-9efd1340602a: 'Project Background Image' # Project Background Image
     92fadaaf-637f-4f52-8d54-ff49e87f4ad6: Subheader # Subheader
     94de021f-114d-4e83-af88-95221a2adbaa: Header # Header
+    100e8a0f-927f-4c55-931c-66841e8a3084: Publisher # Publisher
     135c1e00-7e1f-4252-b411-90819ab248d9: 'Field Site Detailed Description' # Field Site Detailed Description
     153a493e-d05f-46fb-9c1f-22ea82959a9f: 'Field Site' # Field Site
     162f0ec4-9993-4179-87d2-2884e28871ed: 'Paragraph Text' # Paragraph Text
+    200c21e2-55e3-43bc-b31c-e24b8c35dea6: Editors # Editors
     270ea06a-fdfe-47e1-b6ab-aa6641ae34d9: Subheader # Subheader
     298fc78e-73ee-4c98-b573-65d5449b42b1: Paragraph # Paragraph
     319ca604-28e0-45ba-989a-817776169081: 'Past Member Category' # Past Member Category
@@ -95,6 +101,7 @@ meta:
     682db527-cb2c-4d0e-a42a-bdfdb98c267a: 'Rich Text Paragraph' # Rich Text Paragraph
     697ed7a0-5b23-4a22-b02e-6e8b8144f921: 'Current Collaborators Form' # Current Collaborators Form
     777ccf12-c571-4f11-b650-31b24ab49244: Authors # Authors
+    806d4716-38cb-4541-a1d3-157625900a31: 'Comment Link' # Comment Link
     821b5002-3b31-4c59-9d58-a2e2df1dba37: Image # Image
     1977ac0b-6643-4aaf-a275-6764c98378a2: 'Paragraph Text' # Paragraph Text
     2528f6a3-ba6d-407c-bd7b-98950fc26ca5: Publication # Publication
@@ -118,6 +125,7 @@ meta:
     5734709f-78e7-4d74-a1a1-56afa52bf2d2: Subheader # Subheader
     8086411d-e67e-46d7-8772-7dd16bafce75: Department # Department
     10047719-b0b9-4c81-9afc-eda27c3d43ef: 'Background Image' # Background Image
+    16743712-fba9-4d9a-9af4-783c21d0870f: 'Book Info' # Book Info
     49755225-eb07-496e-ab57-e34cbbd891a1: 'Current Collaborators' # Current Collaborators
     98343663-6eba-416b-b74d-5615fdd16c77: 'Current Collaborators ' # Current Collaborators 
     a02e95d9-ef74-445d-b6dc-8a3ac93c0835: 'Past Lab Members' # Past Lab Members
@@ -139,6 +147,7 @@ meta:
     be1794f3-5a73-4fa3-a072-d1b4df732ca4: 'Publication Year' # Publication Year
     bff940c9-54cc-4669-ac99-cd36288cf140: 'End Year' # End Year
     c03eac4c-1efb-4fc1-b5a3-82bc49f052aa: 'Lab Member Form' # Lab Member Form
+    c035ac96-f061-4ef6-b406-6a23fff3ad4b: 'Preferred Citation Name' # Preferred Citation Name
     c2f3d0bd-772c-4ae3-a105-4d9399c63058: Volume # Volume
     c6f608be-4643-4a6c-9b38-56cfc2ce4b50: 'Field Site' # Field Site
     c7a66b7a-c22b-47da-a554-d76b783988d5: 'Text ' # Text 
@@ -163,6 +172,7 @@ meta:
     dfcff989-694b-4ab2-ba1f-deb34bc4d8e1: 'Author Name' # Author Name
     dfd57f27-fbeb-46c4-ab49-0c69a54706de: 'CV File' # CV File
     dfd405c9-9b86-4a9b-ba5e-6859030f2f63: 'Last Name' # Last Name
+    e045d973-eb94-4cae-9f6b-95c34a1e222e: 'Book Chapter' # Book Chapter
     e2e81ce3-bd91-4dba-ac31-63c8a7488a81: 'First Name' # First Name
     e6e48943-71b9-4098-a049-cdd8937160fe: 'Publication Year' # Publication Year
     e8cbc24d-b6e1-4380-8372-151d82625c0d: 'Lab Member' # Lab Member
@@ -186,11 +196,16 @@ meta:
     fae60289-855b-46b6-b24e-f4594b7ded4d: 'Project Start Date' # Project Start Date
     faf3afa8-b0f9-4fe0-ba37-04ba4ddc68bc: 'Social Media Links' # Social Media Links
     fd06b3a3-ec1e-4e79-a0a3-1c0358ba60b3: 'Paragraph Text' # Paragraph Text
+    fd4e00f2-acb9-41e0-beae-fd50a5acea9c: Publisher # Publisher
 plugins:
   redactor:
     edition: standard
     enabled: true
     schemaVersion: 2.3.0
+  sprig:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.1
 system:
   edition: solo
   live: true

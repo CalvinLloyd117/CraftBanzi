@@ -1,35 +1,20 @@
 {% extends '_html5' %}
-{% set publicationEntries = craft.entries.section('publication') %}
-{% set publicationYears =
-  craft.categories().group('publicationYear').orderBy('dateCreated')|reverse
-%}
+
 {% block body %}
   {{ parent() }}
   <div class="wrapper" id="wrapper">
     <h1 class="sectionTitle" id="Publications">
       Publications
     </h1>
-    {% for year in publicationYears %}
-      {% set sectionPublications = publicationEntries.relatedTo(year).all %}
-      {% if sectionPublications %}
-        <section>
-          <div style="margin-top: 0px;"
-            class="sectionBannerText"
-            id="{{ year.slug }}">
-            <h1>
-              {{ year }}
-            </h1>
-          </div>
-          <div class="currentPublications">
-            {% for publication in sectionPublications %}
-              {% include 'modules/_publication' with {
-                publication: publication
-              } %}
-            {% endfor %}
-          </div>
-          </div>
-        </section>
-      {% endif %}
-    {% endfor %}
+    {{
+      sprig(
+        'modules/publicationsComponent',
+        {
+          _limit: 1,
+          category: 'publicationYear'
+        }
+      )
+    }}
+    {{ sprig.script }}
   </div>
 {% endblock %}

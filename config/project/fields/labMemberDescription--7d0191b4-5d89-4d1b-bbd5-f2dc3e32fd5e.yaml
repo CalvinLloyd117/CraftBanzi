@@ -1,16 +1,27 @@
 columnSuffix: bnrcoiqx
-contentColumnType: string
+contentColumnType: text
 fieldGroup: e8cbc24d-b6e1-4380-8372-151d82625c0d # Lab Member
 handle: labMemberDescription
 instructions: 'Brief description of yourself, and elevator pitch of your research / role in the lab (100 -250 words):'
 name: 'Lab Member Description'
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_labmemberdescription}}'
-  maxBlocks: '4'
-  minBlocks: ''
-  propagationKeyFormat: null
-  propagationMethod: all
+  availableTransforms: '*'
+  availableVolumes: '*'
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: ''
+  purifyHtml: '1'
+  redactorConfig: ''
+  removeEmptyTags: '1'
+  removeInlineStyles: '1'
+  removeNbsp: '1'
+  showHtmlButtonForNonAdmins: ''
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
 translationKeyFormat: null
-translationMethod: site
-type: craft\fields\Matrix
+translationMethod: none
+type: craft\redactor\Field

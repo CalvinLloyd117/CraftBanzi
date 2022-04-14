@@ -738,6 +738,114 @@ div.currentPublications {
   margin: 50px;
   gap: 50px;
 }
+/* .publication .Loading {
+  height: 100%;
+} */
+.Loading {
+  /* background-color: red; */
+  grid-column: 1 / -1;
+  height: 50vh;
+  position: relative;
+  width: 100%;
+  z-index: 1000;
+}
+
+.Loading.paused * {
+  animation-play-state: paused !important;
+  -webkit-animation-play-state: paused !important;
+}
+
+.Loading .inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fff;
+  margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 div.currentPublications .publication {
   position: relative;
@@ -749,6 +857,8 @@ div.currentPublications .publication {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  width: 100%;
+  background: #0f0f0f;
 }
 
 div.currentPublications .publication ::-webkit-scrollbar-track {
@@ -767,7 +877,7 @@ div.currentPublications .publication .publicationInfo {
   bottom: 0;
   position: absolute;
   background: rgba(0, 0, 0, 0.7);
-  padding: 20px 20px;
+  padding: 0px 0px;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(0, 0, 0, 0.5);
   /* overflow: hidden; */
@@ -778,6 +888,8 @@ div.currentPublications .publication .publicationInfo {
   bottom: 0px;
   width: 100% !important;
   word-wrap: break-word;
+  height: max-content;
+  min-height: 0px;
 }
 
 @keyframes myBounceOpen {
@@ -803,6 +915,7 @@ div.currentPublications .publication .publicationInfo .inner {
   height: auto;
   object-fit: contain;
   position: relative;
+  padding: 20px 20px;
 }
 
 div.currentPublications .publication .publicationInfo .inner iframe {
@@ -857,6 +970,7 @@ div.currentPublications .publication .publicationInfo .inner.visible {
   position: relative;
   align-items: center;
   display: block;
+  padding-top: 0px;
 }
 
 div.currentPublications .publication .publicationInfo .inner.visible ol {
@@ -959,6 +1073,7 @@ div.currentPublications .publication .publicationInfo.minimized .expand {
   text-align: center;
   vertical-align: middle;
   line-height: 100%;
+  padding-top: 25px;
 }
 
 div.currentPublications .publication .publicationInfo .expand div {
@@ -986,6 +1101,7 @@ div.currentPublications .publication .publicationInfo.maximized .expand {
   display: flex;
   line-height: 100%;
   top: 0;
+  padding-top: 25px;
 }
 
 div.currentPublications .publication .publicationInfo.minimized p {
@@ -1091,6 +1207,10 @@ div.currentLabMembers {
   gap: 50px;
 }
 
+div.currentLabMembers .sprig-component {
+  grid-column: 1 / -1;
+}
+
 div.currentLabMembers .labMember {
   position: relative;
   grid-column: 1 / span 2;
@@ -1170,17 +1290,24 @@ div.currentLabMembers .labMember .labMemberInfo .inner {
 }
 
 div.currentLabMembers .labMember .labMemberInfo .inner p {
-  margin: 15px 0px 15px 15px;
-  margin-block-end: 0px;
+  margin: 0px 0px 15px 0px;
+  margin-block-end: 15px;
+  margin-block-start: 5px !important;
+  padding: 0;
+}
+
+div.currentLabMembers .labMember .labMemberInfo .inner p.topic {
+  margin: 0px 0px 15px 15px;
+  margin-block-end: 15px;
   margin-block-start: 5px !important;
   padding: 0;
 }
 
 div.currentLabMembers .labMember .labMemberInfo .inner p.intro {
   margin: 15px 0px 15px 0px;
-  margin-block-end: 0px;
+  margin-block-end: 10px;
   margin-block-start: 0px !important;
-  padding: 10px 0px 10px 0px;
+  padding: 10px 0px 0px 0px;
 }
 
 div.currentLabMembers .labMember .labMemberInfo .inner h1 {
@@ -1220,7 +1347,7 @@ div.currentLabMembers .labMember .labMemberInfo .inner.intro {
 
 div.currentLabMembers .labMember .labMemberInfo .inner.intro p {
   margin-block-start: 0px;
-  margin-block-end: 0px;
+  margin-block-end: 15px;
 }
 
 div.currentLabMembers .labMember .labMemberInfo .inner.content {
@@ -1744,7 +1871,11 @@ down from 50px -> 3.33vw */
   }
 
   div.currentPublications .publication .publicationInfo {
-    padding: 1.33vw 1.33vw;
+    padding: 0px 0px;
+  }
+
+  div.currentPublications .publication .publicationInfo .inner {
+    /* padding: 1.9vw 1.9vw; */
   }
 
   div.currentLabMembers {
@@ -1831,7 +1962,7 @@ down from 50px -> 3.33vw */
   End Project definitions
   */
   div.currentPublications .publication .publicationInfo {
-    padding: 1.9vw 1.9vw;
+    padding: 0px 0px;
   }
 
   div.currentLabMembers .labMember {

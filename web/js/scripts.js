@@ -26,9 +26,18 @@ var navSticky = navbar.offsetTop;
 window.addEventListener('resize', () => onResize())
 window.addEventListener('scroll', () => applySticky(navbar, navSticky))
 
-//apply parallax to all images with parallax class
-var images = document.querySelectorAll('.parallax');
-new simpleParallax(images, { orientation: 'down', scale: parallaxScale });
+var parallaxImages;
+function parallaxify()
+{
+  if (parallaxImages !== undefined)
+  {
+    parallaxImages.destroy()
+  }
+  //apply parallax to all images with parallax class
+  var images = document.querySelectorAll('.parallax');
+  parallaxImages = new simpleParallax(images, { orientation: 'down', scale: parallaxScale });
+}
+
 
 /************************************************************************
  * Function to get touch positions
@@ -324,6 +333,27 @@ function togglePublicationInfo(id)
   }
 }
 
+function openPublicationInfoOnLoad()
+{
+  if (window.location.href.indexOf('#') != -1)
+  {
+    var section = window.location.href.split('#').pop()
+    var target = document.getElementById(section)
+    if (target.classList.contains('minimized'))
+    {
+      openPublicationInfo(section)
+    }
+    // else if (target.classList.contains('maximized'))
+    // {
+    //   colapsePublicationInfo(section)
+    // }
+    else
+    {
+      return
+    }
+  }
+}
+
 /*****************************************************************
  * 
  *****************************************************************/
@@ -485,16 +515,19 @@ function navigateTo(url)
     var section = window.location.href.split('#').pop()
     // openContentWindow(section)
     scrollToSection(section)
-    var target = document.getElementById(section)
-    if (!target.lastElementChild.classList.contains('mobile'))
-    {
-      expandProjectInfo(section)
-    }
+    // Going to handle the opening of projects inside of sprig now
 
-    else if (target.lastElementChild.classList.contains('mobile') && window.matchMedia("(max-width: 750px)").matches)
-    {
-      expandProjectInfo(section)
-    }
+
+    // var target = document.getElementById(section)
+    // if (!target.lastElementChild.classList.contains('mobile'))
+    // {
+    //   expandProjectInfo(section)
+    // }
+
+    // else if (target.lastElementChild.classList.contains('mobile') && window.matchMedia("(max-width: 750px)").matches)
+    // {
+    //   expandProjectInfo(section)
+    // }
 
     // expandPublicationInfo(section)
   }
@@ -517,12 +550,12 @@ function scrollToSection(target)
     {
       if (classes.contains('projectInfo') || classes.contains('labMember'))
       {
-        elem.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" })
+        elem.scrollIntoView({ behavior: "smooth", block: "start", inline: "start" })
       }
       // works on desktop and mobile for individual publications
       else if (classes.contains('publicationInfo'))
       {
-        elem.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" })
+        elem.scrollIntoView({ behavior: "smooth", block: "end", inline: "end" })
       }
       else if (classes.contains('sectionBannerText'))
       {
@@ -657,8 +690,11 @@ function SlideShow(oldn, n)
   {
     slides[slidePosition - 1].classList.add('slideInRight')
   }
+  if (circles.length > 0)
+  {
+    circles[slidePosition - 1].className += " enable";
+  }
 
-  circles[slidePosition - 1].className += " enable";
   firstSlide = false
   clearTimeout(slideshowTimeout)
   slideshowTimeout = setTimeout(function () { plusSlides(1) }, slideDuration); // Change image every 10 seconds
@@ -667,3 +703,36 @@ function SlideShow(oldn, n)
 /*****************************************************************
  * 
  *****************************************************************/
+const IO = new IntersectionObserver((entries) =>
+{
+  entries.forEach((entry) =>
+  {
+    if (entry.isIntersecting)
+    {
+      // const state = (entry.intersectionRatio >= 0.75) ? 'running' : 'paused';
+      // entry.target.style.setProperty('--animps', state);
+      //if (entry.intersectionRatio > 0)
+      //{
+      entry.target.classList.remove('paused')
+      //}
+    }
+    else
+    {
+      entry.target.classList.add('paused')
+    }
+  });
+}, {
+  threshold: 0,
+  rootMargin: '100% 0px 0px 0px',
+  root: null
+
+});
+
+const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+const elements = document.querySelectorAll(`.Loading`)
+
+console.log("IO Elems: ", elements)
+elements.forEach(animation =>
+{
+  IO.observe(animation);
+});

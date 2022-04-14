@@ -37,9 +37,9 @@ fieldLayouts:
             width: 100
           -
             fieldUid: c7a66b7a-c22b-47da-a554-d76b783988d5 # Text 
-            instructions: null
-            label: null
-            required: false
+            instructions: ''
+            label: ''
+            required: '1'
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null

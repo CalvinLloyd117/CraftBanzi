@@ -1,0 +1,19 @@
+columnSuffix: yibtkbba
+contentColumnType: text
+fieldGroup: e8cbc24d-b6e1-4380-8372-151d82625c0d # Lab Member
+handle: preferredCitationName
+instructions: 'If the name appearing in your citations differs from your first initial followed by your last name, please add it below. (For example, P. Henzi is cited as S. P. Henzi) '
+name: 'Preferred Citation Name'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: 'S. P. Henzi'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

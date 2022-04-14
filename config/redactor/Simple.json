@@ -1,4 +1,13 @@
 {
-  "buttons": ["bold", "italic"],
-  "toolbarFixed": true
+  "buttons": [
+    "formatting",
+    "bold",
+    "italic",
+    "unorderedlist",
+    "orderedlist",
+    "link"
+  ],
+  "linkNewTab": true,
+  "toolbarFixed": true,
+  "formatting": ["h2", "p"]
 }

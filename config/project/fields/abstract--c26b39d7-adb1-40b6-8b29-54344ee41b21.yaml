@@ -1,16 +1,27 @@
 columnSuffix: kkacobxe
-contentColumnType: string
+contentColumnType: text
 fieldGroup: 2528f6a3-ba6d-407c-bd7b-98950fc26ca5 # Publication
 handle: abstract
 instructions: 'Please add the abstract for the paper/article you are adding'
 name: Abstract
 searchable: true
 settings:
-  contentTable: '{{%matrixcontent_abstract}}'
-  maxBlocks: ''
-  minBlocks: ''
-  propagationKeyFormat: null
-  propagationMethod: all
+  availableTransforms: '*'
+  availableVolumes: '*'
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: ''
+  purifyHtml: '1'
+  redactorConfig: ''
+  removeEmptyTags: '1'
+  removeInlineStyles: '1'
+  removeNbsp: '1'
+  showHtmlButtonForNonAdmins: ''
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
 translationKeyFormat: null
-translationMethod: site
-type: craft\fields\Matrix
+translationMethod: none
+type: craft\redactor\Field

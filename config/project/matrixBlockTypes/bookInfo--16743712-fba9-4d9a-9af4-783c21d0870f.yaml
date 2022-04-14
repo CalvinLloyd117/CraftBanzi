@@ -1,0 +1,75 @@
+field: e045d973-eb94-4cae-9f6b-95c34a1e222e # Book Chapter
+fieldLayouts:
+  e8528e71-9330-4677-bbc6-f738f62599d0:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: fd4e00f2-acb9-41e0-beae-fd50a5acea9c # Publisher
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 200c21e2-55e3-43bc-b31c-e24b8c35dea6 # Editors
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  200c21e2-55e3-43bc-b31c-e24b8c35dea6: # Editors
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: editors
+    instructions: 'Please add a list of the names of the editors. (firstInitial. lastName, firstInitial2. lastName2, . . ., firstInitialN. lastInitialN)'
+    name: Editors
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: 'firstInitial1. lastName1, firstInitial2. lastName2, . . ., firstInitialN. lastInitialN'
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  fd4e00f2-acb9-41e0-beae-fd50a5acea9c: # Publisher
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: publisher
+    instructions: ''
+    name: Publisher
+    searchable: false
+    settings:
+      allowLimit: false
+      allowMultipleSources: false
+      allowSelfRelations: false
+      branchLimit: '1'
+      limit: null
+      localizeRelations: false
+      selectionLabel: 'Add a publisher'
+      showSiteMenu: true
+      source: 'group:100e8a0f-927f-4c55-931c-66841e8a3084' # Publisher
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Categories
+handle: bookInfo
+name: 'Book Info'
+sortOrder: 1

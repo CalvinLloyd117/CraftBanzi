@@ -1,117 +1,40 @@
-{% set allCategories = craft.categories().group('labMemberCategory').orderBy('dateCreated') %}
+{% set allCategories = craft.categories().group('labMemberCategory') %}
 {# {% set = value %} #}
 {# {% set %} #}
-<h1 class="sectionTitle" id="Publications">Lab Members</h1>
+<h1 class="sectionTitle" id="Publications">
+  Lab Members
+</h1>
 <!-- Post doctoral-fellows section -->
 <!-- If you need to create a new section, copy the following block of code for the section and paste it before, after or between existing sections. Modify the content as necessary. -->
 {% for category in allCategories %}
-{% set sectionMembers = labMembers.relatedTo(category).all %}
-{% if sectionMembers %}
-<section id="{{category.slug}}">
-    <div style="margin-top: 0px;" class="sectionBannerText">
-        <h1>{{category}}</h1>
-    </div>
-    <div class="currentLabMembers">
+  {% set sectionMembers =
+    labMembers.with(['labMemberProfilePicture']).relatedTo(category).all
+  %}
+  {# {% set sectionMembers = true %} #}
+  {% if sectionMembers %}
+    <section id="{{ category.slug }}">
+      <div style="margin-top: 0px;" class="sectionBannerText">
+        <h1>
+          {{ category }}
+        </h1>
+      </div>
+      <div class="currentLabMembers">
         {% for labMember in sectionMembers %}
-        <div class="labMember" id="{{labMember.slug}}">
-            <div class="profilePic">
-                {% if labMember.isFieldEmpty('labMemberProfilePicture') == false %}
-                {% for pic in labMember.labMemberProfilePicture.all %}
-                <img alt="Default profile photo." class="parallax" src={{pic.url}}>
-                {% endfor %}
-                {% else %}
-                <img alt="Default profile photo." class="parallax" src="/assets/images/defaultProfile.svg">
-                {% endif %}
-            </div>
-            <div class="labMemberInfo right">
-                <div class="inner intro">
-                    {% if category.slug == 'principle-investigators' or category.slug == 'post-doctoral-fellows' %}
-                    <h1>
-                        Dr. {{labMember.title}}
-                    </h1>
-                    {% else %}
-                    <h1>
-                        {{labMember.title}}
-                    </h1>
-                    {% endif %}
-                    {% for descBlock in labMember.labMemberDescription %}
-                    {% if descBlock.type == "subheader" %}
-                    <h2>{{descBlock.subheaderContent}}</h2>
-                    {% elseif descBlock.type == "paragraph" %}
-                    <p class="intro">{{descBlock.paragraphContent}}</p>
-                    {% elseif descBlock.type == "richText" %}
-                    {{descBlock.richTextParagraph}}
-                    {% endif %}
-                    {% endfor %}
-
-                    {% for cvBlock in labMember.cv %}
-                    {% if cvBlock.type == 'cvFile' %}
-                    <p class="intro">File</p>
-                    {% elseif cvBlock.type == 'cvLink' %}
-                    <p class="intro"><b>CV: </b><a href="{{cvBlock.cvUrl}}">
-                            {{cvBlock.cvUrl}}
-                        </a></p>
-                    {% endif %}
-                    {% endfor %}
-
-                    {% if labMember.isFieldEmpty('emailAddress') == false %}
-                    <p class="intro"><b>Email: </b>{{labMember.emailAddress}}</p>
-                    {% endif %}
-
-                    {% for blockType in labMember.socialMediaLinks %}
-                    <p class="intro"><b>{{blockType.type.handle}}: </b><a
-                            href="{{blockType.smLink}}">{{blockType.smLink}}</a></p>
-                    {% endfor %}
-                    {% if labMember.isFieldEmpty('researchGateLink') == false %}
-                    <p class="intro"><b>Research Gate: </b><a
-                            href="{{labMember.researchGateLink}}">{{labMember.researchGateLink}}</a></p>
-                    {% endif %}
-                    {% for blockType in labMember.labMemberResearchTopic %}
-                    {% if blockType.type == "researchTopic" %}
-                    <h2>Research Topic:</h2>
-                    <p>{{blockType.topic}}</p>
-                    {% elseif blockType.type == "phdTopic" %}
-                    <h2>PhD Topic:</h2>
-                    <p>{{blockType.topic}}</p>
-                    {% elseif blockType.type == "mastersTopic" %}
-                    <h2>Masters Topic:</h2>
-                    <p>{{blockType.topic}}</p>
-                    {% elseif blockType.type == "postDoctoralFocusTopic" %}
-                    <h2>Post Doctoral Focus:</h2>
-                    <p>{{blockType.topic}}</p>
-                    {% elseif blockType.type == "appliedStudyTopic" %}
-                    <h2>Applied Study Topic:</h2>
-                    <p>{{blockType.topic}}</p>
-                    {% endif %}
-                    {% endfor %}
-                    {% if labMember.isFieldEmpty('labMemberFieldSite') == false %}
-                    <h2>Fieldsite: </h2>
-                    <a href="#">
-                        <p>{{labMember.labMemberFieldSite.title}}</p>
-                    </a>
-                    {% endif %}
-
-                    {% if (labMember.isFieldEmpty("labMemberDepartment") == false) and
-                    labMember.isFieldEmpty('labMemberCenter') == false %}
-                    <h2>Centre:</h2>
-                    <p>{{labMember.labMemberDepartment.one.title}}, {{labMember.labMemberCenter.one.title}}</p>
-
-                    {% elseif (labMember.isFieldEmpty("labMemberDepartment") == false) and
-                    labMember.isFieldEmpty('labMemberCenter') %}
-                    <h2>Department:</h2>
-                    <p>{{labMember.labMemberDepartment.one.title}}</p>
-
-                    {% elseif (labMember.isFieldEmpty("labMemberDepartment")) and
-                    labMember.isFieldEmpty('labMemberCenter') == false %}
-                    <h2>Centre:</h2>
-                    <p>{{labMember.labMemberCenter.one.title}}</p>
-                    {% endif %}
-
-                </div>
-            </div>
-        </div>
+          {{
+            sprig(
+              'modules/_labMemberProfile',
+              {
+                labMember: labMember.id,
+                category: category.slug
+              }
+            )
+          }}
+          {{ sprig.script }}
+          {# {% include 'modules/_labMemberProfile' with {
+            labMember: labMember
+          } %} #}
         {% endfor %}
-    </div>
-</section>
-{% endif %}
+      </div>
+    </section>
+  {% endif %}
 {% endfor %}

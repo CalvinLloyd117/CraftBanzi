@@ -1,0 +1,44 @@
+{# {% set year = year ?? null %} #}
+{% set visible = visible|default(false) %}
+<div class="currentPublications">
+  {# <div class="currentPublications"> #}
+  {# {% if visible == true %} #}
+  {% if not year == null %}
+    {% set sectionPublications =
+      craft.entries.section('publication').with(
+        ['publicationCoverImage']
+      ).relatedTo(
+        year
+      )
+    %}
+  {% endif %}
+  {% if sectionPublications|default(null) %}
+    <script>
+      console.log('I was just re-rendered.');
+    </script>
+    {% for publication in sectionPublications %}
+      {# {% set image = publication.publicationCoverImage[0] ?? null %} #}
+      {# {% include 'modules/_publication' with {
+        publication: publication,
+        img: image
+      } %} #}
+      {{
+        sprig(
+          'modules/_publication',
+          {
+            publicationID: publication.id,
+            publicationSlug: publication.slug
+          }
+        )
+      }}
+      {{ sprig.script }}
+    {% endfor %}
+  {% endif %}
+  {# {% else %} #}
+  {# <div class="Loading" sprig s-trigger="intersect threshold:0.25 consume" s-val:visible={{true}}>
+        <div class="inner">
+            <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        </div>
+    </div>
+  {% endif %} #}
+</div>

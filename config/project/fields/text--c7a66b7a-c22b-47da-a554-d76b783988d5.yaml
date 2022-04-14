@@ -1,16 +1,27 @@
 columnSuffix: null
-contentColumnType: string
+contentColumnType: text
 fieldGroup: f0e50402-de48-431e-b603-d7b66f86fdc2 # Carousel Entry
 handle: text
 instructions: ''
 name: 'Text '
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_text}}'
-  maxBlocks: ''
-  minBlocks: '1'
-  propagationKeyFormat: null
-  propagationMethod: all
+  availableTransforms: '*'
+  availableVolumes: ''
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: ''
+  purifyHtml: '1'
+  redactorConfig: Simple.json
+  removeEmptyTags: '1'
+  removeInlineStyles: '1'
+  removeNbsp: '1'
+  showHtmlButtonForNonAdmins: ''
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
 translationKeyFormat: null
-translationMethod: site
-type: craft\fields\Matrix
+translationMethod: none
+type: craft\redactor\Field
