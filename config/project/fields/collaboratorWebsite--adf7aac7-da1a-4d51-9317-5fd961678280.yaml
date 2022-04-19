@@ -1,0 +1,15 @@
+columnSuffix: bwatuoij
+contentColumnType: string(255)
+fieldGroup: 49755225-eb07-496e-ab57-e34cbbd891a1 # Current Collaborators
+handle: collaboratorWebsite
+instructions: 'If the collaborator has a website/page related to their research, please add it here.'
+name: 'Collaborator Website'
+searchable: false
+settings:
+  maxLength: '255'
+  placeholder: null
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

@@ -1,0 +1,127 @@
+{% set visible = visible|default(false) %}
+<div class="project" id="{{projectSlug}}">
+  {% if visible == true %}
+    {% set project = craft.entries.section('project').id(projectID).with(['projectBackgroudImage']).one %}
+    {% set img = project.projectBackgroundImage[0] ?? null %}
+    <img alt="{{project.backgroundImageDescription}}"
+      class="parallax projectBackground"
+      src="{{img.url}}" />
+      {% if project.projectOverlayAlignment %}
+        {% set overlayAlignment = 'right' %}
+      {% else %}
+        {% set overlayAlignment = 'left' %}
+      {% endif %}
+    <div class="projectInfo minimized {{overlayAlignment}}">
+      <div class="grid">
+      <div class="expand" onclick="toggleProjectInfo('{{projectSlug}}')">
+        <div>
+          &#10094;
+        </div>
+      </div>
+      <div class="inner intro title">
+        <h1>
+          {{project.title}}
+        </h1>
+        <p class="name">
+          {% for cont in project.contributors %}
+            {% if cont.type == 'labMember' %}
+              <a href="/about#{{cont.labMemberEntry.first.slug}}">{{cont.labMemberEntry.first.title}}</a>{% if not loop.last %}, {% endif %}
+            {% elseif cont.type == 'currentCollaborator' %}
+              {% if cont.collaboratorEntry.first.isFieldEmpty('collaboratorWebsite') == false %}
+              <a href="{{cont.collaboratorEntry.first.collaboratorWebsite}}">{{cont.collaboratorEntry.first.title}}</a>{% if not loop.last %}, {% endif %}
+              {% else %}
+              <a href="/about#{{cont.collaboratorEntry.first.slug}}">{{cont.collaboratorEntry.first.title}}</a>{% if not loop.last %}, {% endif %}
+              {% endif %}
+            {% elseif cont.type == 'nameInputField' %}
+              {{cont.contributorName}}{% if not loop.last %}, {% endif %}
+            {% endif %}
+          {% endfor %}
+        </p>
+      </div>
+      {% if project.isFieldEmpty('introductionImage') == false %}
+        {% if project.imageAlignment %}
+          <div class="inner intro hidden">
+            {{project.projectIntroduction}}
+          </div>
+          <div class="inner hidden">
+            <img alt="sdafa"
+              src={{project.introductionImage.first.url}}
+            />
+          </div>
+        {% else %}
+          <div class="inner hidden tempNone">
+            <img alt="sdafa"
+              src={{project.introductionImage.first.url}}
+              />
+          </div>
+          <div class="inner hidden intro ">
+            {{project.projectIntroduction}}
+          </div>
+        {% endif %}
+      {% else %}
+        <div class="inner intro hidden spanTwo">
+          {{project.projectIntroduction}}
+        </div>
+      {% endif %}
+      {% if project.isFieldEmpty('detailedDescription') == false %}
+      {% for elem in project.detailedDescription %}
+        {% if elem.type == 'text' %}
+          <div class="inner hidden spanTwo">
+          {{elem.textContent}}
+          </div>
+        {% elseif elem.type == 'image' %}
+        <div class="inner hidden">
+          <img alt="A tent for completing surveys."
+            src="images/Home/Projects/WildlifeCoexistence/WildlifeCoexistence_related1.jpg"
+            width="3120"
+            height="4160" />
+        </div>
+        {% elseif elem.type == 'textWithImage' %}
+          {# Image is Right Aligned #}
+          {% if elem.imageAlignment %}
+          {% if elem.isFieldEmpty('text') == false %}
+          <div class="inner hidden">    
+            {{elem.text}}
+          </div>
+          {% endif %}
+          <div class="inner hidden">
+            <img alt="{{elem.imageDescription}}"
+              src={{elem.image.first.url}}
+              />
+          </div>
+          {% else %}
+          <div class="inner hidden">
+            <img alt="{{elem.imageDescription}}"
+              src={{elem.image.first.url}}
+              />
+          </div>
+          {% if elem.isFieldEmpty('text') == false %}
+          <div class="inner hidden">    
+            {{elem.text}}
+          </div>
+          {% endif %}
+          {% endif %}
+        {% else %}
+          <p>Incorrect content type.</p>
+        {% endif %}
+      {% endfor %}
+      <div class="buttonOuter learnMore">
+        <button aria-label="Learn More"
+          onclick="toggleProjectInfo('{{projectSlug}}')"
+          class="inner">
+        </button>
+      </div>
+      {% endif %}
+      </div>
+    </div>
+    <script>
+       parallaxify()
+    </script>
+    {% else %}
+    <div style="height: 100%;" class="Loading paused" sprig s-trigger="intersect threshold:0.25 consume" s-val:visible={{true}}>
+      <div class="inner">
+        <div class="lds-roller" data-animation><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+      </div>
+    </div>
+  {% endif %}
+</div>

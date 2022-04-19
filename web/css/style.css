@@ -408,13 +408,13 @@ header p {
   width: 100%;
   background-color: #191919;
   position: sticky;
-  z-index: 1;
+  z-index: 1000;
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box; /* Firefox, other Gecko */
   box-sizing: border-box;
   height: 50px;
   display: flex;
-  margin-top: 50px;
+  margin-top: 0px;
   max-height: max-content;
 }
 
@@ -434,15 +434,19 @@ header p {
 
 div.currentProjects {
   height: max-content;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
   margin: 50px;
-  gap: 50px;
+  /* gap: 50px; */
 }
 
+div.currentProjects .sprig-component {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 div.currentProjects .project {
   position: relative;
-  grid-column: 1 / span 2;
+  /* grid-column: 1 / span 2; */
   max-height: 82vh;
   width: 100%;
   overflow: hidden !important;
@@ -461,7 +465,7 @@ div.currentProjects .project .projectInfo {
   bottom: 0;
   position: absolute;
   background: rgba(0, 0, 0, 0.7);
-  padding: 20px 40px;
+  padding: 40px 40px;
   backdrop-filter: blur(10px);
   transition: 0.5s;
   transition-timing-function: ease-out;
@@ -475,6 +479,10 @@ div.currentProjects .project .projectInfo .inner {
   transition: 0.5s;
   height: auto;
   object-fit: contain;
+}
+
+.spanTwo {
+  grid-column: span 2;
 }
 
 div.currentProjects .project .projectInfo .inner.videoContainer {
@@ -533,12 +541,16 @@ div.currentProjects .project .projectInfo .inner.hidden.spacer {
 div.currentProjects .project .projectInfo .inner.visible {
   opacity: 1;
   transition: 0.5s;
-  object-fit: cover !important;
+  object-fit: contain !important;
   position: relative;
-  align-items: center;
+  /* align-items: center; */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center top;
+  justify-content: top;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 div.currentProjects .project .projectInfo .inner.visible.spacer {
@@ -557,10 +569,12 @@ div.currentProjects .project .projectInfo .inner.visible.spacer {
 div.currentProjects .project .projectInfo .inner.visible img {
   object-fit: contain !important;
   max-width: 100%;
+  /* width: 100%; */
   /* object-position: top; */
   /* height: auto; */
-  max-height: 100%;
-  display: none;
+  max-height: 70vh;
+  /* margin: auto; */
+  /* display: none; */
 }
 
 div.currentProjects .project .projectInfo .inner.visible img.visible {
@@ -575,15 +589,27 @@ div.currentProjects .project .projectInfo .inner.visible img.visible {
 div.currentProjects .project .projectInfo .inner.visible p {
   margin-block-start: 0px;
   margin-block-end: 0px;
-  margin: 15px 0px;
+  margin: 15px 0px 0px 0px;
 }
 
 div.currentProjects .project .projectInfo .inner.visible p:first-child {
-  margin: 0px 0px 15px 0px;
+  margin: 0px 0px 0px 0px;
 }
 
-div.currentProjects .project .projectInfo .inner.visible p:last-child {
+div.currentProjects .project .projectInfo .inner.intro p:first-child {
   margin: 0px 0px 0px 0px;
+}
+
+div.currentProjects .project .projectInfo .inner.intro p {
+  margin: 15px 0px 0px 0px;
+}
+
+/* div.currentProjects .project .projectInfo .inner.visible p:last-child {
+  margin: 0px 0px 0px 0px;
+} */
+
+div.currentProjects .project .projectInfo .inner.intro p:last-child {
+  margin: 15px 0px 0px 0px;
 }
 
 div.currentProjects .project .projectInfo .inner.visible h2 {
@@ -602,6 +628,9 @@ div.currentProjects .project .projectInfo.minimized {
   padding: 20px 0px 20px 40px;
 }
 
+div.currentProjects .project .projectInfo.minimized .tempNone {
+  display: none;
+}
 div.currentProjects .project .projectInfo.minimized p {
   /* margin: 0px 0px !important; */
 }
@@ -609,10 +638,18 @@ div.currentProjects .project .projectInfo.minimized p {
 div.currentProjects .project .projectInfo.maximized {
   width: 100%;
   overflow-y: auto;
+  /* grid-template-rows: min-content; */
+}
+
+div.currentProjects .project .projectInfo.maximized .grid {
+  width: 100%;
+  overflow-y: auto;
   display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: auto;
+  gap: 40px;
+  grid-template-columns: auto auto;
+  grid-template-rows: min-content;
+  height: min-content;
+  grid-template-rows: min-content;
 }
 
 div.currentProjects .project .projectInfo.maximized p {
@@ -623,10 +660,14 @@ div.currentProjects .project .projectInfo .inner.intro {
   position: relative;
   height: min-content;
   opacity: 1;
-
+  /* grid-column: span 2; */
   height: max-content;
   max-height: 70%;
   overflow: auto;
+}
+
+div.currentProjects .project .projectInfo .inner.intro.title {
+  grid-column: span 2;
 }
 
 div.currentProjects .project .projectInfo .inner.intro.noExpand {
@@ -661,6 +702,14 @@ div.currentProjects .project .projectInfo .inner.intro p.name {
   font-size: 0.8em;
   padding: 0px !important;
   margin: 5px 0px 2.33vw 0px !important;
+}
+
+div.currentProjects .project .projectInfo.maximized .inner.intro p.name {
+  margin-block-start: 0px;
+  margin-block-end: 2.33vw;
+  font-size: 0.8em;
+  padding: 0px !important;
+  margin: 5px 0px 0vw 0px !important;
 }
 
 div.currentProjects .project .projectInfo .inner.intro h1 {
@@ -698,6 +747,16 @@ div.currentProjects .project .projectInfo .buttonOuter.learnMore {
   margin-top: 40px;
 }
 
+div.currentProjects .project .projectInfo.maximized .buttonOuter.learnMore {
+  cursor: pointer;
+  position: static;
+  right: 40px;
+  bottom: 40px;
+  margin-top: 40px;
+  grid-column: span 2;
+  justify-self: end;
+}
+
 div.currentProjects .project .projectInfo .buttonOuter.learnMore.mobile {
   cursor: pointer;
   position: absolute;
@@ -707,11 +766,11 @@ div.currentProjects .project .projectInfo .buttonOuter.learnMore.mobile {
 }
 
 div.currentProjects .project .projectInfo .buttonOuter.close {
-  position: relative;
-  grid-column: 6 / span 1;
+  /* position: absolute; */
+  grid-column: span 2;
   justify-self: end;
   padding: 0px 0px;
-  margin: 40px 0px 40px 0px;
+  margin: 0px 0px 0px 0px;
 }
 
 div.currentProjects .project .projectInfo .buttonOuter .inner {
@@ -741,13 +800,23 @@ div.currentPublications {
 /* .publication .Loading {
   height: 100%;
 } */
+
+.LoadingBox {
+  width: 100%;
+  height: 100%;
+  background: #141414;
+  z-index: 10;
+  position: absolute;
+  border-top: 1px solid rgba(80, 80, 80, 0.5);
+  border-bottom: 1px solid rgba(80, 80, 80, 0.5);
+}
 .Loading {
   /* background-color: red; */
   grid-column: 1 / -1;
   height: 50vh;
   position: relative;
   width: 100%;
-  z-index: 1000;
+  z-index: 1;
 }
 
 .Loading.paused * {
@@ -1205,6 +1274,7 @@ div.currentLabMembers {
   grid-template-columns: 1fr 1fr;
   margin: 50px;
   gap: 50px;
+  position: relative;
 }
 
 div.currentLabMembers .sprig-component {
@@ -1250,11 +1320,28 @@ div.currentLabMembers .labMember .labMemberInfo.labMemberList {
   grid-column: 1 / span 2;
 }
 
-div.currentLabMembers .labMember .labMemberInfo.labMemberList ul li {
+div.currentLabMembers .labMember .labMemberInfo.labMemberList div:first-child {
+  margin-top: 0px !important;
+}
+
+div.currentLabMembers .labMember .labMemberInfo.labMemberList div {
+  margin-top: 1.665vw !important;
+}
+
+div.currentLabMembers .labMember .labMemberInfo.labMemberList ul {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  /* margin-top: 1.665vw; */
+}
+
+div.currentLabMembers
+  .labMember
+  .labMemberInfo.labMemberList
+  ul
+  li:first-child {
   color: white;
   font-family: 'Open sans', sans-serif;
-  font-size: 1.125em;
-  margin-top: 20px !important;
+  margin-top: 0px !important;
 }
 
 div.currentLabMembers
@@ -1265,11 +1352,34 @@ div.currentLabMembers
   margin-top: 0px !important;
 }
 
+div.currentLabMembers .labMember .labMemberInfo.labMemberList ul li {
+  color: white;
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.125em;
+  margin-top: 20px !important;
+}
+
+div.currentLabMembers .labMember .labMemberInfo.labMemberList ul div {
+  margin-top: 20px !important;
+  color: white;
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.125em;
+  margin-top: 20px !important;
+}
+
+div.currentLabMembers
+  .labMember
+  .labMemberInfo.labMemberList
+  ul
+  div:first-child {
+  margin-top: 0px !important;
+}
+
 div.currentLabMembers .labMember .labMemberInfo.labMemberList ul li h2 {
   font-size: 1.25em;
   margin-block-start: 0em;
   margin-block-end: 0em;
-  padding: 10px 0px 5px 0px;
+  /* padding: 0px 0px 5px 0px; */
 }
 
 div.currentLabMembers .labMember .labMemberInfo.labMemberList ul li h3 {
@@ -1284,6 +1394,7 @@ div.currentLabMembers .labMember .labMemberInfo.labMemberList ul li p {
   margin-block-end: 0em;
   padding: 0px;
 }
+
 div.currentLabMembers .labMember .labMemberInfo .inner {
   transition: 0.5s;
   height: max-content;
@@ -1518,6 +1629,7 @@ div.contentContainer.visible {
   overflow: hidden;
   background: #0f0f0f;
   border-bottom: 1px solid rgba(80, 80, 80, 0.5);
+  margin-bottom: 50px;
 }
 
 .slideshow-container ::-webkit-scrollbar-track {
@@ -1811,6 +1923,11 @@ down from 50px -> 3.33vw */
     margin-block-end: 1.06vw;
   }
 
+  /* Slideshow container */
+  .slideshow-container {
+    margin-bottom: 3.33vw;
+  }
+
   .slideshow-container .dotContainer {
     position: absolute;
     bottom: 3vw;
@@ -1841,17 +1958,16 @@ down from 50px -> 3.33vw */
 
   div.currentProjects {
     height: max-content;
-    display: grid;
     flex-direction: column;
-    grid-template-columns: 1fr 1fr;
     margin: 3.33vw;
     gap: 3.33vw;
   }
 
   .sectionBannerText,
   .sectionBannerText2 {
-    margin-top: 3.33vw;
+    margin-top: 0vw;
     height: auto;
+    z-index: 10;
   }
 
   .sectionBannerText,
@@ -1860,7 +1976,7 @@ down from 50px -> 3.33vw */
     padding: 0px 3.33vw;
     font-size: 1.5625em;
     line-height: 25px;
-    margin-top: 3.33vw;
+    margin-top: 0vw;
     margin-bottom: 0px !important;
     line-height: 100%;
   }
@@ -1996,6 +2112,105 @@ down from 50px -> 3.33vw */
   .wrapper h1.sectionTitle {
     font-size: 2.55vw;
   }
+
+  div.currentLabMembers .labMember .labMemberInfo.labMemberList ul {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    padding-inline-start: 40px;
+  }
+
+  div.currentLabMembers
+    .labMember
+    .labMemberInfo.labMemberList
+    ul
+    li:first-child {
+    color: white;
+    font-family: 'Open sans', sans-serif;
+    margin-top: 0px !important;
+  }
+
+  div.currentLabMembers .labMember .labMemberInfo.labMemberList ul li {
+    color: white;
+    font-family: 'Open sans', sans-serif;
+    margin-top: 3.33vw !important;
+  }
+
+  div.currentLabMembers
+    .labMember
+    .labMemberInfo.labMemberList
+    ul
+    div:first-child {
+    margin-top: 1.7vw !important;
+    color: white;
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.125em;
+    margin-top: 0px !important;
+  }
+
+  div.currentLabMembers
+    .labMember
+    .labMemberInfo.labMemberList
+    ul
+    div:first-child {
+    margin-top: 0px;
+  }
+
+  div.currentLabMembers
+    .labMember
+    .labMemberInfo.labMemberList
+    ul
+    div:first-child {
+    margin-top: 1.665vw !important;
+  }
+
+  div.currentLabMembers .labMember .labMemberInfo.labMemberList ul div {
+    color: white;
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.125em;
+    margin-top: 1.665vw !important;
+  }
+
+  div.currentLabMembers .labMember .labMemberInfo.labMemberList ul div {
+    color: white;
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.125em;
+    margin-top: 1.665vw !important;
+  }
+
+  div.currentLabMembers .labMember .labMemberInfo.labMemberList ul {
+    color: white;
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.125em;
+    /* margin-top: 1.665vw !important; */
+  }
+
+  div.currentLabMembers
+    .labMember
+    .labMemberInfo.labMemberList
+    ul
+    li:first-child {
+    margin-top: 0px !important;
+  }
+
+  div.currentLabMembers .labMember .labMemberInfo.labMemberList ul li h2 {
+    font-size: 0.917em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    /* padding: 0px 0px 5px 0px; */
+  }
+
+  div.currentLabMembers .labMember .labMemberInfo.labMemberList ul li h3 {
+    font-size: 0.7333em;
+    margin-block-start: 0.8325vw;
+    margin-block-end: 0em;
+  }
+
+  div.currentLabMembers .labMember .labMemberInfo.labMemberList ul li p {
+    font-size: 0.6875em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding: 0px;
+  }
 }
 
 @media only screen and (max-width: 750px) {
@@ -2005,7 +2220,6 @@ down from 50px -> 3.33vw */
   }
   .sectionBannerText,
   .sectionBannerText2 {
-    margin-top: 3.33vw;
     height: auto;
   }
 
@@ -2015,7 +2229,7 @@ down from 50px -> 3.33vw */
     padding: 0px 15px;
     font-size: 1.5625em;
     line-height: 25px;
-    margin-top: 15px;
+    margin-top: 0px;
     margin-bottom: 0px !important;
     line-height: 100%;
   }
@@ -2026,7 +2240,7 @@ down from 50px -> 3.33vw */
   }
 
   /*Styles related to the responsive nav Hamburger menu*/
-  .topnav a.icon {
+  .topnav div.icon {
     color: white !important;
     display: flex;
     font-size: 3.125em !important;
@@ -2036,6 +2250,7 @@ down from 50px -> 3.33vw */
     line-height: 30px;
     width: max-content;
     margin-right: 10px;
+    cursor: pointer;
   }
 
   .topnav .navButtons {
@@ -2577,7 +2792,7 @@ down from 50px -> 3.33vw */
     font-size: 1.125em;
   }
 
-  .topnav a.icon {
+  .topnav div.icon {
     font-size: 2.5em !important;
     line-height: 25px;
   }

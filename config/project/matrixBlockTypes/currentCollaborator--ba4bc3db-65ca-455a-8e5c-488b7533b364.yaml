@@ -1,0 +1,44 @@
+field: c3d60eb7-a096-4845-9ac2-6849cee269cc # Contributors 
+fieldLayouts:
+  6b6f8074-87be-4cd4-9a6e-5b2f5408a40c:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 7ae2dc07-cb92-478c-ba01-745ef170707b # Collaborator Entry
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  7ae2dc07-cb92-478c-ba01-745ef170707b: # Collaborator Entry
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: collaboratorEntry
+    instructions: 'Please select a collaborator.'
+    name: 'Collaborator Entry'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: false
+      source: null
+      sources:
+        - 'section:98343663-6eba-416b-b74d-5615fdd16c77' # Current Collaborators 
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+handle: currentCollaborator
+name: 'Current Collaborator'
+sortOrder: 2

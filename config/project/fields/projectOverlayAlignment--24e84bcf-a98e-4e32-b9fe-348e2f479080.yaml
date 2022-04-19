@@ -1,0 +1,14 @@
+columnSuffix: dljenidz
+contentColumnType: boolean
+fieldGroup: 5a459a8a-83ed-4cb0-a0b2-fa9f83ab144f # Project
+handle: projectOverlayAlignment
+instructions: 'Which side of the project would you like the overlay (containing the introductory text) to be positioned? Left, or Right? Essentially this setting will impact which side of the project Background Image will be hidden by the overlay when it is closed.'
+name: 'Project Overlay Alignment'
+searchable: false
+settings:
+  default: true
+  offLabel: 'Overlay Left'
+  onLabel: 'Overlay Right'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

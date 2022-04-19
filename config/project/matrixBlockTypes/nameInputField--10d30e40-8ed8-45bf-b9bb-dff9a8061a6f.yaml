@@ -1,0 +1,41 @@
+field: c3d60eb7-a096-4845-9ac2-6849cee269cc # Contributors 
+fieldLayouts:
+  6d82dcd6-b7d8-4973-9287-b367ecc8c3f8:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 76b62d57-9985-40e2-9f45-e8250d6f3dc8 # Contributor Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  76b62d57-9985-40e2-9f45-e8250d6f3dc8: # Contributor Name
+    columnSuffix: yjnprbye
+    contentColumnType: text
+    fieldGroup: null
+    handle: contributorName
+    instructions: ''
+    name: 'Contributor Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: nameInputField
+name: 'Name Input Field'
+sortOrder: 3

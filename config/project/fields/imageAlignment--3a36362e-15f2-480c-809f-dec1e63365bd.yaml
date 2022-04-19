@@ -1,0 +1,14 @@
+columnSuffix: qyjtvnvs
+contentColumnType: boolean
+fieldGroup: 5a459a8a-83ed-4cb0-a0b2-fa9f83ab144f # Project
+handle: imageAlignment
+instructions: ''
+name: 'Image Alignment'
+searchable: false
+settings:
+  default: true
+  offLabel: 'Align Left'
+  onLabel: 'Align Right'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

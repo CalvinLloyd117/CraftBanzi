@@ -1,42 +1,69 @@
+{% set collaborators = craft.entries.section('currentCollaborators') %}
+{% set anyVisible = anyVisible|default(false) %}
+
 {% if collaborators %}
-<section id="current-collaborators">
-    <div style="margin-top: 0px;" class="sectionBannerText">
-        <h1>Current Collaborators</h1>
-    </div>
-    <div class="currentLabMembers">
+  {% if anyVisible == false %}
+    <section id="current-collaborators" sprig s-trigger="intersect threshold:0 consume" s-val:anyVisible={{true}}>
+      {# <section id="current-collaborators"> #}
+      <div class="sectionBannerText">
+        <h1>
+          Current Collaborators
+        </h1>
+      </div>
+      <div class="currentLabMembers" style="min-height: 50vh">
         <div class="labMember">
-            <div class="labMemberInfo labMemberList">
-                <ul>
-                    {% for collaborator in collaborators | reverse %}
-                    <li>
-                        <h2>{{collaborator.title}}</h2>
-                        {% if (collaborator.isFieldEmpty("labMemberDepartment") == false) and
-                        collaborator.isFieldEmpty('university') == false %}
-                        <p>{{collaborator.labMemberDepartment.one.title}}, {{collaborator.university.one.title}}</p>
-                        {% elseif (collaborator.isFieldEmpty("labMemberDepatment")) and
-                        collaborator.isFieldEmpty('university') == false %}
-                        <p>{{collaborator.university.one.title}}</p>
-                        {% elseif (collaborator.isFieldEmpty("labMemberDepartment") == false) and
-                        collaborator.isFieldEmpty('university') %}
-                        {{collaborator.labMemberDepartment.one.title}}
-                        {% endif %}
-                        <h3>Project:</h3>
-                        {% if collaborator.project %}
-                        {% for proj in collaborator.project %}
-                        {% if proj.type == "projectEntry" %}
-                        <a href="/#{{proj.projectEntrySelection.title}}">
-                            <p>{{proj.projectEntrySelection.title}}</p>
-                        </a>
-                        {% elseif proj.type == "projectName" %}
-                        <p>{{proj.projectNameText}}</p>
-                        {% endif %}
-                        {% endfor %}
-                        {% endif %}
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div>
+          <div class="labMemberInfo labMemberList">
+            {# <ul> #}
+              {% for collaborator in collaborators|reverse %}
+                {{
+                  sprig(
+                    'modules/_collaboratorListItem',
+                    {
+                      collaboratorID: collaborator.id,
+                      anyVisible: anyVisible
+                    }
+                  )
+                }}
+                {{ sprig.script }}
+              {% endfor %}
+            {# </ul> #}
+          </div>
         </div>
-    </div>
-</section>
+        <div class="LoadingBox">
+            <div style="height: 100%;" class="Loading paused" sprig s-trigger="intersect threshold:0.25 consume" s-val:anyVisible={{true}}>
+            {# <div style="height: 100%;" class="Loading paused"> #}
+            <div class="inner">
+                <div class="lds-roller" data-animation><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+            </div>
+      </div>
+    </section>
+  {% else %}
+      <section id="current-collaborators">
+      <div style="margin-top: 0px;" class="sectionBannerText">
+        <h1>
+          Current Collaborators
+        </h1>
+      </div>
+      <div class="currentLabMembers">
+        <div class="labMember">
+          <div class="labMemberInfo labMemberList">
+            {# <ul> #}
+              {% for collaborator in collaborators|reverse %}
+                {{
+                  sprig(
+                    'modules/_collaboratorListItem',
+                    {
+                      collaboratorID: collaborator.id,
+                      anyVisible: anyVisible
+                    }
+                  )
+                }}
+                {{ sprig.script }}
+              {% endfor %}
+            {# </ul> #}
+          </div>
+        </div>
+      </div>
+    </section>
+  {% endif %}
 {% endif %}

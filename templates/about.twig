@@ -4,8 +4,8 @@
 {% set elemCount = craft.entries().section('aboutCarouselEntry').count() %}
 
 {% set labMemberEntries = craft.entries.section('labMemberProfile') %}
-{% set pastLabMembers = craft.entries.section('pastLabMembers') %}
-{% set currentCollaborators = craft.entries.section('currentCollaborators') %}
+{# {% set pastLabMembers = craft.entries.section('pastLabMembers') %} #}
+{# {% set currentCollaborators = craft.entries.section('currentCollaborators') %} #}
 
 {% block body %}
   {{ parent() }}
@@ -23,10 +23,14 @@
     {# {% include 'modules/_pastLabMembersSection' with {
       pastMembers: pastLabMembers
     } %} #}
+    {{ sprig('modules/_pastLabMembersSection') }}
+    {{ sprig.script }}
     <!-- Current Collaborators section -->
     {# {% include 'modules/_currentCollaboratorsSection' with {
       collaborators: currentCollaborators
     } %} #}
+    {{ sprig('modules/_currentCollaboratorsSection') }}
+    {{ sprig.script }}
     <!-- End Current Collaborators section -->
   </div>
 {% endblock %}

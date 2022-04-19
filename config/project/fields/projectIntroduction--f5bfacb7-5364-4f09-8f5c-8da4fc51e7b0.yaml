@@ -1,16 +1,27 @@
 columnSuffix: null
-contentColumnType: string
+contentColumnType: text
 fieldGroup: 5a459a8a-83ed-4cb0-a0b2-fa9f83ab144f # Project
 handle: projectIntroduction
-instructions: 'Please select blocks to comprise your project''s introduction.'
+instructions: 'Briefly introduce your project.'
 name: 'Project Introduction'
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_projectintroduction}}'
-  maxBlocks: ''
-  minBlocks: ''
-  propagationKeyFormat: null
-  propagationMethod: all
+  availableTransforms: '*'
+  availableVolumes: '*'
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: ''
+  purifyHtml: '1'
+  redactorConfig: Simple.json
+  removeEmptyTags: '1'
+  removeInlineStyles: '1'
+  removeNbsp: '1'
+  showHtmlButtonForNonAdmins: ''
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
 translationKeyFormat: null
-translationMethod: site
-type: craft\fields\Matrix
+translationMethod: none
+type: craft\redactor\Field

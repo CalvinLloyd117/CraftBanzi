@@ -1,0 +1,19 @@
+columnSuffix: rlnrkdxa
+contentColumnType: string(800)
+fieldGroup: 5a459a8a-83ed-4cb0-a0b2-fa9f83ab144f # Project
+handle: backgroundImageDescription
+instructions: 'Please add a few words describing the image'
+name: 'Background Image Description'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 200
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,0 +1,32 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 5a459a8a-83ed-4cb0-a0b2-fa9f83ab144f # Project
+handle: introductionImage
+instructions: 'If you would like to have an image appear next to your introductory text, add it here. Note that the image will only be visible in the project''s expanded view.'
+name: 'Introduction Image'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowUploads: true
+  allowedKinds: null
+  defaultUploadLocationSource: 'volume:e6732067-02ef-47db-8371-405b77fee1f6' # Images
+  defaultUploadLocationSubpath: 'projects/{slug}'
+  limit: '1'
+  localizeRelations: false
+  previewMode: full
+  restrictFiles: ''
+  selectionLabel: ''
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:e6732067-02ef-47db-8371-405b77fee1f6' # Images
+  singleUploadLocationSubpath: ''
+  source: null
+  sources: '*'
+  targetSiteId: null
+  useSingleFolder: false
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

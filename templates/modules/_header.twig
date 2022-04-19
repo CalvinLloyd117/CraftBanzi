@@ -1,52 +1,63 @@
 {% set labMemberCategories = craft.categories().group('labMemberCategory') %}
-{% set pastLabMemberCategories = craft.categories().group('pastMemberCategory') %}
-{% set publicationYears = craft.categories().group('publicationYear')%}
+{% set pastLabMemberCategories =
+  craft.categories().group('pastMemberCategory')
+%}
+{% set publicationYears = craft.categories().group('publicationYear') %}
+{% set currentCollaborators =
+  craft.entries.section('currentCollaborators').total()
+%}
 <header id="header">
-    <div id="bannerimg" class='bannerImage'>
-        <img alt="Some vervets on a tree." class="parallax" src="images\img0064.png">
-    </div>
-    <div class="topnav" id="navbar">
-        <a href="/" class="logo active">
-            <h1>the banzi-lab</h1>
+  <div class="topnav" id="navbar">
+    <a href="/" class="logo active">
+      <h1>
+        the banzi-lab
+      </h1>
+    </a>
+    <div class="navButtons" id="navButtons">
+      <div class="dropdown buttonOuter {{
+        route == '/publications'
+          ? 'active'
+        }}">
+        <a href="/publications">
+          <button class="dropbtn inner">Publications</button>
         </a>
-        <div class="navButtons" id="navButtons">
-            <div class="dropdown buttonOuter {{ route == '/publications' ? 'active' }}">
-                <a href="/publications">
-                    <button class="dropbtn inner">Publications
-                    </button>
-                </a>
-                <div class="chevron" onclick="expandDropdown()"><span>&#10094;</span></div>
-                <div class="dropdown-content">
-                    {% if publicationYears %}
-                        {% for year in publicationYears %}
-                            <a href="/publications#{{year.slug}}">{{year}}</a>
-                        {% endfor %}
-                    {% endif %}
-                </div>
-            </div>
-            <div class="dropdown buttonOuter {{ route == '/about' ? 'active' }}">
-                <a href="/about">
-                    <button class="dropbtn inner">About
-                    </button>
-                </a>
-                <div class="chevron" onclick="expandDropdown()"><span>&#10094;</span></div>
-                <!-- Dropdown items for about sections. -->
-                <div class="dropdown-content">
-                    {% if labMemberCategories %}
-                        {% for category in labMemberCategories %}
-                        <a href="/about#{{category.slug}}">{{category}}</a>
-                        {% endfor %}
-                    {% endif %}
-                    {% if labMemberCategories %}
-                        {% for category in pastLabMemberCategories %}
-                        <a href="/about#{{category.slug}}">{{category}}</a>
-                        {% endfor %}
-                    {% endif %}
-                </div>
-            </div>
-
+        <div class="chevron" onclick="expandDropdown()">
+          <span>&#10094;</span>
         </div>
-        <!-- hamburger element to display nav items when viewing the site in mobile -->
-        <a href="javascript:void(0);" class="icon" onclick="toggleHamburger()">≡</a>
+        <div class="dropdown-content">
+          {% if publicationYears %}
+            {% for year in publicationYears %}
+              <a href="/publications#{{ year.slug }}">{{ year }}</a>
+            {% endfor %}
+          {% endif %}
+        </div>
+      </div>
+      <div class="dropdown buttonOuter {{ route == '/about' ? 'active' }}">
+        <a href="/about"><button class="dropbtn inner">About</button></a>
+        <div class="chevron" onclick="expandDropdown()">
+          <span>&#10094;</span>
+        </div>
+        <!-- Dropdown items for about sections. -->
+        <div class="dropdown-content">
+          {% if labMemberCategories %}
+            {% for category in labMemberCategories %}
+              <a href="/about#{{ category.slug }}">{{ category }}</a>
+            {% endfor %}
+          {% endif %}
+          {% if labMemberCategories %}
+            {% for category in pastLabMemberCategories %}
+              <a href="/about#{{ category.slug }}">{{ category }}</a>
+            {% endfor %}
+          {% endif %}
+          {% if currentCollaborators > 0 %}
+            <a href="/about#current-collaborators">Current Collaborators</a>
+          {% endif %}
+        </div>
+      </div>
     </div>
+    <!-- hamburger element to display nav items when viewing the site in mobile -->
+    <div class="icon" onclick="toggleHamburger()">
+      ≡
+    </div>
+  </div>
 </header>

@@ -1,15 +1,17 @@
+{% set pastMembers = craft.entries.section('pastLabMembers') %}
 {% set allCategories = craft.categories().group('pastMemberCategory') %}
+{% set anyVisible = anyVisible|default(false) %}
 <h1 class="sectionTitle" id="Publications">
   Alumni
 </h1>
-
 {% for category in allCategories %}
   {% set sectionMembers =
     pastMembers.order('endYear').relatedTo(category).all
   %}
   {# <p>{{category}}</p> #}
   {% if sectionMembers %}
-    <section id="{{ category.slug }}">
+    {% if anyVisible == false %}
+    <section id="{{ category.slug }}" sprig s-trigger="intersect threshold:0 consume" s-val:anyVisible={{true}}>
       <div class="sectionBannerText">
         <h1>
           {{ category }}
@@ -18,91 +20,61 @@
       <div class="currentLabMembers">
         <div class="labMember">
           <div class="labMemberInfo labMemberList">
-            <ul>
+            {# <ul> #}
               {% for labMember in sectionMembers|reverse %}
-                <li>
-                  <h2>
-                    {{ labMember.title }}
-                  </h2>
-                  {% if
-                    labMember.startYear
-                      and labMember.endYear
-                      and labMember.educationAchieved.first %}
-                    <p>
-                      {{ labMember.educationAchieved.first }} ({{
-                        labMember.startYear
-                      }} - {{ labMember.endYear }})
-                    </p>
-                    {% if labMember.whoAreThey %}
-                      <p>
-                        {{ labMember.whoAreThey }}
-                      </p>
-                    {% endif %}
-                  {% elseif
-                    labMember.endYear and labMember.educationAchieved.first %}
-                    <p>
-                      {{ labMember.educationAchieved.first }} ({{
-                        labMember.endYear
-                      }})
-                    </p>
-                    {% if labMember.whoAreThey %}
-                      <p>
-                        {{ labMember.whoAreThey }}
-                      </p>
-                    {% endif %}
-                  {% elseif
-                    labMember.whoAreThey
-                      and labMember.startYear
-                      and labMember.endYear %}
-                    <p>
-                      {{ labMember.whoAreThey }} ({{ labMember.startYear }} - {{
-                        labMember.endYear
-                      }})
-                    </p>
-                  {% elseif labMember.whoAreThey and labMember.endYear %}
-                    <p>
-                      {{ labMember.whoAreThey }} ({{ labMember.endYear }})
-                    </p>
-                  {% elseif labMember.startYear and labMember.endYear %}
-                    <p>
-                      {{ labMember.startYear }} - {{ labMember.endYear }}
-                    </p>
-                  {% elseif labMember.endYear %}
-                    <p>
-                      {{ labMember.endYear }}
-                    </p>
-                  {% endif %}
-                  {% if labMember.now %}
-                    <p>
-                      <b>Now:</b> {{ labMember.now }}
-                    </p>
-                  {% endif %}
-
-                  {% if
-                    labMember.isFieldEmpty('labMemberDepartment') == false
-                      and labMember.isFieldEmpty('university') == false %}
-                    <p>
-                      {{ labMember.labMemberDepartment.one.title }}, {{
-                        labMember.university.one.title
-                      }}
-                    </p>
-                  {% elseif
-                    labMember.isFieldEmpty('labMemberDepartment')
-                      and labMember.isFieldEmpty('university') == false %}
-                    <p>
-                      {{ labMember.university.one.title }}
-                    </p>
-                  {% elseif
-                    labMember.isFieldEmpty('labMemberDepartment') == false
-                      and labMember.isFieldEmpty('university') %}
-                    {{ labMember.labMemberDepartment.one.title }}
-                  {% endif %}
-                </li>
+                {{
+                  sprig(
+                    'modules/_pastLabMembersSectionComponent',
+                    {
+                      labMemberID: labMember.id,
+                      anyVisible: anyVisible
+                    }
+                  )
+                }}
+                {{ sprig.script }}
               {% endfor %}
-            </ul>
+            {# </ul> #}
           </div>
         </div>
+        <div class="LoadingBox">
+             <div style="height: 100%;" class="Loading paused" sprig s-trigger="intersect threshold:0.25 consume" s-val:visible={{true}}>
+        <div class="inner">
+            <div class="lds-roller" data-animation><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        </div>
+    </div>
+      </div>
       </div>
     </section>
+    {% else %}
+          <section id="{{ category.slug }}">
+      <div class="sectionBannerText">
+        <h1>
+          {{ category }}
+        </h1>
+      </div>
+      <div class="currentLabMembers">
+        <div class="labMember">
+          <div class="labMemberInfo labMemberList">
+            {# <ul> #}
+              {% for labMember in sectionMembers|reverse %}
+                {{
+                  sprig(
+                    'modules/_pastLabMembersSectionComponent',
+                    {
+                      labMemberID: labMember.id,
+                      anyVisible: anyVisible
+                    }
+                  )
+                }}
+                {{ sprig.script }}
+              {% endfor %}
+            {# </ul> #}
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    {% endif %}
   {% endif %}
 {% endfor %}

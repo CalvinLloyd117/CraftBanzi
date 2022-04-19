@@ -231,14 +231,14 @@ function initialize()
  *****************************************************************/
 function openProjectInfo(id)
 {
-  var target = document.getElementById(id)
+  var target = document.getElementById(id).children[1]
 
   target.classList.replace('minimized', 'maximized')
 
   // if taget has no children, do not loop.
   if (target.hasChildNodes())
   {
-    var children = target.children
+    var children = target.firstElementChild.children
     for (var i = 0; i < children.length; i++)
     {
       if (children[i].classList.contains('hidden'))
@@ -283,13 +283,14 @@ function expandProjectInfo(id)
  * Arguments: 
  *  id: the id of the project parent element.
  *****************************************************************/
-function colapseProjectInfo(id)
+function collapseProjectInfo(id)
 {
-  var target = document.getElementById(id)
+  var target = document.getElementById(id).children[1]
+
   target.classList.replace('maximized', 'minimized')
   if (target.hasChildNodes())
   {
-    var children = target.children
+    var children = target.firstElementChild.children
     for (var i = 0; i < children.length; i++)
     {
       if (children[i].classList.contains('visible'))
@@ -325,7 +326,7 @@ function togglePublicationInfo(id)
   }
   else if (target.classList.contains('maximized'))
   {
-    colapsePublicationInfo(id)
+    collapsePublicationInfo(id)
   }
   else
   {
@@ -345,7 +346,7 @@ function openPublicationInfoOnLoad()
     }
     // else if (target.classList.contains('maximized'))
     // {
-    //   colapsePublicationInfo(section)
+    //   collapsePublicationInfo(section)
     // }
     else
     {
@@ -397,7 +398,7 @@ function openPublicationInfo(id)
 /*****************************************************************
  * 
  *****************************************************************/
-function colapsePublicationInfo(id)
+function collapsePublicationInfo(id)
 {
   var target = document.getElementById(id)
   target.classList.replace('maximized', 'minimized')
@@ -432,7 +433,7 @@ function colapsePublicationInfo(id)
 function toggleProjectInfo(id)
 {
 
-  var target = document.getElementById(id)
+  var target = document.getElementById(id).children[1]
   var proj = document.getElementById(id + "_intro")
   if (target.classList.contains('minimized'))
   {
@@ -440,7 +441,7 @@ function toggleProjectInfo(id)
   }
   else if (target.classList.contains('maximized'))
   {
-    colapseProjectInfo(id)
+    collapseProjectInfo(id)
   }
   else
   {

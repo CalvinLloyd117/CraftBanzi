@@ -1,0 +1,44 @@
+field: c3d60eb7-a096-4845-9ac2-6849cee269cc # Contributors 
+fieldLayouts:
+  980619e8-891e-4c1a-b858-50e5ec6ab517:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: ee9c24a1-c191-4bbd-981a-ae6f5f5a1918 # Lab Member Entry
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  ee9c24a1-c191-4bbd-981a-ae6f5f5a1918: # Lab Member Entry
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: labMemberEntry
+    instructions: ''
+    name: 'Lab Member Entry'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: 'Select a contributing lab member.'
+      showSiteMenu: false
+      source: null
+      sources:
+        - 'section:89443b3d-3eed-4c1b-9784-ffb1f0efc9e6' # Lab Member Profile
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+handle: labMember
+name: 'Lab Member'
+sortOrder: 1
