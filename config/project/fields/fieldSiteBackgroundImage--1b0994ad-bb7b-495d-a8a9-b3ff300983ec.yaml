@@ -10,13 +10,13 @@ settings:
   allowUploads: true
   allowedKinds: null
   defaultUploadLocationSource: 'volume:e6732067-02ef-47db-8371-405b77fee1f6' # Images
-  defaultUploadLocationSubpath: 'fieldSites/{entry.title}/backgroundImage'
+  defaultUploadLocationSubpath: 'fieldsites/{owner.slug}/backgroundImage'
   limit: '1'
   localizeRelations: false
   previewMode: full
   restrictFiles: ''
   selectionLabel: ''
-  showSiteMenu: false
+  showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   singleUploadLocationSource: 'volume:e6732067-02ef-47db-8371-405b77fee1f6' # Images

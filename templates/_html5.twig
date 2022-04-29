@@ -1,37 +1,38 @@
 {% set route = craft.app.request.url %}
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     {% block head %}
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description"
         content="the banzi-lab is a research lab at the University of Lethbridge with a wide range of fields related to psychology." />
-    <meta name="keywords"
+      <meta name="keywords"
         content="University of Lethbridge, research, psychology, biology, vervets, behavior, studies, animal-behaviour, Africa, field sites" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,300;1,700&display=swap"
-        rel="stylesheet">
-    <link rel="shortcut icon" href="Icons/favicon3/favicon.ico" />
-    <title>the banzi-lab</title>
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,300;1,700&display=swap"
+        rel="stylesheet" />
+      <link rel="shortcut icon" href="assets/icons/favicon3/favicon.ico" />
+      <title>
+        the banzi-lab
+      </title>
     {% endblock %}
-</head>
-<!-- On body load, run initialize script -->
+  </head>
+  <!-- On body load, run initialize script -->
 
-<body {{attr(bodyAttributes ?? {})}} class="preload" onload="initialize()">
-    {% include "modules/_header" with {
-    route: route
-    }%}
+  <body {{ attr(bodyAttributes ?? {}) }} class="preload" onload="initialize()">
+    {% include 'modules/_header' with {
+      route: route
+    } %}
     {% block body %}
+
     {% endblock %}
     <footer>
-        <div class="inner"></div>
+      <div class="inner"></div>
     </footer>
     <script src="js/simpleParallax.js-master/simpleParallax.js-master/dist/simpleParallax.js"></script>
     <script src="js/scripts.js"></script>
-</body>
-
+  </body>
 </html>

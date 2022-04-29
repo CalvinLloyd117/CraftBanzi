@@ -5,7 +5,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: 2c859fd2-9fdb-4497-ae58-a98289685fea # textContent
+            fieldUid: 2c859fd2-9fdb-4497-ae58-a98289685fea # Text Content
             instructions: null
             label: null
             required: false
@@ -16,13 +16,13 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  2c859fd2-9fdb-4497-ae58-a98289685fea: # textContent
+  2c859fd2-9fdb-4497-ae58-a98289685fea: # Text Content
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: textContent
     instructions: ''
-    name: textContent
+    name: 'Text Content'
     searchable: false
     settings:
       availableTransforms: '*'

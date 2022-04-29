@@ -14,8 +14,12 @@
     {% endfor %}
     <!-- Back and forward buttons -->
     {% if count > 1 %}
-      <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+      <div class="Back" onclick="plusSlides(-1)">
+        &#10094;
+      </div>
+      <div class="forward" onclick="plusSlides(1)">
+        &#10095;
+      </div>
       <div class="dotContainer" style="z-index: 500;">
         {% for item in entries %}
           <span class="dots" onclick="currentSlide({{ loop.index }})"></span>

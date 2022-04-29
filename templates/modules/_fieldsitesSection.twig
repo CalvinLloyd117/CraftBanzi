@@ -1,159 +1,24 @@
-<section>
-    <div style="margin-top: 0px;" class="sectionBannerText">
-        <h1 class="fieldSite">Field Sites</h1>
+{% set currentFieldSites = craft.entries.section('fieldSite').all %}
+{% if not currentFieldSites == null %}
+  <section>
+    <div class="sectionBannerText">
+      <h1>
+        Field Sites
+      </h1>
     </div>
     <div class="currentProjects">
-        <!-- To add a new field site, copy and modify the following template and paste it below. -->
-        <!-- <div class="project">
-          <img alt="Image alt tag" class="parallax projectBackground"
-            src="*path/to/fieldsite/background/image.jpg*">
-          <div class="projectInfo minimized right" id="*Unique ID*">
-            <div class="expand" onclick="toggleProjectInfo('*Unique ID*')">
-              <div>&#10094;</div>
-            </div>
-            <div class="inner intro title" style="grid-column: span 4;">
-              <h1>
-                Field Site Name
-              </h1>
-            </div>
-            <div class="inner intro hidden" style="grid-column: 1 / span 2;">
-              <p>
-                Text appearing when the project is minimized or maximized
-              </p>
-            </div>
-            <div class="inner hidden" style="grid-column: 3 / span 4;">
-            </div>
-            <div class="buttonOuter learnMore">
-              <button aria-label="Learn More" onclick="toggleProjectInfo('vervets')" class="inner"></button>
-            </div>
-          </div>
-        </div> -->
-        <div class="project">
-            <img alt="Lab experimenters observing a vervet on a scale." class="parallax projectBackground"
-                src="\images\Home\Field Sites\Vervets\img175.png">
-            <div class="projectInfo minimized left" id="vervets">
-                <div class="expand" onclick="toggleProjectInfo('vervets')">
-                    <div>&#10094;</div>
-                </div>
-                <div class="inner intro title" style="grid-column: span 4;">
-                    <h1 class="fieldSite">
-                        Vervets
-                    </h1>
-                </div>
-                <div class="inner intro hidden" style="grid-column: 1 / span 2;">
-                    <p>
-                        Our vervet research takes place at two locations, both under the aegis of the Applied
-                        Behavioural
-                        Ecology and Ecosystems Research Unit (ABEERU) of the University of South Africa. The
-                        first - Loskop Dam
-                        Nature Reserve - is in Mpumalanga Province, South Africa - and consists primarily of
-                        Acacia-Combretum
-                        woodland. The second but primary site - Samara Game Reserve - is in the Eastern Cape
-                        Province and, as
-                        befits the karoo, is known, increasingly, for extremes of climate. Vervets have
-                        penetrated this
-                        semi-desert region along riverine Acacia corridors and, in contrast to the Loskop
-                        population, the
-                        reduced possibility of successful fission has resulted in a population characterised by
-                        very large
-                        groups living at high density. Project video (courtesy of Chlo&#233 Vilette):
-                    </p>
-                </div>
-                <div class="inner intro hidden videoContainer" style="grid-column: 1 / span 2; margin-top: 15px;">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MPWnw6M0TKg"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-                <div class="buttonOuter mobile learnMore">
-                    <button aria-label="Learn More" onclick="toggleProjectInfo('vervets')" class="inner"></button>
-                </div>
-            </div>
-        </div>
-        <div class="project" id="baboons_intro">
-            <img alt="A baboon looking around." class="parallax projectBackground"
-                src="\images\Home\Field Sites\Baboons\img000_baboon.png" width="1920" height="1080">
-            <div class="projectInfo minimized left" id="baboons">
-                <div class="expand" onclick="toggleProjectInfo('baboons')">
-                    <div>&#10094;</div>
-                </div>
-                <div class="inner intro title" style="grid-column: span 4;">
-                    <h1 class="fieldSite">
-                        Baboons
-                    </h1>
-                </div>
-                <div class="inner intro hidden noExpand" style="grid-column: 1 / span 2;">
-                    <p>
-                        Our initial baboon field work took place at the De Hoop Nature Reserve, in the Western
-                        Cape Province of
-                        South Africa (1996-2007). De Hoop lies along the coast in a winter rainfall belt and was
-                        proclaimed to
-                        protect its endemic fynbos plant communities. Its baboons are members of the species'
-                        southern-most
-                        population and our initial interest in them stemmed from their unusual ecology. We no
-                        longer work at De
-                        Hoop but are busy with analyses of the long-term demographic and social databases, as
-                        well as with the
-                        detailed spatial data set amassed by Dr Parry Clarke. More recently, however, we have
-                        habituated two
-                        baboon groups at Samara, folding them into the thermoregulation research program. Doing
-                        so allows us to
-                        compare the performance of two very differently sized social primates under the same
-                        climatic
-                        conditions.
-                    </p>
-                    <p>Chacma baboons, particularly, are able to occupy a broad range of habitat types - often
-                        extreme - and
-                        our longer-term cross-population objective has been to understand how they manage to do
-                        so and with what
-                        social sequelae. To this end, we are now also working on baboons at the Telperion Nature
-                        Reserve in
-                        Gauteng Province, South Africa.</p>
-                </div>
-                <div class="buttonOuter mobile learnMore">
-                    <button aria-label="Learn More" onclick="toggleProjectInfo('baboons')" class="inner"></button>
-                </div>
-            </div>
-        </div>
-        <div class="project" id="Human_Fertility_and_Reproductive_Decisions_intro">
-            <img alt="Stock photo of Samoa" class="parallax projectBackground"
-                src="\images\Home\Field Sites\HumanFertilityAndReproductiveDecisions\samoa_fromtheweb.jpg">
-            <div class="projectInfo minimized right" id="Human_Fertility_and_Reproductive_Decisions">
-                <div class="expand" onclick="toggleProjectInfo('Human_Fertility_and_Reproductive_Decisions')">
-                    <div>&#10094;</div>
-                </div>
-                <div class="inner intro title" style="grid-column: span 4;">
-                    <h1 class="fieldSite">
-                        Human Fertility and Reproductive Decisions
-                    </h1>
-                </div>
-                <div class="inner intro hidden noExpand" style="grid-column: 1 / span 2;">
-                    <p>
-                        We are currently working in Western Independent Samoa and Nunavut, Canada.
-                    </p>
-                    <h2>Samoa</h2>
-                    <p>Located in the middle of the South Pacific Ocean, halfway between Hawai'i and New
-                        Zealand, Samoa is a
-                        natural fertility population in the process of transitioning to developed-nation status.
-                        Unlike most
-                        developed countries, Samoa still has a stable and relatively high fertility rate.</p>
-                    <h2>Nunavut</h2>
-                    <p>Nunavut is a Canadian territory that comprises most of the Canadian arctic archipelago.
-                        Taking a
-                        multidisciplinary approach, we are investigating the variables that affect fertility.
-                        Topics include
-                        alloparental care by children and others, perceptions of 'help', 'work', and 'play',
-                        female fertility
-                        intentions, social networks and attitudes toward birth control, adoption and the desire
-                        for children.
-                    </p>
-                </div>
-                <div class="buttonOuter mobile learnMore">
-                    <button aria-label="Learn More"
-                        onclick="toggleProjectInfo('Human_Fertility_and_Reproductive_Decisions')"
-                        class="inner"></button>
-                </div>
-            </div>
-        </div>
+      {% for fieldSite in currentFieldSites %}
+        {{
+          sprig(
+            'modules/_FieldSite',
+            {
+              fieldSiteID: fieldSite.id,
+              fieldSiteSlug: fieldSite.slug
+            }
+          )
+        }}
+        {{ sprig.script }}
+      {% endfor %}
     </div>
-</section>
+  </section>
+{% endif %}

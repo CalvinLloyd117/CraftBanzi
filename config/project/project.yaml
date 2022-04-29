@@ -1,4 +1,4 @@
-dateModified: 1650405202
+dateModified: 1651181297
 email:
   fromEmail: calvin.lloyd@uleth.ca
   fromName: banzi-lab
@@ -18,7 +18,7 @@ meta:
     2afe7dbf-f491-4072-a6ae-9b25934e6c3d: 'Research Topic' # Research Topic
     2b7a1219-e12e-4a51-8834-4a4594e2861e: Topic # Topic
     2c055fe1-39f1-48be-bc4f-bd268c972c15: 'Subheader Text' # Subheader Text
-    2c859fd2-9fdb-4497-ae58-a98289685fea: textContent # textContent
+    2c859fd2-9fdb-4497-ae58-a98289685fea: 'Text Content' # Text Content
     2cd6ff54-a4b6-47b6-b82e-f4d60581d179: 'Project Entry' # Project Entry
     2de2d021-cfe1-48ed-bb01-75b08fed1097: 'Subheader Text' # Subheader Text
     2e06ab0d-7c61-424c-b2cf-d15cd153f7be: 'Subheader Text' # Subheader Text
@@ -122,7 +122,6 @@ meta:
     89443b3d-3eed-4c1b-9784-ffb1f0efc9e6: 'Lab Member Profile' # Lab Member Profile
     92346b8b-4c62-47cc-b648-0a442ed0324e: 'Lab Member Research Topic' # Lab Member Research Topic
     127618e2-e792-45f4-ab2b-470cb4121d00: 'Subheader Text' # Subheader Text
-    756075b1-738f-4e2b-8b06-11f12c7d5d1b: Subheader # Subheader
     819381a6-3d06-4ff6-a1e1-cccc64de5177: 'Project Entry Selection' # Project Entry Selection
     843371e5-3b25-4434-b860-6e433bd7cfe9: Align # Align
     967120dc-2b65-4ba1-81d2-1d26e4978562: Image # Image
@@ -146,7 +145,6 @@ meta:
     ac9811cb-bdd9-4929-a11a-a585b04df8b4: Paragraph # Paragraph
     acf8dde3-4b46-41f3-9ca7-2ae57a9effe7: 'Image Alignment' # Image Alignment
     adf7aac7-da1a-4d51-9317-5fd961678280: 'Collaborator Website' # Collaborator Website
-    af56ec45-135f-4dee-89cd-cf00fdcea897: 'Field Site Introduction' # Field Site Introduction
     b0ab019b-008e-4595-bdc6-121f50c85bca: 'Introduction Image' # Introduction Image
     b08f96ca-803f-487b-ab0d-63cfa10be006: 'First Name' # First Name
     b46d36ab-324f-45e1-ab26-4920c3be64a6: Department # Department
@@ -206,11 +204,11 @@ meta:
     f5bfacb7-5364-4f09-8f5c-8da4fc51e7b0: 'Project Introduction' # Project Introduction
     f6bd5895-1433-4942-890a-d997cd400c7d: 'Image Description' # Image Description
     f7bbe91c-183c-483d-a4e9-3dfd80d86d8d: Image # Image
-    f9c0f9b8-f6b5-4321-b3f3-7c7ae24a41e1: Paragraph # Paragraph
     f9e45224-72b9-46ca-9577-6738f33b6ad2: 'Home Carousel Entry' # Home Carousel Entry
     f502eebb-4b9b-4dd6-a180-4cf80efcfb85: 'Lab Member' # Lab Member
     fae60289-855b-46b6-b24e-f4594b7ded4d: 'Project Start Date' # Project Start Date
     faf3afa8-b0f9-4fe0-ba37-04ba4ddc68bc: 'Social Media Links' # Social Media Links
+    fc90ce00-5179-497c-9629-f3180ce64365: 'Field Site Introduction Image' # Field Site Introduction Image
     fd06b3a3-ec1e-4e79-a0a3-1c0358ba60b3: 'Paragraph Text' # Paragraph Text
     fd4e00f2-acb9-41e0-beae-fd50a5acea9c: Publisher # Publisher
 plugins:

@@ -22,7 +22,8 @@ settings:
   singleUploadLocationSource: 'volume:e6732067-02ef-47db-8371-405b77fee1f6' # Images
   singleUploadLocationSubpath: ''
   source: null
-  sources: '*'
+  sources:
+    - 'volume:e6732067-02ef-47db-8371-405b77fee1f6' # Images
   targetSiteId: null
   useSingleFolder: false
   validateRelatedElements: false

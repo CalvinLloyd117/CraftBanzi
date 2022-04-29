@@ -11,7 +11,7 @@ settings:
   allowedKinds: null
   defaultUploadLocationSource: 'volume:e6732067-02ef-47db-8371-405b77fee1f6' # Images
   defaultUploadLocationSubpath: 'projects/{owner.slug}/backgroundImage'
-  limit: ''
+  limit: '1'
   localizeRelations: false
   previewMode: full
   restrictFiles: ''

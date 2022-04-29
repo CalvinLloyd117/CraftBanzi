@@ -70,11 +70,10 @@
           {{elem.textContent}}
           </div>
         {% elseif elem.type == 'image' %}
-        <div class="inner hidden">
-          <img alt="A tent for completing surveys."
-            src="images/Home/Projects/WildlifeCoexistence/WildlifeCoexistence_related1.jpg"
-            width="3120"
-            height="4160" />
+        <div class="inner hidden spanTwo">
+          <img alt="{{elem.imageDescription}}"
+            src="{{elem.image.one.url}}" 
+          />
         </div>
         {% elseif elem.type == 'textWithImage' %}
           {# Image is Right Aligned #}

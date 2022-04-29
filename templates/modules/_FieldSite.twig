@@ -1,0 +1,119 @@
+{% set visible = visible|default(false) %}
+<div class="project" id="{{fieldSiteSlug}}">
+  {% if visible == true %}
+    {% set fieldSite = craft.entries.section('fieldSite').id(fieldSiteID).with(['fieldSiteBackgroudImage']).one %}
+    {% set img = fieldSite.fieldSiteBackgroundImage[0] ?? null %}
+    <img alt="{{fieldSite.backgroundImageDescription}}"
+      class="parallax projectBackground"
+      src="{{img.url}}" />
+      {% if fieldSite.projectOverlayAlignment %}
+        {% set overlayAlignment = 'right' %}
+      {% else %}
+        {% set overlayAlignment = 'left' %}
+      {% endif %}
+    <div class="projectInfo minimized {{overlayAlignment}}">
+      <div class="grid">
+      <div class="expand" onclick="toggleProjectInfo('{{fieldSiteSlug}}')">
+        <div>
+          &#10094;
+        </div>
+      </div>
+      <div class="inner intro title">
+        <h1>
+          {{fieldSite.title}}
+        </h1>
+      </div>
+      {% if fieldSite.isFieldEmpty('introductionImage') == false %}
+        {% if fieldSite.imageAlignment %}
+          <div class="inner intro hidden">
+            {{fieldSite.projectIntroduction}}
+          </div>
+          <div class="inner hidden">
+            <img alt="sdafa"
+              src={{fieldSite.introductionImage.first.url}}
+            />
+          </div>
+        {% else %}
+          <div class="inner hidden tempNone">
+            <img alt="sdafa"
+              src={{fieldSite.introductionImage.first.url}}
+              />
+          </div>
+          <div class="inner hidden intro ">
+            {{fieldSite.projectIntroduction}}
+          </div>
+        {% endif %}
+      {% else %}
+        <div class="inner intro hidden spanTwo">
+          {{fieldSite.projectIntroduction}}
+        </div>
+      {% endif %}
+      {% if fieldSite.isFieldEmpty('detailedDescription') == false %}
+      {% for elem in fieldSite.detailedDescription %}
+        {% if elem.type == 'text' %}
+          <div class="inner hidden spanTwo">
+          {{elem.textContent}}
+          </div>
+        {% elseif elem.type == 'image' %}
+        <div class="inner hidden spanTwo">
+          <img alt="{{elem.imageDescription}}"
+            src="{{elem.image.one.url}}" />
+        </div>
+        {% elseif elem.type == 'textWithImage' %}
+          {# Image is Right Aligned #}
+          {% if elem.imageAlignment %}
+          {% if elem.isFieldEmpty('text') == false %}
+          <div class="inner hidden">    
+            {{elem.text}}
+          </div>
+          {% endif %}
+          <div class="inner hidden">
+            <img alt="{{elem.imageDescription}}"
+              src={{elem.image.first.url}}
+              />
+          </div>
+          {% else %}
+          <div class="inner hidden">
+            <img alt="{{elem.imageDescription}}"
+              src={{elem.image.first.url}}
+              />
+          </div>
+          {% if elem.isFieldEmpty('text') == false %}
+          <div class="inner hidden">    
+            {{elem.text}}
+          </div>
+          {% endif %}
+          {% endif %}
+        {% else %}
+          <p>Incorrect content type.</p>
+        {% endif %}
+      {% endfor %}
+      <div class="buttonOuter learnMore">
+        <button aria-label="Learn More"
+          onclick="toggleProjectInfo('{{fieldSiteSlug}}')"
+          class="inner">
+        </button>
+      </div>
+      {% else %}
+        <div class="buttonOuter learnMore whenSmall">
+        <button aria-label="Learn More"
+          onclick="toggleProjectInfo('{{fieldSiteSlug}}')"
+          class="inner">
+        </button>
+      </div>
+      {% endif %}
+      </div>
+    </div>
+    <script>
+       parallaxify()
+    </script>
+    {% else %}
+    <div style="height: 100%;" class="Loading paused" sprig s-trigger="intersect threshold:0.25 consume" s-val:visible={{true}}>
+      <div class="inner">
+        <div class="lds-roller" data-animation><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+      </div>
+    </div>
+  {% endif %}
+</div>
+
+

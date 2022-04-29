@@ -77,8 +77,10 @@ h1 {
 
 h2 {
   font-family: 'Open sans', sans-serif;
-  font-size: 1.875em;
+  /* font-size: 1.875em; */
   color: white;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
 }
 
 h3 {
@@ -444,6 +446,7 @@ div.currentProjects .sprig-component {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
 div.currentProjects .project {
   position: relative;
   /* grid-column: 1 / span 2; */
@@ -471,6 +474,36 @@ div.currentProjects .project .projectInfo {
   transition-timing-function: ease-out;
 }
 
+div.currentProjects .project .projectInfo figure {
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin: 15px 0px 15px 0px;
+}
+
+div.currentProjects .project .projectInfo figure:first-child {
+  margin: 0px 0px 15px 0px;
+}
+
+div.currentProjects .project .projectInfo figure:last-child {
+  margin: 15px 0px 0px 0px;
+}
+
+div.currentProjects .project .projectInfo figure:only-child {
+  margin: 0px 0px 0px 0px;
+}
+
+div.currentProjects .project .projectInfo iframe {
+  /* border: 5px solid red; */
+  max-height: 82vh;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 19 / 9;
+  /* margin-top: 15px;
+  margin-bottom: 15px; */
+}
+
 div.currentProjects .project ::-webkit-scrollbar-track {
   background-color: transparent;
 }
@@ -485,22 +518,22 @@ div.currentProjects .project .projectInfo .inner {
   grid-column: span 2;
 }
 
-div.currentProjects .project .projectInfo .inner.videoContainer {
+/* div.currentProjects .project .projectInfo .inner.videoContainer {
   position: relative;
   overflow: hidden !important;
   height: 0;
-  padding-bottom: 56.25%; /* creates a 16:9 aspect ratio */
+  padding-bottom: 56.25%;
   margin-right: 40px;
-}
+} */
 
-div.currentProjects .project .projectInfo .inner.videoContainer iframe {
+/* div.currentProjects .project .projectInfo .inner.videoContainer iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   max-width: 100%;
-}
+} */
 
 div.currentProjects .project .projectInfo .inner.hidden {
   opacity: 0;
@@ -586,36 +619,45 @@ div.currentProjects .project .projectInfo .inner.visible img.visible {
   display: block;
 }
 
-div.currentProjects .project .projectInfo .inner.visible p {
+div.currentProjects .project .projectInfo .inner.intro.title {
+  grid-column: span 2;
+  margin-bottom: 40px;
+}
+
+div.currentProjects .project .projectInfo.maximized .inner.intro.title {
+  grid-column: span 2;
+  margin-bottom: 10px;
+}
+
+div.currentProjects .project .projectInfo .inner p {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin: 15px 0px 15px 0px;
+}
+
+div.currentProjects .project .projectInfo .inner p:first-child {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin: 0px 0px 15px 0px;
+}
+
+div.currentProjects .project .projectInfo .inner p:last-child {
   margin-block-start: 0px;
   margin-block-end: 0px;
   margin: 15px 0px 0px 0px;
 }
 
-div.currentProjects .project .projectInfo .inner.visible p:first-child {
-  margin: 0px 0px 0px 0px;
-}
-
-div.currentProjects .project .projectInfo .inner.intro p:first-child {
-  margin: 0px 0px 0px 0px;
-}
-
-div.currentProjects .project .projectInfo .inner.intro p {
-  margin: 15px 0px 0px 0px;
-}
-
-/* div.currentProjects .project .projectInfo .inner.visible p:last-child {
-  margin: 0px 0px 0px 0px;
-} */
-
-div.currentProjects .project .projectInfo .inner.intro p:last-child {
-  margin: 15px 0px 0px 0px;
-}
-
-div.currentProjects .project .projectInfo .inner.visible h2 {
+div.currentProjects .project .projectInfo .inner p:only-child {
   margin-block-start: 0px;
   margin-block-end: 0px;
-  padding: 0;
+  margin: 0px 0px 0px 0px;
+}
+
+div.currentProjects .project .projectInfo .inner h2 {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  padding-top: 0px;
+  font-size: 1.5em;
 }
 
 div.currentProjects .project .projectInfo .visible {
@@ -625,14 +667,11 @@ div.currentProjects .project .projectInfo .visible {
 div.currentProjects .project .projectInfo.minimized {
   width: 40%;
   display: block;
-  padding: 20px 0px 20px 40px;
+  /* padding: 40px 40px 40px 40px; */
 }
 
 div.currentProjects .project .projectInfo.minimized .tempNone {
   display: none;
-}
-div.currentProjects .project .projectInfo.minimized p {
-  /* margin: 0px 0px !important; */
 }
 
 div.currentProjects .project .projectInfo.maximized {
@@ -645,15 +684,11 @@ div.currentProjects .project .projectInfo.maximized .grid {
   width: 100%;
   overflow-y: auto;
   display: grid;
-  gap: 40px;
+  gap: 30px;
   grid-template-columns: auto auto;
   grid-template-rows: min-content;
   height: min-content;
   grid-template-rows: min-content;
-}
-
-div.currentProjects .project .projectInfo.maximized p {
-  margin: 0px 0px;
 }
 
 div.currentProjects .project .projectInfo .inner.intro {
@@ -668,14 +703,11 @@ div.currentProjects .project .projectInfo .inner.intro {
 
 div.currentProjects .project .projectInfo .inner.intro.title {
   grid-column: span 2;
+  /* margin-bottom: 2.33vw; */
 }
 
 div.currentProjects .project .projectInfo .inner.intro.noExpand {
   max-height: 80% !important;
-}
-
-div.currentProjects .project .projectInfo.minimized .inner.intro {
-  padding-right: 40px;
 }
 
 div.currentProjects .project .projectInfo.maximized .inner.intro {
@@ -684,42 +716,27 @@ div.currentProjects .project .projectInfo.maximized .inner.intro {
   overflow: hidden;
 }
 
-div.currentProjects .project .projectInfo .inner.intro p {
-  margin-block-start: 0px;
-  margin-block-end: 0px;
-  margin: 15px 0px;
-}
-
-div.currentProjects .project .projectInfo.minimized .inner.intro p:first-child {
-  /* margin-block-start: 0px;
-  margin-block-end: 0px; */
-  margin: 0px 0px 15px 0px;
-}
-
 div.currentProjects .project .projectInfo .inner.intro p.name {
   margin-block-start: 0px;
   margin-block-end: 2.33vw;
   font-size: 0.8em;
-  padding: 0px !important;
-  margin: 5px 0px 2.33vw 0px !important;
+  padding: 0px;
+  margin: 0px 0px 0vw 0px;
 }
 
 div.currentProjects .project .projectInfo.maximized .inner.intro p.name {
   margin-block-start: 0px;
-  margin-block-end: 2.33vw;
+  /* margin-block-end: 2.33vw; */
+  margin-block-end: 0vw;
   font-size: 0.8em;
-  padding: 0px !important;
-  margin: 5px 0px 0vw 0px !important;
+  padding: 0px;
+  margin: 0px 0px 0vw 0px;
 }
 
 div.currentProjects .project .projectInfo .inner.intro h1 {
-  margin-block-start: 2.33vw;
+  /* margin-block-start: 2.33vw; */
+  margin-block-start: 0vw;
   margin-block-end: 0vw;
-}
-
-div.currentProjects .project .projectInfo .inner.intro h1.fieldSite {
-  margin-block-start: 2.33vw;
-  margin-block-end: 2.33vw;
 }
 
 /* :-webkit-any(article, aside, nav, section) h1 {
@@ -762,6 +779,10 @@ div.currentProjects .project .projectInfo .buttonOuter.learnMore.mobile {
   position: absolute;
   right: 40px;
   bottom: 40px;
+  display: none;
+}
+
+div.currentProjects .project .projectInfo .buttonOuter.learnMore.whenSmall {
   display: none;
 }
 
@@ -948,7 +969,7 @@ div.currentPublications .publication .publicationInfo {
   background: rgba(0, 0, 0, 0.7);
   padding: 0px 0px;
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  /* border: 1px solid rgba(0, 0, 0, 0.5); */
   /* overflow: hidden; */
   transition: 0.5s !important;
   transition-timing-function: ease-out;
@@ -1936,18 +1957,78 @@ down from 50px -> 3.33vw */
     transform: translateX(-50%);
   }
 
+  div.currentProjects .project .projectInfo figure {
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin: 1vw 0px 1vw 0px;
+  }
+
+  div.currentProjects .project .projectInfo figure:first-child {
+    margin: 0px 0px 1vw 0px;
+  }
+
+  div.currentProjects .project .projectInfo figure:last-child {
+    margin: 1vw 0px 0px 0px;
+  }
+
+  div.currentProjects .project .projectInfo figure:only-child {
+    margin: 0px 0px 0px 0px;
+  }
+
   div.currentProjects .project .projectInfo {
-    padding: 1.33vw 2.67vw;
+    padding: 2.67vw 2.67vw;
+  }
+
+  div.currentProjects .project .projectInfo.maximized .grid {
+    gap: 2.67vw;
   }
 
   div.currentProjects .project .projectInfo.minimized {
     width: 45%;
     display: block;
-    padding: 1.33vw 0px 1.33vw 2.67vw;
   }
 
-  div.currentProjects .project .projectInfo.minimized .inner.intro {
-    padding-right: 2.67vw;
+  div.currentProjects .project .projectInfo .inner.intro.title {
+    grid-column: span 2;
+    margin-bottom: 2.67vw;
+  }
+
+  div.currentProjects .project .projectInfo.maximized .inner.intro.title {
+    grid-column: span 2;
+    margin-bottom: 0.67vw;
+  }
+
+  div.currentProjects .project .projectInfo .inner p {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin: 1vw 0px 1vw 0px;
+  }
+
+  div.currentProjects .project .projectInfo .inner p:first-child {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin: 0px 0px 1vw 0px;
+  }
+
+  div.currentProjects .project .projectInfo .inner p:last-child {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin: 1vw 0px 0px 0px;
+  }
+
+  div.currentProjects .project .projectInfo .inner p:only-child {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  div.currentProjects .project .projectInfo .inner h2 {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    padding-top: 0px;
+    font-size: 1.5em;
   }
 
   div.currentProjects .project .projectInfo .buttonOuter.learnMore {
@@ -1961,6 +2042,11 @@ down from 50px -> 3.33vw */
     flex-direction: column;
     margin: 3.33vw;
     gap: 3.33vw;
+  }
+
+  div.currentProjects .sprig-component {
+    margin-top: 3.33vw;
+    margin-bottom: 3.33vw;
   }
 
   .sectionBannerText,
@@ -1988,10 +2074,6 @@ down from 50px -> 3.33vw */
 
   div.currentPublications .publication .publicationInfo {
     padding: 0px 0px;
-  }
-
-  div.currentPublications .publication .publicationInfo .inner {
-    /* padding: 1.9vw 1.9vw; */
   }
 
   div.currentLabMembers {
@@ -2053,6 +2135,21 @@ down from 50px -> 3.33vw */
   p {
     font-size: 0.875em;
   }
+
+  div.currentProjects .project .projectInfo .inner h2 {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    padding-top: 0px;
+    font-size: 1.3125em;
+  }
+
+  div.currentProjects .project .projectInfo .inner.visible h2 {
+    /* margin-block-start: 0px;
+    margin-block-end: 0px; */
+    padding: 0;
+    font-size: 1.3125em;
+  }
+
   h1 {
     font-family: 'Skia', serif;
     font-size: 1.375em;
@@ -2226,17 +2323,18 @@ down from 50px -> 3.33vw */
   .sectionBannerText,
   .sectionBannerText2 h1 {
     display: inline-block;
-    padding: 0px 15px;
+    padding: 10px 3.33vw;
     font-size: 1.5625em;
     line-height: 25px;
-    margin-top: 0px;
-    margin-bottom: 0px !important;
-    line-height: 100%;
+    line-height: 150%;
+    /* padding: 15px 0px; */
+    margin-block-start: 1vw !important;
+    margin-block-end: 1vw !important;
   }
 
   :-webkit-any(article, aside, nav, section) h1 {
-    margin-block-start: 2.33vw;
-    margin-block-end: 2.33vw;
+    margin-block-start: 0vw;
+    margin-block-end: 0vw;
   }
 
   /*Styles related to the responsive nav Hamburger menu*/
@@ -2491,6 +2589,11 @@ down from 50px -> 3.33vw */
     gap: 15px;
   }
 
+  div.currentProjects .sprig-component {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
   div.currentProjects .project {
     grid-column: 1 / span 2;
     max-height: 100% !important;
@@ -2498,7 +2601,21 @@ down from 50px -> 3.33vw */
     overflow: hidden !important;
     display: inline-block;
     box-sizing: border-box;
-    height: 100% !important;
+    height: 82vh !important;
+  }
+
+  div.currentProjects .project .projectInfo.maximized .grid {
+    width: 100%;
+    overflow-y: auto;
+    display: block;
+    grid-template-columns: auto auto;
+    grid-template-rows: min-content;
+    height: min-content;
+    grid-template-rows: min-content;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    overflow: hidden;
   }
 
   div.currentProjects .project .projectInfo {
@@ -2560,7 +2677,7 @@ down from 50px -> 3.33vw */
     transition: 0.5s;
     object-fit: cover !important;
     position: relative;
-    align-items: center;
+    /* align-items: center; */
     background-image: none !important;
   }
 
@@ -2586,16 +2703,15 @@ down from 50px -> 3.33vw */
   }
 
   div.currentProjects .project .projectInfo .inner.visible p {
-    margin-block-start: 0px;
-    margin-block-end: 0px;
+    /* margin-block-end: 0px; */
     padding: 0;
   }
 
-  div.currentProjects .project .projectInfo .inner.visible h2 {
+  /* div.currentProjects .project .projectInfo .inner.visible h2 {
     margin-block-start: 0px;
     margin-block-end: 0px;
     padding: 0;
-  }
+  } */
 
   div.currentProjects .project .projectInfo .visible {
     opacity: 1;
@@ -2623,13 +2739,19 @@ down from 50px -> 3.33vw */
     max-height: 100%;
   }
 
+  div.currentProjects .project .projectInfo.maximized .inner.intro.title {
+    grid-column: span 2;
+    margin-bottom: 4vw;
+  }
+
   div.currentProjects .project .projectInfo .inner {
-    margin: 2.67vw 0px;
+    margin: 2vw 0px;
   }
 
   div.currentProjects .project .projectInfo .inner.visible h2 {
-    padding: 5vw 0px 0px 0px;
+    padding: 0vw 0px 0px 0px;
     font-size: 1em;
+    margin: 1vw 0px;
   }
 
   div.currentProjects .project .projectInfo .inner.intro {
@@ -2642,9 +2764,15 @@ down from 50px -> 3.33vw */
     overflow: auto;
   }
 
-  div.currentProjects .project .projectInfo .inner.title {
+  /* div.currentProjects .project .projectInfo .inner.title {
     display: block;
     margin: 0px;
+  } */
+
+  div.currentProjects .project .projectInfo .inner.intro.title {
+    grid-column: span 2;
+    margin-bottom: 0px;
+    margin-top: 0px;
   }
 
   div.currentProjects .project .projectInfo.maximized .inner.intro {
@@ -2658,9 +2786,6 @@ down from 50px -> 3.33vw */
     margin-block-end: 0px;
   }
 
-  div.currentProjects .project .projectInfo p:not(:first-child) {
-    margin-top: 2.67vw !important;
-  }
   div.currentProjects .project .projectInfo .inner.content {
     transition: 0.5s;
   }
@@ -2684,12 +2809,19 @@ down from 50px -> 3.33vw */
     display: none;
   }
 
+  div.currentProjects
+    .project
+    .projectInfo.maximized
+    .buttonOuter.learnMore.whenSmall {
+    display: block;
+  }
+
   div.currentProjects .project .projectInfo .buttonOuter.close {
     position: relative;
     grid-column: 6 / span 1;
     justify-self: end;
     padding: 0px 0px;
-    margin: 0px 0px;
+    margin: 2.67vw 0px 0px 0px;
     float: right;
     width: auto;
   }

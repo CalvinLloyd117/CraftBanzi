@@ -5,8 +5,10 @@
     "italic",
     "unorderedlist",
     "orderedlist",
-    "link"
+    "link",
+    "video"
   ],
+  "plugins": ["fullscreen", "video"],
   "linkNewTab": true,
   "toolbarFixed": true,
   "formatting": ["h2", "p"]

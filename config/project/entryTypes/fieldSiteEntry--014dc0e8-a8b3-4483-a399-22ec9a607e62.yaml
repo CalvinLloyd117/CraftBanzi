@@ -27,7 +27,43 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            fieldUid: 24e84bcf-a98e-4e32-b9fe-348e2f479080 # Project Overlay Alignment
+            instructions: 'Which side of the field site would you like the overlay (containing the introductory text) to be positioned? Left, or Right? Essentially this setting will impact which side of the project Background Image will be hidden by the overlay when it is closed.'
+            label: 'Field Site Overlay Alignment'
+            required: ''
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
             fieldUid: 1b0994ad-bb7b-495d-a8a9-b3ff300983ec # Field Site Background Image
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: 503f26fa-2059-4630-aa0d-da654f317a9f # Background Image Description
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: f5bfacb7-5364-4f09-8f5c-8da4fc51e7b0 # Project Introduction
+            instructions: 'Briefly introduce the field site.'
+            label: 'Field Site Introduction'
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: fc90ce00-5179-497c-9629-f3180ce64365 # Field Site Introduction Image
             instructions: null
             label: null
             required: false
@@ -36,7 +72,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: af56ec45-135f-4dee-89cd-cf00fdcea897 # Field Site Introduction
+            fieldUid: 3a36362e-15f2-480c-809f-dec1e63365bd # Image Alignment
             instructions: null
             label: null
             required: false
@@ -45,10 +81,10 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 135c1e00-7e1f-4252-b411-90819ab248d9 # Field Site Detailed Description
-            instructions: null
-            label: null
-            required: false
+            fieldUid: 1cb6f08b-efbd-4a8d-846d-06c7b904a894 # Detailed Description
+            instructions: 'Please select blocks to comprise the detailed description of your field site.'
+            label: ''
+            required: ''
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
