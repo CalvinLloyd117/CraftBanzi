@@ -2,7 +2,7 @@ columnSuffix: foxhnhff
 contentColumnType: string(255)
 fieldGroup: e8cbc24d-b6e1-4380-8372-151d82625c0d # Lab Member
 handle: researchGateLink
-instructions: ''
+instructions: 'If you would like to add a link to your research gate profile, add it below.'
 name: 'Research Gate Link'
 searchable: false
 settings:

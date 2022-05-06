@@ -2,13 +2,13 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: 49755225-eb07-496e-ab57-e34cbbd891a1 # Current Collaborators
 handle: project
-instructions: 'What project are they involved in?'
+instructions: 'What project are they involved in? If the project they are contributing to has a corresponding entry, use the Project Entry block to select the entry. Otherwise, add the name of the project using the Project Name block.'
 name: Project
 searchable: false
 settings:
   contentTable: '{{%matrixcontent_project}}'
-  maxBlocks: '1'
-  minBlocks: '1'
+  maxBlocks: ''
+  minBlocks: ''
   propagationKeyFormat: null
   propagationMethod: all
 translationKeyFormat: null

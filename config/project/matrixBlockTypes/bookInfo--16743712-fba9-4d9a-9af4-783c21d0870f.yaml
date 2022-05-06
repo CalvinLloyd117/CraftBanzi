@@ -30,7 +30,7 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: editors
-    instructions: 'Please add a list of the names of the editors. (firstInitial. lastName, firstInitial2. lastName2, . . ., firstInitialN. lastInitialN)'
+    instructions: "Please add a list of the names of the editors in this format:\r\n(firstInitial. lastName, firstInitial2. lastName2, . . ., firstInitialN. lastInitialN)"
     name: Editors
     searchable: false
     settings:
@@ -50,7 +50,7 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: publisher
-    instructions: ''
+    instructions: 'Add the publisher of the book/book chapter.'
     name: Publisher
     searchable: false
     settings:

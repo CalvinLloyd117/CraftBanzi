@@ -8,7 +8,7 @@ fieldLayouts:
             fieldUid: 84e570b4-09f8-4dbd-9548-5442ceea6cb4 # Topic
             instructions: null
             label: null
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -18,15 +18,15 @@ fieldLayouts:
 fields:
   84e570b4-09f8-4dbd-9548-5442ceea6cb4: # Topic
     columnSuffix: null
-    contentColumnType: text
+    contentColumnType: string(800)
     fieldGroup: null
     handle: topic
-    instructions: 'Please enter your topic.'
+    instructions: 'Enter your topic.'
     name: Topic
     searchable: false
     settings:
       byteLimit: null
-      charLimit: null
+      charLimit: 200
       code: ''
       columnType: null
       initialRows: '4'

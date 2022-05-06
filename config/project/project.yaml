@@ -1,4 +1,4 @@
-dateModified: 1651181297
+dateModified: 1651861068
 email:
   fromEmail: calvin.lloyd@uleth.ca
   fromName: banzi-lab
@@ -103,7 +103,7 @@ meta:
     492a21d1-4f8f-4c7f-a5c5-ffde414dc504: Subheader # Subheader
     503f26fa-2059-4630-aa0d-da654f317a9f: 'Background Image Description' # Background Image Description
     635f1fbf-d596-48f9-b69e-9bb9b3620676: Project # Project
-    669fec18-48e6-45a2-b968-5f31b47ba5e8: topic # topic
+    669fec18-48e6-45a2-b968-5f31b47ba5e8: Topic # Topic
     674ef75c-e0a1-4a97-a774-1546cae02529: 'Field Site' # Field Site
     680ebf47-49f3-4261-8078-70586aab044e: 'Publication Year' # Publication Year
     682db527-cb2c-4d0e-a42a-bdfdb98c267a: 'Rich Text Paragraph' # Rich Text Paragraph

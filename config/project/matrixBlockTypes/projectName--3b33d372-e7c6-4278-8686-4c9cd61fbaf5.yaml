@@ -8,7 +8,7 @@ fieldLayouts:
             fieldUid: 79bc6758-0592-4367-a19f-acba9f8319f1 # Project Name Text
             instructions: null
             label: null
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -17,7 +17,7 @@ fieldLayouts:
         sortOrder: 1
 fields:
   79bc6758-0592-4367-a19f-acba9f8319f1: # Project Name Text
-    columnSuffix: fvlptgoa
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: projectNameText

@@ -8,7 +8,7 @@ fieldLayouts:
             fieldUid: 1c6db527-9fb3-4119-925a-f351f983bc30 # Lab Member Author
             instructions: null
             label: null
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -21,7 +21,7 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: labMemberAuthor
-    instructions: 'Please select a lab member to add as an author.'
+    instructions: 'Please select a lab member profile entry to add them as an author.'
     name: 'Lab Member Author'
     searchable: false
     settings:

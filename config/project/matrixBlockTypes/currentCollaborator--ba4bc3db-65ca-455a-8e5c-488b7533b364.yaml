@@ -8,7 +8,7 @@ fieldLayouts:
             fieldUid: 7ae2dc07-cb92-478c-ba01-745ef170707b # Collaborator Entry
             instructions: null
             label: null
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -29,7 +29,7 @@ fields:
       limit: '1'
       localizeRelations: false
       selectionLabel: ''
-      showSiteMenu: false
+      showSiteMenu: true
       source: null
       sources:
         - 'section:98343663-6eba-416b-b74d-5615fdd16c77' # Current Collaborators 

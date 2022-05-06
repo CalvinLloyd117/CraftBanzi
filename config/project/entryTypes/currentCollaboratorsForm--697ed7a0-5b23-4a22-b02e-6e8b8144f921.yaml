@@ -4,6 +4,9 @@ fieldLayouts:
       -
         elements:
           -
+            heading: 'Current Collaborator'
+            type: craft\fieldlayoutelements\Heading
+          -
             autocapitalize: true
             autocomplete: false
             autocorrect: true
@@ -37,9 +40,9 @@ fieldLayouts:
             width: 50
           -
             fieldUid: d9e3215c-14d5-42fa-a9b1-3dd9dfd53c42 # Lab Member Department
-            instructions: null
-            label: null
-            required: false
+            instructions: 'Please add the department of the collaborator (e.g. Psychology)'
+            label: 'Collaborator Department'
+            required: ''
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null

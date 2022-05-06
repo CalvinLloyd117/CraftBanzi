@@ -1,18 +1,18 @@
 columnSuffix: xfqudmnu
-contentColumnType: text
+contentColumnType: string(68)
 fieldGroup: 2528f6a3-ba6d-407c-bd7b-98950fc26ca5 # Publication
 handle: pageRange
-instructions: ' '
+instructions: " Add the page range for your publication, if you know it.\r\n\r\ne.g. 14-31"
 name: 'Page Range'
 searchable: false
 settings:
   byteLimit: null
-  charLimit: null
+  charLimit: 17
   code: ''
   columnType: null
   initialRows: '4'
   multiline: ''
-  placeholder: null
+  placeholder: 14-31
   uiMode: normal
 translationKeyFormat: null
 translationMethod: none

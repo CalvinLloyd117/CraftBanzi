@@ -2,7 +2,7 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: e8cbc24d-b6e1-4380-8372-151d82625c0d # Lab Member
 handle: socialMediaLinks
-instructions: ''
+instructions: 'If you would like to add a link to your social media, add it below.'
 name: 'Social Media Links'
 searchable: false
 settings:

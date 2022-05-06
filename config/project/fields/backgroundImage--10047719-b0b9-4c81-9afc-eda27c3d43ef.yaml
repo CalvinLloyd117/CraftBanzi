@@ -2,7 +2,7 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: f0e50402-de48-431e-b603-d7b66f86fdc2 # Carousel Entry
 handle: backgroundImage
-instructions: 'Please add a background image for the carousel entry.'
+instructions: "Add a background image for the carousel entry.\r\nThis image is best suited to ~16:9 aspect ratio.\r\n\r\nEither select an existing asset, or upload a new one."
 name: 'Background Image'
 searchable: false
 settings:
@@ -15,7 +15,7 @@ settings:
   localizeRelations: false
   previewMode: full
   restrictFiles: ''
-  selectionLabel: ''
+  selectionLabel: 'Add a background image'
   showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false

@@ -2,7 +2,7 @@ columnSuffix: awrcloeb
 contentColumnType: string
 fieldGroup: 2528f6a3-ba6d-407c-bd7b-98950fc26ca5 # Publication
 handle: publicationYear
-instructions: 'Please select the publication year'
+instructions: "Please select the publication year. This will determine the section that the publication appears on the Publication page.\r\n\r\nIf the year does not already exist, you can add a new one."
 name: 'Publication Year'
 searchable: false
 settings:

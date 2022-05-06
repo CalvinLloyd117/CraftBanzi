@@ -2,7 +2,7 @@ columnSuffix: null
 contentColumnType: text
 fieldGroup: 5a459a8a-83ed-4cb0-a0b2-fa9f83ab144f # Project
 handle: projectIntroduction
-instructions: 'Briefly introduce your project.'
+instructions: "Briefly introduce your project. \r\n\r\nYou can format your project introduction using the supplied buttons at the top of the input. This text will appear in the projects minimized view, and will appear at the top of the project and span the full width of the project when in its expanded view."
 name: 'Project Introduction'
 searchable: false
 settings:

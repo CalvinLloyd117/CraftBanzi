@@ -2,7 +2,7 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: e8cbc24d-b6e1-4380-8372-151d82625c0d # Lab Member
 handle: labMemberCenter
-instructions: 'Please select your center.'
+instructions: "Please select your center (eg. University of Lethbridge)\r\n\r\nIf the center you would like to add does not already exist, you can add a new one."
 name: 'Lab Member Center'
 searchable: false
 settings:

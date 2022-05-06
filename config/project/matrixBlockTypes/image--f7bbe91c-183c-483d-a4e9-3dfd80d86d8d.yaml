@@ -8,7 +8,7 @@ fieldLayouts:
             fieldUid: d0fe22dd-8711-49df-bf40-c209647781ca # Image
             instructions: null
             label: null
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -17,7 +17,7 @@ fieldLayouts:
             fieldUid: e234450b-9101-48dd-84a4-d666cf81a252 # Image Description
             instructions: null
             label: null
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -30,7 +30,7 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: image
-    instructions: 'Please add an image.'
+    instructions: "Please add an image to the project description. This image will span the full width of the project when in its expanded view.\r\n\r\nEither select an existing asset, or upload a new one."
     name: Image
     searchable: false
     settings:
@@ -73,7 +73,7 @@ fields:
       columnType: null
       initialRows: '4'
       multiline: ''
-      placeholder: null
+      placeholder: 'A brief description of the image.'
       uiMode: normal
     translationKeyFormat: null
     translationMethod: none

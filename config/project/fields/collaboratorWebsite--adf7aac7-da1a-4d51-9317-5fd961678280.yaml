@@ -2,7 +2,7 @@ columnSuffix: bwatuoij
 contentColumnType: string(255)
 fieldGroup: 49755225-eb07-496e-ab57-e34cbbd891a1 # Current Collaborators
 handle: collaboratorWebsite
-instructions: 'If the collaborator has a website/page related to their research, please add it here.'
+instructions: 'If the collaborator has a website/page related to their research, please add it here. This will add a hyperlink to their website from their name in the collaborator section of the About page.'
 name: 'Collaborator Website'
 searchable: false
 settings:

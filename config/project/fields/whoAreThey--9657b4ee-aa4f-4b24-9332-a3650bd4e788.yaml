@@ -2,7 +2,7 @@ columnSuffix: yqjqggvi
 contentColumnType: text
 fieldGroup: 7179d995-15f8-40c5-8785-7f76d74918b3 # Past Lab Members
 handle: whoAreThey
-instructions: 'What do they do/what did they do in the lab.'
+instructions: 'What do they did they do in the lab?'
 name: 'Who are they'
 searchable: false
 settings:
@@ -12,7 +12,7 @@ settings:
   columnType: null
   initialRows: '4'
   multiline: ''
-  placeholder: null
+  placeholder: 'Brief description of what they did in the lab'
   uiMode: normal
 translationKeyFormat: null
 translationMethod: none

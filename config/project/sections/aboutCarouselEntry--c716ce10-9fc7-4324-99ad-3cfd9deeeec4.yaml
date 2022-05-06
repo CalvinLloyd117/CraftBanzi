@@ -7,9 +7,9 @@ siteSettings:
   c7ed12fe-7739-44e3-accd-f279f495d152: # banzi-lab
     enabledByDefault: true
     hasUrls: true
-    template: about-carousel-entry/_entry
-    uriFormat: 'about-carousel-entry/{slug}'
+    template: modules\_carouselSlide.twig
+    uriFormat: 'about#{slug}'
 structure:
-  maxLevels: null
+  maxLevels: 1
   uid: 96f79161-3b26-418f-b906-53137933c7e8
 type: structure

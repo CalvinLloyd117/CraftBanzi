@@ -2,7 +2,7 @@ columnSuffix: qyjtvnvs
 contentColumnType: boolean
 fieldGroup: 5a459a8a-83ed-4cb0-a0b2-fa9f83ab144f # Project
 handle: imageAlignment
-instructions: ''
+instructions: 'Which side of the project''s expanded view would you like the image to appear? Left or Right?'
 name: 'Image Alignment'
 searchable: false
 settings:

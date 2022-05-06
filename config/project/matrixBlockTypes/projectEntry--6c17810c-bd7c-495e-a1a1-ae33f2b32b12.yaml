@@ -8,7 +8,7 @@ fieldLayouts:
             fieldUid: 819381a6-3d06-4ff6-a1e1-cccc64de5177 # Project Entry Selection
             instructions: null
             label: null
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -29,7 +29,7 @@ fields:
       limit: '1'
       localizeRelations: false
       selectionLabel: ''
-      showSiteMenu: false
+      showSiteMenu: true
       source: null
       sources:
         - 'section:ced9ebe6-9130-453c-9358-58b6e1809ff7' # Project

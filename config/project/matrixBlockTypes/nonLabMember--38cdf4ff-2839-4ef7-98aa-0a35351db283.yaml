@@ -21,7 +21,7 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: authorName
-    instructions: 'Please add an Author Name'
+    instructions: "Please add an non-lab member Author Name formatted like:\r\nFirst Initial. Second Initial. . . . Last Name"
     name: 'Author Name'
     searchable: false
     settings:

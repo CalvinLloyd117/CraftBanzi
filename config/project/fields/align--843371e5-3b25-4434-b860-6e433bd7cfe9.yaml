@@ -2,7 +2,7 @@ columnSuffix: trzfnidc
 contentColumnType: string
 fieldGroup: f0e50402-de48-431e-b603-d7b66f86fdc2 # Carousel Entry
 handle: align
-instructions: 'Select the text alignment option for the entry.'
+instructions: "Select the text alignment option for the entry. \r\n\r\nThis will determine which side of the slide the text will appear."
 name: Align
 searchable: false
 settings:

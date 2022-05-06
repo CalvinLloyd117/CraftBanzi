@@ -8,7 +8,7 @@ fieldLayouts:
             fieldUid: ee9c24a1-c191-4bbd-981a-ae6f5f5a1918 # Lab Member Entry
             instructions: null
             label: null
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -29,7 +29,7 @@ fields:
       limit: '1'
       localizeRelations: false
       selectionLabel: 'Select a contributing lab member.'
-      showSiteMenu: false
+      showSiteMenu: true
       source: null
       sources:
         - 'section:89443b3d-3eed-4c1b-9784-ffb1f0efc9e6' # Lab Member Profile

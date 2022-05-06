@@ -7,8 +7,8 @@ siteSettings:
   c7ed12fe-7739-44e3-accd-f279f495d152: # banzi-lab
     enabledByDefault: true
     hasUrls: true
-    template: current-collaborators/_entry
-    uriFormat: 'current-collaborators/{slug}'
+    template: modules/_collaboratorListItem
+    uriFormat: 'about#current-collaborators'
 structure:
   maxLevels: 1
   uid: 4fc26f95-07e3-4e73-b519-e8e9e2344ae5

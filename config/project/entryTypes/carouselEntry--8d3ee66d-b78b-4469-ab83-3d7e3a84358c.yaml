@@ -4,14 +4,17 @@ fieldLayouts:
       -
         elements:
           -
+            heading: 'Carousel Slide (About Page)'
+            type: craft\fieldlayoutelements\Heading
+          -
             autocapitalize: true
             autocomplete: false
             autocorrect: true
             class: null
             disabled: false
             id: null
-            instructions: null
-            label: null
+            instructions: 'Add a title for the slide you are adding.'
+            label: 'Slide Title'
             max: null
             min: null
             name: null
@@ -28,9 +31,9 @@ fieldLayouts:
             width: 100
           -
             fieldUid: 10047719-b0b9-4c81-9afc-eda27c3d43ef # Background Image
-            instructions: null
-            label: null
-            required: false
+            instructions: ''
+            label: ''
+            required: '1'
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -46,9 +49,9 @@ fieldLayouts:
             width: 100
           -
             fieldUid: 843371e5-3b25-4434-b860-6e433bd7cfe9 # Align
-            instructions: null
-            label: null
-            required: false
+            instructions: 'Select the alignment option you would like for your text. This will align the text block to the selected side.'
+            label: ''
+            required: ''
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null

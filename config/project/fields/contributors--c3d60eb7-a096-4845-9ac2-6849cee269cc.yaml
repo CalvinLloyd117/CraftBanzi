@@ -2,13 +2,13 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: 5a459a8a-83ed-4cb0-a0b2-fa9f83ab144f # Project
 handle: contributors
-instructions: ''
+instructions: "Add all of the people contributing to the project. \r\nIf the contributor is a lab member, select the 'Lab Member' block, and select a Lab Member Profile entry.\r\nIf the contributor is a current collaborator, select 'Current Collaborator' block, and select the Current Collaborator Entry.\r\nOtherwise, choose the Name Input Field and add their name.\r\n\r\nNote: Order of the contributors matters. Add the contributors in the order that you would like them to appear. You can always drag/drop the blocks to adjust the order."
 name: 'Contributors '
 searchable: false
 settings:
   contentTable: '{{%matrixcontent_contributors}}'
   maxBlocks: ''
-  minBlocks: ''
+  minBlocks: '1'
   propagationKeyFormat: null
   propagationMethod: all
 translationKeyFormat: null

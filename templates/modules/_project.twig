@@ -23,7 +23,7 @@
           {{project.title}}
         </h1>
         <p class="name">
-          {% for cont in project.contributors %}
+          {% for cont in project.contributors.all() %}
             {% if cont.type == 'labMember' %}
               <a href="/about#{{cont.labMemberEntry.first.slug}}">{{cont.labMemberEntry.first.title}}</a>{% if not loop.last %}, {% endif %}
             {% elseif cont.type == 'currentCollaborator' %}
@@ -64,7 +64,7 @@
         </div>
       {% endif %}
       {% if project.isFieldEmpty('detailedDescription') == false %}
-      {% for elem in project.detailedDescription %}
+      {% for elem in project.detailedDescription.all() %}
         {% if elem.type == 'text' %}
           <div class="inner hidden spanTwo">
           {{elem.textContent}}

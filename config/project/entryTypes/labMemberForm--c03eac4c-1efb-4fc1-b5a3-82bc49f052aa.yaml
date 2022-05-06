@@ -4,6 +4,9 @@ fieldLayouts:
       -
         elements:
           -
+            heading: 'Lab Member Profile'
+            type: craft\fieldlayoutelements\Heading
+          -
             autocapitalize: true
             autocomplete: false
             autocorrect: true
@@ -57,7 +60,7 @@ fieldLayouts:
             fieldUid: 92346b8b-4c62-47cc-b648-0a442ed0324e # Lab Member Research Topic
             instructions: ''
             label: ''
-            required: ''
+            required: '1'
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -89,7 +92,7 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: Content
+        name: Fields
         sortOrder: 1
       -
         elements:

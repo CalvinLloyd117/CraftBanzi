@@ -207,7 +207,6 @@ function initialize()
   navigateTo()
   applySticky(navbar, navSticky)
   setBannerTextTop()
-
   SlideShow(slidePosition);
   if (document.readyState === "complete")
   {
@@ -217,7 +216,6 @@ function initialize()
   {
     window.addEventListener('load', removePreload)
   }
-
 }
 
 /*****************************************************************

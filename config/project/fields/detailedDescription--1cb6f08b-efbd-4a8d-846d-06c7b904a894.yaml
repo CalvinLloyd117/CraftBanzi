@@ -2,7 +2,7 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: 5a459a8a-83ed-4cb0-a0b2-fa9f83ab144f # Project
 handle: detailedDescription
-instructions: 'Please select blocks to comprise the detailed description of your project.'
+instructions: "Please select blocks to comprise the detailed description of your project. \r\nOrder of the blocks determines the order of the content in the project description.\r\n\r\nIf left blank, your project will not be able to go into an expanded view."
 name: 'Detailed Description'
 searchable: false
 settings:

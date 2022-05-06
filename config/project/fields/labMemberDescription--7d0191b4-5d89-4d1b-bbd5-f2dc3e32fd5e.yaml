@@ -2,7 +2,7 @@ columnSuffix: bnrcoiqx
 contentColumnType: text
 fieldGroup: e8cbc24d-b6e1-4380-8372-151d82625c0d # Lab Member
 handle: labMemberDescription
-instructions: 'Brief description of yourself, and elevator pitch of your research / role in the lab (100 -250 words):'
+instructions: "Brief description of yourself, and elevator pitch of your research / role in the lab (100 -250 words).\r\n\r\nYou are able to format your content using the supplied buttons at the top of the description input."
 name: 'Lab Member Description'
 searchable: false
 settings:

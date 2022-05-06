@@ -17,7 +17,7 @@ fieldLayouts:
             fieldUid: bada9a7b-3053-47e0-85c6-219eff27f789 # Image
             instructions: null
             label: null
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -26,7 +26,7 @@ fieldLayouts:
             fieldUid: a6da367d-f52b-465e-81ed-57a031b50f7f # Image Description
             instructions: null
             label: null
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -48,7 +48,7 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: text
-    instructions: ''
+    instructions: "Please add some text to the project description. This text will span half the width of the project when in its expanded view.\r\n\r\nNote: you are able to leave the text field within this block empty.  If you place two adjacent 'Text with Image' blocks, and the Text field is also left blank in both, then you will get two images that appear side-by-side in the project's expanded view."
     name: Text
     searchable: false
     settings:
@@ -111,7 +111,7 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: image
-    instructions: ''
+    instructions: "Add an image to the project description. This image will span half of the width of the project when in its expanded view.\r\n\r\nEither select an existing asset, or upload a new one."
     name: Image
     searchable: false
     settings:

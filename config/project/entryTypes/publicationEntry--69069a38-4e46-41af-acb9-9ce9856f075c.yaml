@@ -4,6 +4,9 @@ fieldLayouts:
       -
         elements:
           -
+            heading: 'Publication Entry'
+            type: craft\fieldlayoutelements\Heading
+          -
             autocapitalize: true
             autocomplete: false
             autocorrect: true
@@ -71,6 +74,10 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 25
+          -
+            style: warning
+            tip: 'Note: Order of authors matters here. Add authors in the order that they appear in the publication citation. Author blocks can be drag/dropped to adjust the order.'
+            type: craft\fieldlayoutelements\Tip
           -
             fieldUid: 777ccf12-c571-4f11-b650-31b24ab49244 # Authors
             instructions: ''

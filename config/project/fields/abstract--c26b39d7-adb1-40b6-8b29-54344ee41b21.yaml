@@ -2,7 +2,7 @@ columnSuffix: kkacobxe
 contentColumnType: text
 fieldGroup: 2528f6a3-ba6d-407c-bd7b-98950fc26ca5 # Publication
 handle: abstract
-instructions: 'Please add the abstract for the paper/article you are adding'
+instructions: "Please add the abstract for the paper/article you are adding. \r\n\r\nThis section provides various formatting options (header, paragraph, bold, italic, etc.) that will allow to format the text how you would like."
 name: Abstract
 searchable: true
 settings:

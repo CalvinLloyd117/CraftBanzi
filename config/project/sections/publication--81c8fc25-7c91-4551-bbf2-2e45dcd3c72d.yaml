@@ -7,9 +7,9 @@ siteSettings:
   c7ed12fe-7739-44e3-accd-f279f495d152: # banzi-lab
     enabledByDefault: true
     hasUrls: true
-    template: publication/_entry
-    uriFormat: 'publication/{slug}'
+    template: modules/_publicationsComponent.twig
+    uriFormat: 'publications#{slug}'
 structure:
-  maxLevels: null
+  maxLevels: 1
   uid: 8146022d-9e7b-44c3-9814-600dbc3de24b
 type: structure

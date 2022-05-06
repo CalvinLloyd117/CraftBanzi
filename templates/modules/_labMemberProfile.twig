@@ -60,9 +60,11 @@
             {% endfor %}
             {% if labMember.isFieldEmpty('labMemberFieldSite') == false %}
                 <h2>Fieldsite: </h2>
-                <a href="#">
-                    <p class="topic">{{labMember.labMemberFieldSite.title}}</p>
-                </a>
+                <p class="topic">
+                {% for site in labMember.labMemberFieldSite %}
+               <a href="/#{{site.slug}}">{{site.title}}</a>{% if not loop.last %}, {% endif %}
+                {% endfor %}
+                </p>
             {% endif %}
 
             {% if (labMember.isFieldEmpty("labMemberDepartment") == false) and

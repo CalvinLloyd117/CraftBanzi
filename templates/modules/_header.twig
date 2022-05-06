@@ -27,7 +27,10 @@
         <div class="dropdown-content">
           {% if publicationYears %}
             {% for year in publicationYears %}
-              <a href="/publications#{{ year.slug }}">{{ year }}</a>
+              <a onclick="toggleHamburger()"
+                href="/publications#{{ year.slug }}">
+                {{ year }}
+              </a>
             {% endfor %}
           {% endif %}
         </div>
@@ -41,12 +44,30 @@
         <div class="dropdown-content">
           {% if labMemberCategories %}
             {% for category in labMemberCategories %}
-              <a href="/about#{{ category.slug }}">{{ category }}</a>
+              {% if
+                craft.entries.section('labMemberProfile').relatedTo(
+                  category
+                ).count()
+                  > 0 %}
+                <a onclick="toggleHamburger()"
+                  href="/about#{{ category.slug }}">
+                  {{ category }}
+                </a>
+              {% endif %}
             {% endfor %}
           {% endif %}
           {% if labMemberCategories %}
             {% for category in pastLabMemberCategories %}
-              <a href="/about#{{ category.slug }}">{{ category }}</a>
+              {% if
+                craft.entries.section('pastLabMembers').relatedTo(
+                  category
+                ).count()
+                  > 0 %}
+                <a onclick="toggleHamburger()"
+                  href="/about#{{ category.slug }}">
+                  {{ category }}
+                </a>
+              {% endif %}
             {% endfor %}
           {% endif %}
           {% if currentCollaborators > 0 %}

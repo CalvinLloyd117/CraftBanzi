@@ -2,7 +2,7 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: 3dc3c38e-60a7-412d-95ca-fc02ead5f8b7 # Field Site
 handle: fieldSiteBackgroundImage
-instructions: 'Please add a background image for your field site.'
+instructions: "Please add a background image for your field site.\r\n\r\nEither choose an existing asset, or upload a new one.\r\nThis image is best suited for images with ~16:9 aspect ratios."
 name: 'Field Site Background Image'
 searchable: false
 settings:

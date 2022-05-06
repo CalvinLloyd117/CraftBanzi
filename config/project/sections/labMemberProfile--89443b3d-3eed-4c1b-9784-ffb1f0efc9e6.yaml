@@ -7,9 +7,9 @@ siteSettings:
   c7ed12fe-7739-44e3-accd-f279f495d152: # banzi-lab
     enabledByDefault: true
     hasUrls: true
-    template: lab-member-profile/_entry
-    uriFormat: 'lab-member-profile/{slug}'
+    template: modules\_labMemberProfile.twig
+    uriFormat: 'about#{slug}'
 structure:
-  maxLevels: null
+  maxLevels: 1
   uid: 334cbb11-761c-482c-b725-a9de5f70317e
 type: structure

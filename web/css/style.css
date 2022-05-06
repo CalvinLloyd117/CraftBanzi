@@ -1140,7 +1140,7 @@ div.currentPublications .publication .publicationInfo .visible {
 div.currentPublications .publication .publicationInfo.minimized {
   width: 100%;
   height: calc(max-content + 10px) !important;
-  max-height: 50%;
+  /* max-height: 50%; */
   position: absolute;
   bottom: 0px;
 }
@@ -1309,7 +1309,7 @@ div.currentLabMembers .labMember {
   width: 100%;
   overflow: hidden !important;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
   border-top: 1px solid rgba(80, 80, 80, 0.5);
   border-bottom: 1px solid rgba(80, 80, 80, 0.5);
   box-sizing: border-box;
@@ -1327,6 +1327,7 @@ div.currentLabMembers .labMember .profilePic {
 
 div.currentLabMembers .labMember .profilePic img {
   object-fit: cover;
+  max-height: 80vh;
 }
 
 div.currentLabMembers .labMember .labMemberInfo {
@@ -1913,6 +1914,10 @@ div.contentContainer.visible {
 /* This is the media query where margins/paddings begin to scale 
 down from 50px -> 3.33vw */
 @media only screen and (max-width: 1500px) {
+  div.currentPublications .publication .publicationInfo .inner {
+    padding: 1.3vw 1.3vw;
+  }
+
   .topnav .logo {
     margin-left: 2%;
   }
@@ -2311,6 +2316,10 @@ down from 50px -> 3.33vw */
 }
 
 @media only screen and (max-width: 750px) {
+  div.currentPublications .publication .publicationInfo .inner {
+    padding: 2.66vw 2.66vw;
+  }
+
   div.currentLabMembers {
     margin: 15px;
     gap: 15px;
@@ -2322,6 +2331,8 @@ down from 50px -> 3.33vw */
 
   .sectionBannerText,
   .sectionBannerText2 h1 {
+    z-index: 999;
+    top: 58px;
     display: inline-block;
     padding: 10px 3.33vw;
     font-size: 1.5625em;
@@ -2332,6 +2343,21 @@ down from 50px -> 3.33vw */
     margin-block-end: 1vw !important;
   }
 
+  h1 {
+    font-size: 1em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  .Info h2 {
+    font-size: 1em;
+  }
+
+  .Info h1 {
+    font-size: 1.25em;
+  }
   :-webkit-any(article, aside, nav, section) h1 {
     margin-block-start: 0vw;
     margin-block-end: 0vw;
@@ -2373,11 +2399,12 @@ down from 50px -> 3.33vw */
     position: absolute;
     top: 100%;
     /* height: calc(100vh - 50px); */
-    max-height: calc(100vh - 50px);
+    max-height: calc(100vh - 58px);
     overflow-y: auto !important;
-    overflow: scroll;
     left: 0;
     background-color: #0f0f0f;
+    top: 58px;
+    border: 3px solid #191919;
   }
 
   .dropdown {
@@ -2920,6 +2947,10 @@ down from 50px -> 3.33vw */
 }
 
 @media only screen and (max-width: 600px) {
+  .sectionBannerText,
+  .sectionBannerText2 h1 {
+    top: 42px;
+  }
   .topnav .logo h1 {
     font-size: 1.125em;
   }
@@ -2931,5 +2962,6 @@ down from 50px -> 3.33vw */
   .topnav .navButtons.hamburger {
     height: calc(100vh - 42px);
     max-height: calc(100vh - 42px);
+    top: 42px;
   }
 }

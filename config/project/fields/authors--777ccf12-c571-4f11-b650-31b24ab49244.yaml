@@ -2,13 +2,13 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: 2528f6a3-ba6d-407c-bd7b-98950fc26ca5 # Publication
 handle: authors
-instructions: 'Please add all authors on the publication'
+instructions: "Please add all authors on the publication.\r\n\r\nAdd blocks for the authors you wish to add. Authors can be either:\r\nLab Members: select an entry corresponding to the lab member to add their name to the publication.\r\nNon-Lab Member: Add an authors name to the publication. (eg. S. P. Henzi)"
 name: Authors
 searchable: false
 settings:
   contentTable: '{{%matrixcontent_authors}}'
   maxBlocks: ''
-  minBlocks: ''
+  minBlocks: '1'
   propagationKeyFormat: null
   propagationMethod: all
 translationKeyFormat: null

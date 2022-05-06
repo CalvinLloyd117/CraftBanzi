@@ -2,7 +2,7 @@ columnSuffix: ffzjpchf
 contentColumnType: smallint(4)
 fieldGroup: 7179d995-15f8-40c5-8785-7f76d74918b3 # Past Lab Members
 handle: startYear
-instructions: ''
+instructions: 'When did they start at the lab?'
 name: 'Start Year'
 searchable: false
 settings:

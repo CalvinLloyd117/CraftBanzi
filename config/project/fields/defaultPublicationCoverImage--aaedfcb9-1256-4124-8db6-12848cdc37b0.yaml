@@ -2,7 +2,7 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: 2528f6a3-ba6d-407c-bd7b-98950fc26ca5 # Publication
 handle: defaultPublicationCoverImage
-instructions: 'Please upload a default cover for the Journal.'
+instructions: "Please upload a default cover for the Journal. This cover image will be used when no cover is provided to the individual publication.\r\nThis image is best suited to images with ~8:11 aspect ratio."
 name: 'Default Publication Cover Image'
 searchable: false
 settings:
@@ -11,7 +11,7 @@ settings:
   allowedKinds: null
   defaultUploadLocationSource: 'volume:e6732067-02ef-47db-8371-405b77fee1f6' # Images
   defaultUploadLocationSubpath: 'publications/covers/{entry.title}/default'
-  limit: ''
+  limit: '1'
   localizeRelations: false
   previewMode: full
   restrictFiles: ''

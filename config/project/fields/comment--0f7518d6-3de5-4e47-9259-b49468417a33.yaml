@@ -2,7 +2,7 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: 2528f6a3-ba6d-407c-bd7b-98950fc26ca5 # Publication
 handle: comment
-instructions: ''
+instructions: 'Have there been any publications made in response to this publication? If so, add them here.'
 name: Comment
 searchable: false
 settings:

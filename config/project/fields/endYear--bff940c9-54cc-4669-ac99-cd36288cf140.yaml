@@ -2,7 +2,7 @@ columnSuffix: mpliicwi
 contentColumnType: smallint(4)
 fieldGroup: 7179d995-15f8-40c5-8785-7f76d74918b3 # Past Lab Members
 handle: endYear
-instructions: ''
+instructions: 'When did they leave the lab?'
 name: 'End Year'
 searchable: false
 settings:

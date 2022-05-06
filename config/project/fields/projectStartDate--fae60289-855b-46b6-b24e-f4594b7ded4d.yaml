@@ -2,7 +2,7 @@ columnSuffix: rzlursnj
 contentColumnType: datetime
 fieldGroup: 5a459a8a-83ed-4cb0-a0b2-fa9f83ab144f # Project
 handle: projectStartDate
-instructions: 'Please add an approximate start date for your project. This will be used to sort projects.'
+instructions: 'Please add an approximate start date for your project. This will be used to sort projects on the Home page.'
 name: 'Project Start Date'
 searchable: false
 settings:

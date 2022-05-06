@@ -9,7 +9,7 @@ settings:
   allowSelfRelations: false
   limit: ''
   localizeRelations: false
-  selectionLabel: ''
+  selectionLabel: 'Add a publication entry.'
   showSiteMenu: true
   source: null
   sources:

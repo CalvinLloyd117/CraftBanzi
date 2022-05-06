@@ -2,7 +2,7 @@ columnSuffix: null
 contentColumnType: text
 fieldGroup: f0e50402-de48-431e-b603-d7b66f86fdc2 # Carousel Entry
 handle: text
-instructions: ''
+instructions: 'Add content to the slide you are adding. This includes various formatting options (headers, paragraphs, bold, italic, etc.)'
 name: 'Text '
 searchable: false
 settings:

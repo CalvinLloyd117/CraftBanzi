@@ -2,14 +2,14 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: e8cbc24d-b6e1-4380-8372-151d82625c0d # Lab Member
 handle: labMemberFieldSite
-instructions: 'Please add a field site, if you have one.'
+instructions: "Please add a field site, if you have one.\r\n\r\nIf the entry for the field site does not exist, you will need to create it first.\r\n\r\n"
 name: 'Lab Member Field Site'
 searchable: false
 settings:
   allowSelfRelations: false
-  limit: '1'
+  limit: ''
   localizeRelations: false
-  selectionLabel: ''
+  selectionLabel: 'Add a field site'
   showSiteMenu: true
   source: null
   sources:

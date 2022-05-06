@@ -2,7 +2,7 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: e8cbc24d-b6e1-4380-8372-151d82625c0d # Lab Member
 handle: labMemberCategory
-instructions: 'Please select the category you fall under.'
+instructions: 'Please select the category that the Lab Member falls under. This determines the section under which the profile can be found on the About page.'
 name: 'Lab Member Category'
 searchable: false
 settings:

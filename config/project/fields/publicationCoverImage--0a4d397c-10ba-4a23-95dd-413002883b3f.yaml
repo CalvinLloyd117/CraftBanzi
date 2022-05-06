@@ -2,7 +2,7 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: 2528f6a3-ba6d-407c-bd7b-98950fc26ca5 # Publication
 handle: publicationCoverImage
-instructions: 'Please upload the cover for the volume/issue for the publication.'
+instructions: "Please upload the cover for the volume/issue for the publication. \r\n\r\nIf no cover is provided here, then the default cover for the Journal will be used, if applicable."
 name: 'Publication Cover Image'
 searchable: false
 settings:
@@ -11,7 +11,7 @@ settings:
   allowedKinds: null
   defaultUploadLocationSource: 'volume:e6732067-02ef-47db-8371-405b77fee1f6' # Images
   defaultUploadLocationSubpath: 'publications/{entry.title}/covers/{entry.volume}/{entry.issue}'
-  limit: ''
+  limit: '1'
   localizeRelations: false
   previewMode: full
   restrictFiles: ''

@@ -2,7 +2,7 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: e8cbc24d-b6e1-4380-8372-151d82625c0d # Lab Member
 handle: labMemberProfilePicture
-instructions: ''
+instructions: "Upload an image to appear on your profile.\r\n\r\nEither select an existing asset, or upload a new one."
 name: 'Lab Member Profile Picture'
 searchable: false
 settings:
@@ -11,7 +11,7 @@ settings:
   allowedKinds: null
   defaultUploadLocationSource: 'volume:e6732067-02ef-47db-8371-405b77fee1f6' # Images
   defaultUploadLocationSubpath: 'About/{slug}/profilePicture'
-  limit: ''
+  limit: '1'
   localizeRelations: false
   previewMode: full
   restrictFiles: ''

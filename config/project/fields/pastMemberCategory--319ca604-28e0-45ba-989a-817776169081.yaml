@@ -2,7 +2,7 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: 7179d995-15f8-40c5-8785-7f76d74918b3 # Past Lab Members
 handle: pastMemberCategory
-instructions: ''
+instructions: 'What category did they fall under?'
 name: 'Past Member Category'
 searchable: false
 settings:

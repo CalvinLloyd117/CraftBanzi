@@ -2,7 +2,7 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: 5a459a8a-83ed-4cb0-a0b2-fa9f83ab144f # Project
 handle: projectBackgroundImage
-instructions: 'Please add a background image for your project.'
+instructions: "Please add a background image for your project.\r\n\r\nEither select an existing asset, or upload a new one."
 name: 'Project Background Image'
 searchable: false
 settings:

@@ -4,6 +4,9 @@ fieldLayouts:
       -
         elements:
           -
+            heading: 'Past Lab Member Form'
+            type: craft\fieldlayoutelements\Heading
+          -
             autocapitalize: true
             autocomplete: false
             autocorrect: true

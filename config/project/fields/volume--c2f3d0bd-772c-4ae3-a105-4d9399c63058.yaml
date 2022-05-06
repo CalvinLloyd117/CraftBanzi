@@ -2,7 +2,7 @@ columnSuffix: yzkkfoax
 contentColumnType: integer(10)
 fieldGroup: 2528f6a3-ba6d-407c-bd7b-98950fc26ca5 # Publication
 handle: volume
-instructions: 'Please add the volume of the Journal'
+instructions: 'Please add the volume of the Journal, if you know it.'
 name: Volume
 searchable: false
 settings:

@@ -2,13 +2,13 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: e8cbc24d-b6e1-4380-8372-151d82625c0d # Lab Member
 handle: labMemberResearchTopic
-instructions: 'Please add the research topic for the lab member.'
+instructions: "Please add the research topic for the lab member.\r\n\r\nSelect the block for your research topic, and add a few words describing your research."
 name: 'Lab Member Research Topic'
 searchable: false
 settings:
   contentTable: '{{%matrixcontent_labmemberresearchtopic}}'
   maxBlocks: '1'
-  minBlocks: '0'
+  minBlocks: '1'
   propagationKeyFormat: null
   propagationMethod: all
 translationKeyFormat: null

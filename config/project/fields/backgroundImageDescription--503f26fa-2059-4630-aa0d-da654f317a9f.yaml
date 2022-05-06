@@ -2,7 +2,7 @@ columnSuffix: rlnrkdxa
 contentColumnType: string(800)
 fieldGroup: 5a459a8a-83ed-4cb0-a0b2-fa9f83ab144f # Project
 handle: backgroundImageDescription
-instructions: 'Please add a few words describing the image'
+instructions: 'Please add a few words describing the image.'
 name: 'Background Image Description'
 searchable: false
 settings:
@@ -12,7 +12,7 @@ settings:
   columnType: null
   initialRows: '4'
   multiline: ''
-  placeholder: null
+  placeholder: 'Brief image description'
   uiMode: normal
 translationKeyFormat: null
 translationMethod: none

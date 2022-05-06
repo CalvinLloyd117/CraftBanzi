@@ -5,10 +5,10 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: 669fec18-48e6-45a2-b968-5f31b47ba5e8 # topic
+            fieldUid: 669fec18-48e6-45a2-b968-5f31b47ba5e8 # Topic
             instructions: null
             label: null
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -16,17 +16,17 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  669fec18-48e6-45a2-b968-5f31b47ba5e8: # topic
+  669fec18-48e6-45a2-b968-5f31b47ba5e8: # Topic
     columnSuffix: null
-    contentColumnType: text
+    contentColumnType: string(800)
     fieldGroup: null
     handle: topic
-    instructions: 'Please enter your topic.'
-    name: topic
+    instructions: 'Enter your topic.'
+    name: Topic
     searchable: false
     settings:
       byteLimit: null
-      charLimit: null
+      charLimit: 200
       code: ''
       columnType: null
       initialRows: '4'

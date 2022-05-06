@@ -49,11 +49,11 @@
         {% for author in publicationAuthors %}
           {% if author.type == 'labMember' %}
             {% set lma = author.labMemberAuthor.one %}
-            {% if lma.isFieldEmpty('preferredCitationName') == false %}
+            {# {% if lma.isFieldEmpty('preferredCitationName') == false %}
               <a href="/about#{{ lma.slug }}">
                 {{ lma.preferredCitationName }}
               </a>{% if not loop.last %}, {% endif %}
-            {% else %}
+            {% else %} #}
               <a href="/about#{{ lma.slug }}">
                 {% for n in lma.title|split(' ') %}
                   {% if not loop.last %}
@@ -63,7 +63,7 @@
                   {% endif %}
                 {% endfor %}
               </a>{% if not loop.last %}, {% endif %}
-            {% endif %}
+            {# {% endif %} #}
           {% elseif author.type == 'nonLabMember' %}
             {{ author.authorName }}{% if not loop.last %}, {% endif %}
           {% endif %}
@@ -81,22 +81,22 @@
             <div class="citation">
                 <h2>Citation:</h2>
                 <p>
-                {% for author in publicationAuthors %}
+                {% for author in publicationAuthors.all() %}
                 {% if author.type == 'labMember' %}
                     {% set auth = author.labMemberAuthor.one %}
                     {% if auth.isFieldEmpty('preferredCitationName') == false %}
                     <a href="/about#{{auth.slug}}">{{auth.preferredCitationName}}</a>{% if loop.length <=2 and not loop.last %} &{% elseif loop.length - loop.index == 1 %} & {% elseif not loop.last %}, {% else %}. {% endif %}
                     {% else %}
-                    <a href="/about#{{auth.slug}}">{% for n in auth.title|split(" ") %}{% if not loop.last %}{{n|first}}. {% else %}{{n}}{% endif %}{% endfor %}</a>{% if loop.length <=2 and not loop.last %} &{% elseif loop.length - loop.index == 1 %} & {% elseif not loop.last %}, {% else %}. {% endif %}
+                    <a href="/about#{{auth.slug}}">{{auth.title|split(" ")|last }}, {% for n in auth.title|split(" ") %}{% if not loop.last %}{{n|first}}.{% endif %}{% endfor %}</a>{% if loop.length <=2 and not loop.last %} &{% elseif loop.length - loop.index == 1 %} & {% elseif not loop.last %}, {% else %} {% endif %}
                     {% endif %}
                 {% elseif author.type == 'nonLabMember' %}
-                {{author.authorName}}{% if loop.length <=2 and not loop.last %} &{% elseif loop.length - loop.index == 1 %} & {% elseif not loop.last %}, {% else %}. {% endif %}
+                {{author.authorName|split(". ")|last}}, {% for I in author.authorName|split(". ") %}{% if not loop.last %}{{I}}.{% endif %}{% endfor %}{% if loop.length <=2 and not loop.last %} &{% elseif loop.length - loop.index == 1 %} & {% elseif not loop.last %}, {% else %} {% endif %}
                 {% endif %}
                 {% endfor %}
                 {% if publication.isFieldEmpty('bookChapter') == false %}
-                {{publication.publicationYear.one}}. {{publication.title}}. In: {{publication.journalName.one}}. {% for bk in publication.bookChapter %}{% if bk.isFieldEmpty('editors') == false %}(eds. {{bk.editors}}){% if publication.isFieldEmpty('pageRange') == false %}, pp. {{publication.pageRange}}.{% else %}. {% endif %} {% if bk.isFieldEmpty('publisher') == false %}{{bk.publisher.one}}. {% endif %} {% endif %}{% endfor %}
+                ({{publication.publicationYear.one}}). {{publication.title}}. In: {{publication.journalName.one}}. {% for bk in publication.bookChapter %}{% if bk.isFieldEmpty('editors') == false %}(eds. {{bk.editors}}){% if publication.isFieldEmpty('pageRange') == false %}, pp. {{publication.pageRange}}.{% else %}. {% endif %} {% if bk.isFieldEmpty('publisher') == false %}{{bk.publisher.one}}. {% endif %} {% endif %}{% endfor %}
                 {% else %}
-                {{publication.publicationYear.one}}. {{publication.title}}. <i>{{publication.journalName.one}}</i>{% if publication.isFieldEmpty('volume') == false  %} {{publication.volume}}{% if publication.isFieldEmpty('pageRange') == false %}: {{publication.pageRange}}.{% else %}.{% endif %}{% else %}.{% endif %}
+                ({{publication.publicationYear.one}}). {{publication.title}}. <i>{{publication.journalName.one}}</i>{% if publication.isFieldEmpty('volume') == false  %}, <i>{{publication.volume}}</i>{% if publication.isFieldEmpty('issue') == false  %}({{publication.issue}}){% else %}{% endif %}{% if publication.isFieldEmpty('pageRange') == false %}, {{publication.pageRange}}.{% else %}.{% endif %}{% else %}.{% endif %}
                 {% endif %}
                 <a rel="noopener"href="{{publication.doi}}">{{publication.doi}}</a>
                 </p>

@@ -2,7 +2,7 @@ columnSuffix: dljenidz
 contentColumnType: boolean
 fieldGroup: 5a459a8a-83ed-4cb0-a0b2-fa9f83ab144f # Project
 handle: projectOverlayAlignment
-instructions: 'Which side of the project would you like the overlay (containing the introductory text) to be positioned? Left, or Right? Essentially this setting will impact which side of the project Background Image will be hidden by the overlay when it is closed.'
+instructions: "Which side of the project would you like the overlay (containing the introductory text) to be positioned? Left, or Right? \r\n\r\nEssentially this setting will impact which side of the project Background Image will be hidden by the overlay when it is closed."
 name: 'Project Overlay Alignment'
 searchable: false
 settings:

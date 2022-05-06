@@ -2,7 +2,7 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: 3dc3c38e-60a7-412d-95ca-fc02ead5f8b7 # Field Site
 handle: fieldSiteintroductionImage
-instructions: ''
+instructions: "If you would like an image in your Field Site's minimized view, add it here.\r\n\r\nEither select an existing asset, or upload a new one."
 name: 'Field Site Introduction Image'
 searchable: false
 settings:
@@ -16,7 +16,7 @@ settings:
   previewMode: full
   restrictFiles: ''
   selectionLabel: ''
-  showSiteMenu: false
+  showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   singleUploadLocationSource: 'volume:e6732067-02ef-47db-8371-405b77fee1f6' # Images

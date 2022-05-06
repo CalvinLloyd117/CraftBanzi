@@ -4,6 +4,9 @@ fieldLayouts:
       -
         elements:
           -
+            heading: 'Field Site Entry'
+            type: craft\fieldlayoutelements\Heading
+          -
             autocapitalize: true
             autocomplete: false
             autocorrect: true
@@ -28,7 +31,7 @@ fieldLayouts:
             width: 100
           -
             fieldUid: 24e84bcf-a98e-4e32-b9fe-348e2f479080 # Project Overlay Alignment
-            instructions: 'Which side of the field site would you like the overlay (containing the introductory text) to be positioned? Left, or Right? Essentially this setting will impact which side of the project Background Image will be hidden by the overlay when it is closed.'
+            instructions: "Which side of the field site would you like the overlay (containing the introductory text) to be positioned? Left, or Right? \r\n\r\nEssentially this setting will impact which side of the project Background Image will be hidden by the overlay when it is closed."
             label: 'Field Site Overlay Alignment'
             required: ''
             tip: null

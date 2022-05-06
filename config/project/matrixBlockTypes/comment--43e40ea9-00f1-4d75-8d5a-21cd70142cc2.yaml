@@ -8,7 +8,7 @@ fieldLayouts:
             fieldUid: 3d2775f0-4784-4cf2-b07b-3566f9385ed6 # Name
             instructions: null
             label: null
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -17,7 +17,7 @@ fieldLayouts:
             fieldUid: 806d4716-38cb-4541-a1d3-157625900a31 # Comment Link
             instructions: null
             label: null
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -30,7 +30,7 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: commentName
-    instructions: ''
+    instructions: 'Add the name of the responding publication.'
     name: Name
     searchable: false
     settings:
@@ -50,7 +50,7 @@ fields:
     contentColumnType: string(255)
     fieldGroup: null
     handle: commentLink
-    instructions: ''
+    instructions: 'Provide a link (or DOI) to the responding publication.'
     name: 'Comment Link'
     searchable: false
     settings:
