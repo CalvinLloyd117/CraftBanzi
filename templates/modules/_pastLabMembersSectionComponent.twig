@@ -11,9 +11,9 @@
       {% if
         labMember.startYear
           and labMember.endYear
-          and labMember.educationAchieved.first %}
+          and labMember.educationAchieved.one %}
         <p>
-          {{ labMember.educationAchieved.first }} ({{ labMember.startYear }} - {{
+          {{ labMember.educationAchieved.one }} ({{ labMember.startYear }} - {{
             labMember.endYear
           }})
         </p>
@@ -22,9 +22,9 @@
             {{ labMember.whoAreThey }}
           </p>
         {% endif %}
-      {% elseif labMember.endYear and labMember.educationAchieved.first %}
+      {% elseif labMember.endYear and labMember.educationAchieved.one %}
         <p>
-          {{ labMember.educationAchieved.first }} ({{ labMember.endYear }})
+          {{ labMember.educationAchieved.one }} ({{ labMember.endYear }})
         </p>
         {% if labMember.whoAreThey %}
           <p>

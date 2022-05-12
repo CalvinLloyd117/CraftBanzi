@@ -25,9 +25,9 @@
         <p class="name">
           {% for cont in project.contributors.all() %}
             {% if cont.type == 'labMember' %}
-              <a href="/about#{{cont.labMemberEntry.first.slug}}">{{cont.labMemberEntry.first.title}}</a>{% if not loop.last %}, {% endif %}
+              <a href="/about#{{cont.labMemberEntry.one.slug}}">{{cont.labMemberEntry.one.title}}</a>{% if not loop.last %}, {% endif %}
             {% elseif cont.type == 'currentCollaborator' %}
-              {% if cont.collaboratorEntry.first.isFieldEmpty('collaboratorWebsite') == false %}
+              {% if cont.collaboratorEntry.one.isFieldEmpty('collaboratorWebsite') == false %}
               <a href="{{cont.collaboratorEntry.first.collaboratorWebsite}}">{{cont.collaboratorEntry.first.title}}</a>{% if not loop.last %}, {% endif %}
               {% else %}
               <a href="/about#{{cont.collaboratorEntry.first.slug}}">{{cont.collaboratorEntry.first.title}}</a>{% if not loop.last %}, {% endif %}
@@ -45,13 +45,13 @@
           </div>
           <div class="inner hidden">
             <img alt="sdafa"
-              src={{project.introductionImage.first.url}}
+              src={{project.introductionImage.one.url}}
             />
           </div>
         {% else %}
           <div class="inner hidden tempNone">
             <img alt="sdafa"
-              src={{project.introductionImage.first.url}}
+              src={{project.introductionImage.one.url}}
               />
           </div>
           <div class="inner hidden intro ">
@@ -85,13 +85,13 @@
           {% endif %}
           <div class="inner hidden">
             <img alt="{{elem.imageDescription}}"
-              src={{elem.image.first.url}}
+              src={{elem.image.one.url}}
               />
           </div>
           {% else %}
           <div class="inner hidden">
             <img alt="{{elem.imageDescription}}"
-              src={{elem.image.first.url}}
+              src={{elem.image.one.url}}
               />
           </div>
           {% if elem.isFieldEmpty('text') == false %}

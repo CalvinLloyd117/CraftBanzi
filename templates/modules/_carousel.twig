@@ -4,7 +4,7 @@
     ontouchmove="handleTouchMove()"
     ontouchstart="handleTouchStart()">
     <!-- Full images with numbers and message Info -->
-    {% for en in entries %}
+    {% for en in entries.all %}
       {% set first = loop.first %}
       {% include 'modules/_carouselSlide' with {
         entry: en,
@@ -21,7 +21,7 @@
         &#10095;
       </div>
       <div class="dotContainer" style="z-index: 500;">
-        {% for item in entries %}
+        {% for item in entries.all() %}
           <span class="dots" onclick="currentSlide({{ loop.index }})"></span>
         {% endfor %}
       </div>

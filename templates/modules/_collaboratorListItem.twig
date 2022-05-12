@@ -30,7 +30,7 @@
         Project:
       </h3>
       {% if collaborator.project %}
-        {% for proj in collaborator.project %}
+        {% for proj in collaborator.project.all() %}
           {% if proj.type == 'projectEntry' %}
             <a href="/#{{ proj.projectEntrySelection.title }}">
               <p>

@@ -20,7 +20,7 @@
             </h1>
             {% endif %}
             {{labMember.labMemberDescription}}
-            {% for cvBlock in labMember.cv %}
+            {% for cvBlock in labMember.cv.all() %}
             {% if cvBlock.type == 'cvFile' %}
             <p class="intro">File</p>
             {% elseif cvBlock.type == 'cvLink' %}
@@ -32,7 +32,7 @@
             {% if labMember.isFieldEmpty('emailAddress') == false %}
             <p class="intro"><b>Email: </b>{{labMember.emailAddress}}</p>
             {% endif %}
-            {% for blockType in labMember.socialMediaLinks %}
+            {% for blockType in labMember.socialMediaLinks.all() %}
             <p class="intro"><b>{{blockType.type.handle}}: </b><a
                 href="{{blockType.smLink}}">{{blockType.smLink}}</a></p>
             {% endfor %}
@@ -40,7 +40,7 @@
             <p class="intro"><b>Research Gate: </b><a
                 href="{{labMember.researchGateLink}}">{{labMember.researchGateLink}}</a></p>
             {% endif %}
-            {% for blockType in labMember.labMemberResearchTopic %}
+            {% for blockType in labMember.labMemberResearchTopic.all() %}
             {% if blockType.type == "researchTopic" %}
                     <h2>Research Topic:</h2>
                     <p class="topic">{{blockType.topic}}</p>

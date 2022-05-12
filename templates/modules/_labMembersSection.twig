@@ -6,7 +6,7 @@
 </h1>
 <!-- Post doctoral-fellows section -->
 <!-- If you need to create a new section, copy the following block of code for the section and paste it before, after or between existing sections. Modify the content as necessary. -->
-{% for category in allCategories %}
+{% for category in allCategories.all() %}
   {% set sectionMembers =
     labMembers.with(['labMemberProfilePicture']).relatedTo(category).all
   %}

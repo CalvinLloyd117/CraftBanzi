@@ -1,6 +1,6 @@
 {% extends '_html5' %}
 
-{% set carouselEntries = craft.entries().section('aboutCarouselEntry').all() %}
+{% set carouselEntries = craft.entries().section('aboutCarouselEntry') %}
 {% set elemCount = craft.entries().section('aboutCarouselEntry').count() %}
 
 {% set labMemberEntries = craft.entries.section('labMemberProfile') %}

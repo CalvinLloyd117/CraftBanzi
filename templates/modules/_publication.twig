@@ -12,7 +12,7 @@
   {% elseif publication.isFieldEmpty('journalName') == false %}
     {% for j in publication.journalName.all %}
       {% if j.isFieldEmpty('defaultPublicationCoverImage') == false %}
-        {% for img in j.defaultPublicationCoverImage %}
+        {% for img in j.defaultPublicationCoverImage.all %}
           <img alt="cover photo." src="{{ img.url }}" />
         {% endfor %}
       {% else %}
@@ -46,7 +46,7 @@
         {{ publication.title }}
       </h1>
       <p>
-        {% for author in publicationAuthors %}
+        {% for author in publicationAuthors.all() %}
           {% if author.type == 'labMember' %}
             {% set lma = author.labMemberAuthor.one %}
             {# {% if lma.isFieldEmpty('preferredCitationName') == false %}
@@ -94,14 +94,14 @@
                 {% endif %}
                 {% endfor %}
                 {% if publication.isFieldEmpty('bookChapter') == false %}
-                ({{publication.publicationYear.one}}). {{publication.title}}. In: {{publication.journalName.one}}. {% for bk in publication.bookChapter %}{% if bk.isFieldEmpty('editors') == false %}(eds. {{bk.editors}}){% if publication.isFieldEmpty('pageRange') == false %}, pp. {{publication.pageRange}}.{% else %}. {% endif %} {% if bk.isFieldEmpty('publisher') == false %}{{bk.publisher.one}}. {% endif %} {% endif %}{% endfor %}
+                ({{publication.publicationYear.one}}). {{publication.title}}. In: {{publication.journalName.one}}. {% for bk in publication.bookChapter.all() %}{% if bk.isFieldEmpty('editors') == false %}(eds. {{bk.editors}}){% if publication.isFieldEmpty('pageRange') == false %}, pp. {{publication.pageRange}}.{% else %}. {% endif %} {% if bk.isFieldEmpty('publisher') == false %}{{bk.publisher.one}}. {% endif %} {% endif %}{% endfor %}
                 {% else %}
                 ({{publication.publicationYear.one}}). {{publication.title}}. <i>{{publication.journalName.one}}</i>{% if publication.isFieldEmpty('volume') == false  %}, <i>{{publication.volume}}</i>{% if publication.isFieldEmpty('issue') == false  %}({{publication.issue}}){% else %}{% endif %}{% if publication.isFieldEmpty('pageRange') == false %}, {{publication.pageRange}}.{% else %}.{% endif %}{% else %}.{% endif %}
                 {% endif %}
                 <a rel="noopener"href="{{publication.doi}}">{{publication.doi}}</a>
                 </p>
                 {% if publication.isFieldEmpty('comment') == false %}
-                    {% for com in publication.comment %}
+                    {% for com in publication.comment.all() %}
                         <p><b>Comment: </b><a rel="noopener" href="{{com.commentLink}}">{{com.commentName}}</a></p>
                     {% endfor %}
                 {% endif %}

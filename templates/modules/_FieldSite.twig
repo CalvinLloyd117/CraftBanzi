@@ -49,7 +49,7 @@
         </div>
       {% endif %}
       {% if fieldSite.isFieldEmpty('detailedDescription') == false %}
-      {% for elem in fieldSite.detailedDescription %}
+      {% for elem in fieldSite.detailedDescription.all %}
         {% if elem.type == 'text' %}
           <div class="inner hidden spanTwo">
           {{elem.textContent}}

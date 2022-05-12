@@ -24,7 +24,7 @@ var navSticky = navbar.offsetTop;
 
 //add listeners
 window.addEventListener('resize', () => onResize())
-window.addEventListener('scroll', () => applySticky(navbar, navSticky))
+// window.addEventListener('scroll', () => applySticky(navbar, navSticky))
 
 var parallaxImages;
 function parallaxify()
@@ -160,7 +160,7 @@ function expandDropdown()
  *****************************************************************/
 function onResize()
 {
-  applySticky(navbar, navSticky)
+  // applySticky(navbar, navSticky)
   setBannerTextTop()
   animationResizeCancel()
 }
@@ -205,7 +205,7 @@ function removePreload()
 function initialize()
 {
   navigateTo()
-  applySticky(navbar, navSticky)
+  // applySticky(navbar, navSticky)
   setBannerTextTop()
   SlideShow(slidePosition);
   if (document.readyState === "complete")
@@ -594,25 +594,25 @@ window.onpopstate = function (event)
 /*****************************************************************
  * 
  *****************************************************************/
-function applySticky(elem, loc)
-{
-  setBannerTextTop()
-  // assignProjectPosition('contentContainer')
-  if (window.pageYOffset >= loc)
-  {
-    elem.classList.add("sticky")
-    var wrapper = document.getElementById('wrapper')
-    var elemHeight = elem.getBoundingClientRect().height
-    wrapper.style.paddingTop = `${elemHeight}px`
-  }
-  else
-  {
-    var wrapper = document.getElementById('wrapper')
-    var elemHeight = elem.getBoundingClientRect().height
-    wrapper.style.paddingTop = '0px'
-    elem.classList.remove("sticky");
-  }
-}
+// function applySticky(elem, loc)
+// {
+// setBannerTextTop()
+// // assignProjectPosition('contentContainer')
+// if (window.pageYOffset >= loc)
+// {
+//   elem.classList.add("sticky")
+//   var wrapper = document.getElementById('wrapper')
+//   var elemHeight = elem.getBoundingClientRect().height
+//   wrapper.style.paddingTop = `${elemHeight}px`
+// }
+// else
+// {
+//   var wrapper = document.getElementById('wrapper')
+//   var elemHeight = elem.getBoundingClientRect().height
+//   wrapper.style.paddingTop = '0px'
+//   elem.classList.remove("sticky");
+// }
+// }
 
 // Functions for carousel Implementation
 var slidePosition = 1;

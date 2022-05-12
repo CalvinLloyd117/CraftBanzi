@@ -14,7 +14,7 @@
         <div class="labMember">
           <div class="labMemberInfo labMemberList">
             {# <ul> #}
-              {% for collaborator in collaborators|reverse %}
+              {% for collaborator in collaborators.all()|reverse %}
                 {{
                   sprig(
                     'modules/_collaboratorListItem',
@@ -48,7 +48,7 @@
         <div class="labMember">
           <div class="labMemberInfo labMemberList">
             {# <ul> #}
-              {% for collaborator in collaborators|reverse %}
+              {% for collaborator in collaborators.all()|reverse %}
                 {{
                   sprig(
                     'modules/_collaboratorListItem',

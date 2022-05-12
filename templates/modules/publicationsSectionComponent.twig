@@ -16,7 +16,7 @@
     <script>
       console.log('I was just re-rendered.');
     </script>
-    {% for publication in sectionPublications %}
+    {% for publication in sectionPublications.all() %}
       {# {% set image = publication.publicationCoverImage[0] ?? null %} #}
       {# {% include 'modules/_publication' with {
         publication: publication,

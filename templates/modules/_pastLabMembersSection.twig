@@ -4,9 +4,9 @@
 <h1 class="sectionTitle" id="Publications">
   Alumni
 </h1>
-{% for category in allCategories %}
+{% for category in allCategories.all() %}
   {% set sectionMembers =
-    pastMembers.order('endYear').relatedTo(category).all
+    pastMembers.orderBy('endYear').relatedTo(category).all
   %}
   {# <p>{{category}}</p> #}
   {% if sectionMembers %}
