@@ -4,7 +4,7 @@ This README serves to be your guide for the Barrett-Henzi Lab website build in *
 
 ## Front-End Information
 
-The front-end of the website (what a user sees when they visit the website in their browser) consists of three main pages. These pages (Home/Index, Publications, About) are templates (blank-slate structures) which are populated by entries which can be added, modified, or removed in the back-end. The front-end will dynamically respond to any changes made to the backend, and adjust the stucture accordingly. This means that modifications to the code of the website are not required in any way.
+The front-end of the website (what a user sees when they visit the website in their browser) consists of three main pages. These pages (Home/Index, Publications, About) are templates (blank-slate structures) which are populated by entries which can be added, modified, or removed in the back-end. The front-end will dynamically respond to any changes made to the back-end and adjust the stucture accordingly. This means that modifications to the code of the website are not required in any way.
 
 ## Back-End Information
 
@@ -23,6 +23,12 @@ The back-end is what is responsible for modifying content on the site. The back-
 ### Dashboard
 
 Contains a list of Recent Entries, optional updates, and news regarding Craft CMS.
+
+### Entries
+
+The *Entries* tab is where the majority of content management will happen. This tab contains several entry structures, each of which is responsible for rendering a certain section or type of content. Entries are organized by the page that they are used to populate (Home/Index, Publications, and About). 
+
+More information on the specific entry types can be found below in the ***Content Management*** section of the README.
 
 ### Categories 
 
@@ -60,3 +66,17 @@ All assets (images) that have been directly uploaded to the back-end. Images tha
 ### Utilities
 
 Contains System info, Database Backup, and more. Typically nothing should need to be done within this tab. If more information is required regarding Utilities, [here is the Craft documentation pertaining to it](https://craftcms.com/docs/3.x/extend/#modules-vs-plugins).
+
+### Settings
+
+Various CMS Settings related to System and Content. This is where the structure of *Fields* and *Sections* can be modified and routes can be added.
+
+Generally speaking, settings should not need to be modified, and should not be unless you know what you are doing.
+
+### Plugin Store 
+
+Find and add new plugins to the CMS. In general, Plugins should be avoided and should not be installed unless they recieve adequate support and have no system vulnerabilities.
+
+## Content Management
+
+Managing content in a Content Management System (CMS) like ***Craft CMS*** is straight forward and easy, and does not require any modifications to be made to the front-end template code at all. All modification and additions to content can be done from the back-end with no programming knowledge, or knowledge of web development at all.
