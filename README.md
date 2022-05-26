@@ -173,7 +173,6 @@ However, certain fields are a little more complex including:
 - **Assets**
   
   Either Add an asset (that already exists in the back-end) or select Upload a file, which will prompt you to choose an asset to upload from your computer.
-  Assets are automatically added to the database, and the website's public folder to be visible in the website's front-end.
   
 - 
  
