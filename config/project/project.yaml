@@ -1,4 +1,4 @@
-dateModified: 1651861068
+dateModified: 1653069388
 email:
   fromEmail: calvin.lloyd@uleth.ca
   fromName: banzi-lab
@@ -40,6 +40,7 @@ meta:
     6c9e5547-a960-4329-9d7c-ce9b1fd6f0fc: banzi-lab # banzi-lab
     6c17810c-bd7c-495e-a1a1-ae33f2b32b12: 'Project Entry' # Project Entry
     6de9c75c-b23a-4f5c-96b4-9e8605cc7349: 'Lab Member' # Lab Member
+    6de37ee4-14dc-4fd9-9cbc-86f4fe586fea: 'Manual Citation' # Manual Citation
     7ae2dc07-cb92-478c-ba01-745ef170707b: 'Collaborator Entry' # Collaborator Entry
     7c7e255d-4ba3-4b62-8497-ae34b177b0f4: Description # Description
     7c67c593-c1c9-487d-a009-94abf7622ee5: Centre # Centre

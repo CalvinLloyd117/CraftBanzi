@@ -131,7 +131,16 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
-            width: 100
+            width: 50
+          -
+            fieldUid: 6de37ee4-14dc-4fd9-9cbc-86f4fe586fea # Manual Citation
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
         name: Content
         sortOrder: 1
 handle: publicationEntry

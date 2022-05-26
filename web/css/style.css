@@ -36,6 +36,14 @@ body {
   max-height: 100%;
 }
 
+.ignore-css {
+  all: unset !important;
+}
+
+.ignore-css p {
+  all: unset !important;
+}
+
 .preload * {
   transition: none !important;
   -webkit-transition: none !important;
@@ -701,12 +709,12 @@ div.currentProjects .project .projectInfo.maximized .grid {
 
 div.currentProjects .project .projectInfo .inner.intro {
   position: relative;
-  height: min-content;
   opacity: 1;
   /* grid-column: span 2; */
   height: max-content;
-  max-height: 70%;
+  max-height: calc(82vh - (152px + 2.67vw + 2.67vw + 55px + 40px));
   overflow: auto;
+  margin-bottom: 55px;
 }
 
 div.currentProjects .project .projectInfo .inner.intro.title {
@@ -957,6 +965,22 @@ div.currentPublications .publication {
   background-repeat: no-repeat;
   width: 100%;
   background: #0f0f0f;
+  /* max-height: calc((80vh) * 11 / 8.5); */
+}
+
+div.currentPublications .publication a {
+  text-decoration: none !important;
+}
+
+div.currentPublications .publication h1 {
+  transition: 0.25s;
+}
+div.currentPublications .publication h1:hover {
+  color: rgb(214, 214, 214);
+}
+
+div.currentPublications .publication p a {
+  text-decoration: underline !important;
 }
 
 div.currentPublications .publication ::-webkit-scrollbar-track {
@@ -969,6 +993,7 @@ div.currentPublications .publication img {
   object-fit: cover;
   /* position: absolute;
     top: 0; */
+  cursor: pointer;
 }
 
 div.currentPublications .publication .publicationInfo {
@@ -1085,8 +1110,52 @@ div.currentPublications .publication .publicationInfo .inner.visible ol li {
   padding-left: 10px;
 }
 
+div.currentPublications
+  .publication
+  .publicationInfo
+  .inner.visible
+  .citationTitleBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: red;
+}
+
+div.currentPublications
+  .publication
+  .publicationInfo
+  .inner.visible
+  .citationTitleBox
+  span {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+div.currentPublications
+  .publication
+  .publicationInfo
+  .inner.visible
+  .citationTitleBox
+  span:hover
+  svg {
+  fill: rgb(214, 214, 214);
+}
+
+div.currentPublications
+  .publication
+  .publicationInfo
+  .inner.visible
+  .citationTitleBox
+  span
+  svg {
+  fill: #ffffff;
+  transition: 0.25s;
+}
 div.currentPublications .publication .publicationInfo .inner.visible .citation {
   margin: 10px 0px 10px 0px;
+  cursor: pointer;
 }
 
 div.currentPublications

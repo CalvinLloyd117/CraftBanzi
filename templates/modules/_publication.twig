@@ -7,7 +7,7 @@
 {% set img = publication.publicationCoverImage[0] ?? null %}
   {% if img %}
     {# {% for img in publication.publicationCoverImage.all %} #}
-    <img loading="lazy" alt="cover photo." src="{{ img.url }}" />
+    <img loading="lazy" alt="cover photo." src="{{ img.url }}" onclick="togglePublicationInfo('{{ publication.slug }}')"/>
     {# {% endfor %} #}
   {% elseif publication.isFieldEmpty('journalName') == false %}
     {% for j in publication.journalName.all %}
@@ -42,9 +42,11 @@
       </div>
     </div>
     <div class="inner intro" style="grid-column: span 4;">
+      <a rel="noopener" href="{{publication.doi}}">
       <h1>
         {{ publication.title }}
       </h1>
+      </a>
       <p>
         {% for author in publicationAuthors.all() %}
           {% if author.type == 'labMember' %}
@@ -78,16 +80,21 @@
         {% else %}
         <p>Abstract not available.<p>
         {% endif %}
-            <div class="citation">
-                <h2>Citation:</h2>
+        <div class="citationTitleBox">
+        <h2>Citation:</h2><span onclick="copyToClipboard(this.parentElement.nextElementSibling);"><svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"></path></svg></span>
+        </div>
+            <div class="citation" onclick="copyToClipboard(this);"> 
+                {% if publication.isFieldEmpty('manualCitation') == false %}
+                {{publication.manualCitation}}
+                {% else %}
                 <p>
                 {% for author in publicationAuthors.all() %}
                 {% if author.type == 'labMember' %}
                     {% set auth = author.labMemberAuthor.one %}
                     {% if auth.isFieldEmpty('preferredCitationName') == false %}
-                    <a href="/about#{{auth.slug}}">{{auth.preferredCitationName}}</a>{% if loop.length <=2 and not loop.last %} &{% elseif loop.length - loop.index == 1 %} & {% elseif not loop.last %}, {% else %}. {% endif %}
+                    {{auth.preferredCitationName}}{% if loop.length <=2 and not loop.last %} &{% elseif loop.length - loop.index == 1 %} & {% elseif not loop.last %}, {% else %}. {% endif %}
                     {% else %}
-                    <a href="/about#{{auth.slug}}">{{auth.title|split(" ")|last }}, {% for n in auth.title|split(" ") %}{% if not loop.last %}{{n|first}}.{% endif %}{% endfor %}</a>{% if loop.length <=2 and not loop.last %} &{% elseif loop.length - loop.index == 1 %} & {% elseif not loop.last %}, {% else %} {% endif %}
+                    {{auth.title|split(" ")|last }}, {% for n in auth.title|split(" ") %}{% if not loop.last %}{{n|first}}.{% endif %}{% endfor %}{% if loop.length <=2 and not loop.last %} &{% elseif loop.length - loop.index == 1 %} & {% elseif not loop.last %}, {% else %} {% endif %}
                     {% endif %}
                 {% elseif author.type == 'nonLabMember' %}
                 {{author.authorName|split(". ")|last}}, {% for I in author.authorName|split(". ") %}{% if not loop.last %}{{I}}.{% endif %}{% endfor %}{% if loop.length <=2 and not loop.last %} &{% elseif loop.length - loop.index == 1 %} & {% elseif not loop.last %}, {% else %} {% endif %}
@@ -98,15 +105,16 @@
                 {% else %}
                 ({{publication.publicationYear.one}}). {{publication.title}}. <i>{{publication.journalName.one}}</i>{% if publication.isFieldEmpty('volume') == false  %}, <i>{{publication.volume}}</i>{% if publication.isFieldEmpty('issue') == false  %}({{publication.issue}}){% else %}{% endif %}{% if publication.isFieldEmpty('pageRange') == false %}, {{publication.pageRange}}.{% else %}.{% endif %}{% else %}.{% endif %}
                 {% endif %}
-                <a rel="noopener"href="{{publication.doi}}">{{publication.doi}}</a>
+                {{publication.doi}}
                 </p>
-                {% if publication.isFieldEmpty('comment') == false %}
+                {% endif %}
+            </div>
+        </div>
+                        {% if publication.isFieldEmpty('comment') == false %}
                     {% for com in publication.comment.all() %}
                         <p><b>Comment: </b><a rel="noopener" href="{{com.commentLink}}">{{com.commentName}}</a></p>
                     {% endfor %}
                 {% endif %}
-            </div>
-        </div>
     </div>
     <script>openPublicationInfoOnLoad()</script>
     {% endif %}

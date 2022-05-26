@@ -38,6 +38,72 @@ function parallaxify()
   parallaxImages = new simpleParallax(images, { orientation: 'down', scale: parallaxScale });
 }
 
+function copyToClipboard(event)
+{
+  // navigator.permissions.query({ name: "clipboard-write" }).then((result) =>
+  // {
+  //   if (result.state == "granted" || result.state == "prompt")
+  //   {
+  //     // alert("Write access ranted!");
+  //     var copyText = event;
+  //     console.log(event)
+  //     navigator.clipboard.writeText(copyText).then(() =>
+  //     {
+  //       // Alert the user that the action took place.
+  //       // Nobody likes hidden stuff being done under the hood!
+  //       alert("Copied to clipboard");
+  //     });
+  //   }
+  // });
+  var copyText = event.innerHTML
+  // navigator.clipboard.writeText(copyText).then(() =>
+  // {
+  //   // Alert the user that the action took place.
+  //   // Nobody likes hidden stuff being done under the hood!
+  //   alert("Copied to clipboard");
+  // });
+  // console.log(event)
+  alert("Copied to clipboard");
+  copyFormatted(copyText)
+
+}
+
+function copyFormatted(html)
+{
+
+  // Create an iframe (isolated container) for the HTML
+  var container = document.createElement('div')
+  container.innerHTML = html
+
+  // Hide element
+  container.style.position = 'fixed'
+  container.style.pointerEvents = 'none'
+  container.style.opacity = 0;
+  container.style.width = "0px";
+  container.style.height = "0px";
+  container.style.background = "transparent !important"
+  container.style.backgroundColor = "none !important"
+  container.classList.add("ignore-css")
+  // Detect all style sheets of the page
+
+  // Mount the iframe to the DOM to make `contentWindow` available
+  document.body.appendChild(container)
+
+  // Copy to clipboard
+  window.getSelection().removeAllRanges()
+
+  var range = document.createRange()
+  range.selectNode(container)
+  window.getSelection().addRange(range)
+
+  document.execCommand('copy')
+  // for (var i = 0; i < activeSheets.length; i++) activeSheets[i].disabled = true
+  document.execCommand('copy')
+  // for (var i = 0; i < activeSheets.length; i++) activeSheets[i].disabled = false
+
+  // Remove the iframe
+  document.body.removeChild(container)
+}
 
 /************************************************************************
  * Function to get touch positions
@@ -353,6 +419,19 @@ function openPublicationInfoOnLoad()
   }
 }
 
+function pauseAllYTPlayback()
+{
+  var node = Array.from(document.getElementsByTagName('iframe'))
+  console.log(node)
+  for (var i = 0; i < node.length; i++)
+  {
+    var ytSrc = node[i].getAttribute('src')
+    node[i].setAttribute("src", '')
+    node[i].setAttribute("src", ytSrc)
+  }
+}
+
+
 /*****************************************************************
  * 
  *****************************************************************/
@@ -440,6 +519,8 @@ function toggleProjectInfo(id)
   else if (target.classList.contains('maximized'))
   {
     collapseProjectInfo(id)
+    pauseAllYTPlayback()
+
   }
   else
   {
