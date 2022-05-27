@@ -205,5 +205,26 @@ Drag and Drop functionality for entries, categories, and matrix blocks can be us
 
 ![image](https://user-images.githubusercontent.com/45299786/170744893-46599427-8163-48d3-97ea-54ad255abf92.png)
 
+### Removing Content
 
- 
+Removing content in Craft CMS is simple. All elements within the CMS (entries, categories, matrix blocks follow the same basic steps to be removed from the CMS. CMS elements can be **deleted**, which will **permanantly remove them from the website**, or they can be **Disabled** temporarily and re-enabled at a later date. 
+
+#### Deleting Content
+
+Content Elements are **deleted** by navigating to the appropriate tab on the /admin page, and selecting the each element you wish to delete with the checkbox on the left side of the element. 
+
+![image](https://user-images.githubusercontent.com/45299786/170762994-987b8329-3bf5-4154-961b-66a35d686fae.png)
+
+Once any number of elements are selected, they can be permanantly deleted by selecting the gear icon at the top of the page, and selecting **delete**.
+
+![image](https://user-images.githubusercontent.com/45299786/170763182-6514c624-fee8-4681-89d6-c09a15138de2.png)
+
+#### Disabling Content (temporary content hiding)
+
+Content elements can be disabled temporarily at any time by navigating to the element you wish to disable, and clicking to edit the element. Once inside the editting interface, you will find a switch to disable the element on the right hand side.
+
+![image](https://user-images.githubusercontent.com/45299786/170763776-d6842441-17f7-464c-a841-b18f59ba350f.png)
+
+When disabled, the element will still exist in the database but will not be visible in the front-end of the site. Disabled elements can be re-enabled by clicking their enable/disable switch again.
+
+
