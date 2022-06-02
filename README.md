@@ -2,14 +2,6 @@
 
 This README serves to be your guide for the Barrett-Henzi Lab website build in *[Craft CMS](https://craftcms.com/)*. This guide will contain information relevant to maintaining and updating the website. The back-end of the website contains comments and information related to specific **entries** and **fields**, but this file provides quickstart info, and some general information related to the site.
 
-## Front-End
-
-The front-end of the website (what a user sees when they visit the website in their browser) consists of three main pages. These pages **Home/Index**, **Publications**, and **About** are templates (blank-slate structures) which are populated by **entries** which can be added, modified, or removed in the back-end. The front-end will dynamically respond to any changes made to the back-end and adjust the stucture accordingly. This means that modifications to the template code that comprises the website is not required in any way.
-
-## Back-End
-
-The back-end is what is responsible for modifying content on the site. The back-end is reached by navigating to /admin and logging in using username and password. Once logged in, you will find a series of tabs which are used to manage content.
-
 ### Keywords and Definitions
 - **[Entry/Entries](https://craftcms.com/docs/3.x/entries.html):** A series of related **Fields** responsible for populating a certain template structure within the front-end.
   
@@ -19,6 +11,14 @@ The back-end is what is responsible for modifying content on the site. The back-
   
 - **Section:** Sections are closely related to entries, and refer to a given portion of the front-end. Sections have a corresponding entry type which is filled out in order to add additional content to that section.
 
+## Front-End
+
+The front-end of the website (what a user sees when they visit the website in their browser) consists of three main pages. These pages **Home/Index**, **Publications**, and **About** are templates (blank-slate structures) which are populated by **entries** which can be added, modified, or removed in the back-end. The front-end will dynamically respond to any changes made to the back-end and adjust the stucture accordingly. This means that modifications to the template code that comprises the website is not required in any way.
+
+## Back-End
+
+The back-end is what is responsible for modifying content on the site. The back-end is reached by navigating to /admin and logging in using username and password. Once logged in, you will find a series of tabs which are used to manage content.
+
 ## Back-end Tabs, Navigation, and Overview
 
 ### Dashboard
@@ -27,7 +27,7 @@ Contains a list of Recent Entries, optional updates, and news regarding Craft CM
 
 ### Entries
 
-The **Entries** tab is where the majority of content management will happen. This tab contains several entry structures, each of which is responsible for rendering a certain **section** or type of content. **Entries** are organized by the page that they are used to populate (Home/Index, Publications, and About). 
+The **Entries** tab is where the majority of content management will happen. This tab contains several entry structures, each of which is responsible for rendering a certain **section** or content element. **Entries** are organized by the page that they are used to populate (Home/Index, Publications, and About). 
 
 More information on the specific entry types can be found below in the ***Content Management*** section of the README.
 
@@ -44,11 +44,11 @@ There are several categories within the site that perform various functions rela
 - **Journal Name:** The Name of a Journal where a paper might be published.
 - **Lab Member Category:** Categories related to what role/position is held by lab members (eg. Master's Student, Research Assistant, etc.)
   
-  **Note:** Adding a Lab Member Category will add an additional section to the *Lab Members* portion of the **About** page (and update the nav button dropdown menu) given that at lease one Lab Member entry exists that falls under that category. Lab Member category order within the back-end can be modified (drag and drop) to adjust the order of the Lab Member sections on the **About** page. 
+  **Note:** Adding a Lab Member Category will add an additional section to the *Lab Members* portion of the **About** page (and update the nav button dropdown menu) given that at least one Lab Member entry exists that falls under that category. Lab Member category order within the back-end can be modified (drag and drop) to adjust the order of the Lab Member sections on the **About** page. 
   
-- **Publication Year:** A year that a publication is published.
+- **Publication Year:** A year that a publication is published. Also includes an "In Press" category.
   
-  **Note:** Adding a Publication Year category will add a new Section (denoted by the year header) to the **Publications** page (and update the nav dropdown menu) that contains all publications that fall under that **Publication Year** Category. Order of the categories within the back-end is important. More recent years should appear at the top of the list of **Publication Year** categories to enforce the decending order of the publications (i.e more recent publications appear at the top of the page).
+  **Note:** Adding a Publication Year category will add a new Section (denoted by the year header) to the **Publications** page (and update the nav dropdown menu) that contains all publications that fall under that **Publication Year** Category. Order of the categories within the back-end is important. More recent years should appear at the top of the list of **Publication Year** categories to enforce the decending order of the publications (i.e more recent publications appear at the top of the page). You will also need to ensure that the In Press category is always at the top of the **Publication Year** category list to ensure that it always appears first.
   
 - **Education:** The highest education that a Past Lab Member has achieved.
 
@@ -80,9 +80,9 @@ Find and add new plugins to the CMS. In general, Plugins should be avoided and s
 
 ## Content Management
 
-Managing content in a Content Management System (CMS) like ***Craft CMS*** is straight forward and easy, and does not require any modifications to be made to the front-end template code at all. All modification and additions to content can be done from the back-end with no programming knowledge, or knowledge of web development.
+Managing content in a Content Management System (CMS) like ***Craft CMS*** is straight forward and easy, and does not require any modifications to be made to the front-end template code at all. All modifications and additions to content can be done from the back-end with no programming knowledge, or knowledge of web development.
 
-To manage the CMS through adding, modifying, or removing content, you must ensure that you are signed into the back-end by navigating to /admin and entering the username and password for the admin account. **All Content management steps assume you have logged in**.
+To manage the CMS through adding, modifying, or removing content, you must ensure that you are signed into the back-end by navigating to /admin and entering the username and password for the admin account. **All content management steps assume you have logged in**.
 
 ### Entries and Entry Types
 
@@ -116,7 +116,7 @@ Entry type that is responsible for rendering content on the **Publications** pag
 
   **Note:** Citations for publications are automatically derived from the fields within a Publication. If you prefer to add a manual citation, you can use the Manual Citation Field in the Publication entry to overide this feature.
 
-  **Note:** Publications will be ordered based on the **Publication Year** category selected for the entry, with most recent **Publication Years** appearing at the top. Within a **Publication Year**, entries will be ordered based on the order they are found within The Publication Entries section of the back-end, with the most recent entries (those appearing at the top of the list) appearing first.
+  **Note:** Publications will be ordered based on the **Publication Year** category selected for the entry, with most recent **Publication Years** appearing at the top. Keep in mind that Publication Year order can be modified if needed to enforce this rule. See the **Modifying Section Order** section below. Within a **Publication Year**, entries will be ordered based on the order they are found within The Publication Entries section of the back-end, with the most recent entries (those appearing at the top of the list) appearing first.
 
 #### About Page
 
@@ -132,17 +132,17 @@ Entry types that are responsible for rendering content on the **About** page.
 
 - Each **Lab Member Profile** entry is responsible for rendering a single lab member profile block found within the **About** page. 
   
-  **Lab Member Profiles** are first ordered by the Lab Member Categories List, with the categories at the top of the list appearing at the top of the page. Within a Lab Member Category, **Lab Member Profile** entries are placed in the order that they are found in the Lab Member Profile Entry List, with entries at the top appearing first.
+  **Lab Member Profiles** are first ordered by the **Lab Member Categories** List, with the categories at the top of the list appearing at the top of the page. Within a Lab Member Category, **Lab Member Profile** entries are placed in the order that they are found in the Lab Member Profile Entry List, with entries at the top appearing first.
 
 ##### Past Lab Members
 
 - Each **Past Lab Member** Entry renders a list item within the Past Lab Member section of the **About** page.
 
-  Past Lab Members are first ordered by the Past Member Category order, with Categories at the top of the list appearing first. Within a Past Member Category, entries are ordered by the order they are found in the Past Lab Members Entry list.
+  Past Lab Members are first ordered by the Past Member Category order, with Categories at the top of the list appearing first. Within a Past Member Category, entry order is determined by the order they are found in the **Past Lab Members** Entry list.
 
 ##### Current Collaborator
 
-- Entries for anyone currently working with the lab on a project, but who is not a full-fledged Lab Member.
+- Entries for anyone currently working with the lab on a project/publication, but who is not a full-fledged Lab Member.
 
   Current Collaborator order is determined by the order the entries appear in the back-end, with entries at the top of the list appearing first.
   
@@ -153,7 +153,7 @@ Adding content to the site is very straight forward. To add some content, follow
 1. Navigate to the **Entries* Tab in the back-end.
 2. Select the entry type you wish to add, and click new entry, or select New entry from the drop-down list.
 3. Fill out the Entry Form completely, ensuring that all **Fields** indicated with a * are filled out. If the Entry is not entirely filled out, it cannot be added the the site. Incomplete entries will be placed in a draft state, and you can always come back to finish it later.
-4. Once the entry has been filled out, select *Create Entry* at the top right. You must also ensure that the entry is *enabled* for it to appear on the live site. Entries can be enabled/disabled by clicking on an entry, and clicking the enabled/disabled switch on the right-hand side of the entry edit panel.
+4. Once the entry has been filled out, select *Create Entry* at the top right. You must also ensure that the entry is *enabled* for it to appear on the live site. See **Disabling Content (temporary content hiding)** below.
 
 Most **Fields** within an entry are straight forward, and have instructions above them. 
 
@@ -174,7 +174,9 @@ However, certain fields are a little more complex including:
 
 - **Assets**
   
-  Either Add an asset (that already exists in the back-end) or select Upload a file, which will prompt you to choose an asset to upload from your computer.
+  Either Add an asset (that already exists in the back-end) or select Upload a file, which will prompt you to choose an asset to upload from your computer. Image assets will automatically be sized to fit within the front-end. You do not need to worry about properly sizing images, the system will handle the image scaling on its own.
+  
+ **Note:** Depending where the image will appear, it may be sized differently. For example, the images uploaded to the **Project Background Image** field will fill the entire width of the project panel, and will overflow if necessary to avoid distorting the image. Images in this case also have a parallax effect attached to them which will introduce additional cropping on the top and bottom of the image. Conversely, **Lab Member Profile Picture** images will size themselves relative the the size of the content that they appear next to, but will not exceed the intrinsic dimensions of the image (i.e. if the image is 500x500 pixels, it will not grow to 900x900 pixels, becoming large and blurry to fill the space).
   
 ### Modifying Entry Content
 
@@ -197,7 +199,7 @@ This displays the entries in a list in the same order that they will appear in t
 
 Section order is controlled by the order of the categories associated with entries on a given page. For example, the **About** page displays the **Lab Members** sections based on the order of the Lab Member Category associated with each **Lab Member** entry.
 
-To modify the order that sections appear in the front-end, select the Categories tab on the Left side of the admin page. Then find the Category governing the order of the sections in question and click it to view those categories. Sort the categories by **Structure** by clicking the sorting button at the top right. Categories can now be re-ordered by dragging and dropping them into new locations within the list.
+To modify the order that sections appear in the front-end, select the Categories tab on the Left side of the admin page. Then find the Category governing the order of the sections you wish to modify and click it to view those categories. Sort the categories by **Structure** by clicking the sorting button at the top right. Categories can now be re-ordered by dragging and dropping them into new locations within the list.
 
 #### Drag and Drop
 
@@ -224,6 +226,10 @@ Once any number of elements are selected, they can be permanantly deleted by sel
 Content elements can be disabled temporarily at any time by navigating to the element you wish to disable, and clicking to edit the element. Once inside the editting interface, you will find a switch to disable the element on the right hand side.
 
 ![image](https://user-images.githubusercontent.com/45299786/170763776-d6842441-17f7-464c-a841-b18f59ba350f.png)
+
+Alternatively, you can disable multiple elements at the same time by navigating to the entries section you wish to modify, and selecting multiple elements with their checkboxes on the left side of the entry list, and clicking **Set Status** and choosing enable/disable.
+
+![image](https://user-images.githubusercontent.com/45299786/171670925-30193d03-6555-4012-9c35-2ae9c2e13385.png)
 
 When disabled, the element will still exist in the database but will not be visible in the front-end of the site. Disabled elements can be re-enabled by clicking their enable/disable switch again.
 
