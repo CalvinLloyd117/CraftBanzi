@@ -12,16 +12,11 @@
       )
     %}
   {% endif %}
-  {% if sectionPublications|default(null) %}
+  {% if sectionPublications.count > 0 %}
     <script>
       console.log('I was just re-rendered.');
     </script>
     {% for publication in sectionPublications.all() %}
-      {# {% set image = publication.publicationCoverImage[0] ?? null %} #}
-      {# {% include 'modules/_publication' with {
-        publication: publication,
-        img: image
-      } %} #}
       {{
         sprig(
           'modules/_publication',
@@ -34,11 +29,4 @@
       {{ sprig.script }}
     {% endfor %}
   {% endif %}
-  {# {% else %} #}
-  {# <div class="Loading" sprig s-trigger="intersect threshold:0.25 consume" s-val:visible={{true}}>
-        <div class="inner">
-            <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-        </div>
-    </div>
-  {% endif %} #}
 </div>

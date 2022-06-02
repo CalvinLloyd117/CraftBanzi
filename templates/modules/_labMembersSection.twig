@@ -1,4 +1,4 @@
-{% set allCategories = craft.categories().group('labMemberCategory') %}
+{% set allCategories = craft.categories().group('labMemberCategory').all %}
 {# {% set = value %} #}
 {# {% set %} #}
 <h1 class="sectionTitle" id="Publications">
@@ -6,7 +6,7 @@
 </h1>
 <!-- Post doctoral-fellows section -->
 <!-- If you need to create a new section, copy the following block of code for the section and paste it before, after or between existing sections. Modify the content as necessary. -->
-{% for category in allCategories.all() %}
+{% for category in allCategories %}
   {% set sectionMembers =
     labMembers.with(['labMemberProfilePicture']).relatedTo(category).all
   %}

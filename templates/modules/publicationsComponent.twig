@@ -2,23 +2,32 @@
 
 <div>
   {% for year in publicationYears %}
-    <section>
-      <div style="margin-top: 0px;"
-        class="sectionBannerText"
-        id="{{ year.slug }}">
-        <h1>
-          {{ year }}
-        </h1>
-      </div>
-      {{
-        sprig(
-          'modules/publicationsSectionComponent',
-          {
-            year: year.id
-          }
-        )
-      }}
-      {{ sprig.script }}
-    </section>
+    {% set count =
+      craft.entries.section('publication').with(
+        ['publicationCoverImage']
+      ).relatedTo(
+        year
+      ).count
+    %}
+    {% if count > 0 %}
+      <section>
+        <div style="margin-top: 0px;"
+          class="sectionBannerText"
+          id="{{ year.slug }}">
+          <h1>
+            {{ year }}
+          </h1>
+        </div>
+        {{
+          sprig(
+            'modules/publicationsSectionComponent',
+            {
+              year: year.id
+            }
+          )
+        }}
+        {{ sprig.script }}
+      </section>
+    {% endif %}
   {% endfor %}
 </div>
