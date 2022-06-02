@@ -315,7 +315,7 @@ Drag and Drop functionality for entries, categories, and matrix blocks can be us
 
 ![image](https://user-images.githubusercontent.com/45299786/170744893-46599427-8163-48d3-97ea-54ad255abf92.png)
 
-###Previewing Entries
+### Previewing Entries
 
 In Progress entries can be viewed in real time by clicking on either the **Preview** Button (opens the entry within the editting window), or the **View** button (opens the entry in a new tab).
 
