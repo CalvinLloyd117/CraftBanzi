@@ -7,7 +7,7 @@ This README serves to be your guide for the Barrett-Henzi Lab website build in *
   
 - **[Field](https://craftcms.com/docs/3.x/assets-fields.html#settings):** A single piece of entry data. 
   
-  For example, *Asset* fields expect an image to be added. In the case of an Asset Field, you can add a new asset by uploading a file, or selecting an existing asset. Other fields might be plain text, or checkboxes.
+  For example, *Asset* Fields expect an image to be added. In the case of an Asset Field, you can add a new asset by uploading a file, or selecting an existing asset. Other fields might be plain text, or checkboxes.
   
 - **Section:** Sections are closely related to entries, and refer to a given portion of the front-end. Sections have a corresponding entry type which is filled out in order to add additional content to that section.
 
@@ -51,7 +51,7 @@ There are several categories within the site that perform various functions rela
 
 - **Centre:** Refers to a university or equivelent institution.
 - **Department:** A department (eg. Psychology) within a **Centre**
-- **Journal Name:** The Name of a Journal where a paper might be published.
+- **Journal Name:** The name of a Journal where a paper might be published.
 - **Lab Member Category:** Categories related to what role/position is held by lab members (eg. Master's Student, Research Assistant, etc.)
   
   **Note:** Adding a Lab Member Category will add an additional section to the *Lab Members* portion of the **About** page (and update the nav button dropdown menu) given that at least one Lab Member entry exists that falls under that category. Lab Member category order within the back-end can be modified (drag and drop) to adjust the order of the Lab Member sections on the **About** page. 
@@ -90,7 +90,7 @@ Find and add new plugins to the CMS. In general, Plugins should be avoided and s
 
 ## Content Management
 
-Managing content in a Content Management System (CMS) like ***Craft CMS*** is straight forward and easy, and does not require any modifications to be made to the front-end template code at all. All modifications and additions to content can be done from the back-end with no programming knowledge, or knowledge of web development.
+Managing content in a Content Management System (CMS) like ***Craft CMS*** is straightforward and easy, and does not require any modifications to be made to the front-end template code at all. All modifications and additions to content can be done from the back-end with no programming or web development knowledge.
 
 To manage the CMS through adding, modifying, or removing content, you must ensure that you are signed into the back-end by navigating to /admin and entering the username and password for the admin account. **All content management steps assume you have logged in**.
 
@@ -144,7 +144,7 @@ Entry types that are responsible for rendering content on the **Home/Index** pag
 
 ##### Field Site
 
-- **Field Site** Entries share a very similar structure to **Projects**. Each **Field Site** entry renders a single field site, which will be located at the bottom of the **Home/Index** Page
+- **Field Site** entries share a very similar structure to **Projects**. Each **Field Site** entry renders a single field site, which will be located at the bottom of the **Home/Index** Page
 
 | ![image](https://user-images.githubusercontent.com/45299786/171728173-bd8587b2-b332-4a8d-80c3-f84ff8d8f3cc.png) | 
 |:--:| 
@@ -164,7 +164,7 @@ Entry type that is responsible for rendering content on the **Publications** pag
 
 | ![image](https://user-images.githubusercontent.com/45299786/171728813-a5599da9-b078-449e-81f2-f827783dfdb3.png) | 
 |:--:| 
-| An Example of a back-end **Publication** Entry |
+| An example of a back-end **Publication** Entry |
 
 | ![image](https://user-images.githubusercontent.com/45299786/171729093-e7403a12-c577-4afc-95cb-13841652533b.png) | ![image](https://user-images.githubusercontent.com/45299786/171729223-bdcfbd2a-1afb-47e6-9e1f-3322d7f58ff2.png) |
 |:---------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------:|
@@ -186,7 +186,7 @@ Entry types that are responsible for rendering content on the **About** page.
   
 | ![image](https://user-images.githubusercontent.com/45299786/171730142-87cbacf1-a494-4ec3-b4b8-f304f3226aa9.png) | 
 |:--:| 
-| An Example of a back-end **About Carousel Entry** |
+| An example of a back-end **About Carousel Entry** |
 
 | ![image](https://user-images.githubusercontent.com/45299786/171730308-492f6d01-6dd2-4466-bcd4-fd637de2085e.png) | 
 |:--:| 
@@ -212,7 +212,7 @@ Entry types that are responsible for rendering content on the **About** page.
 
 ##### Past Lab Members
 
-- Each **Past Lab Member** Entry renders a list item within the Past Lab Member section of the **About** page.
+- Each **Past Lab Member** entry renders a list item within the Past Lab Member section of the **About** page.
 
 | ![image](https://user-images.githubusercontent.com/45299786/171731299-624ba5d1-4ad1-424c-8024-abce556ed9bb.png) | 
 |:--:| 
@@ -222,7 +222,7 @@ Entry types that are responsible for rendering content on the **About** page.
 |:--:| 
 | **Past Lab Member** front-end content generated from the above entry |
 
-  Past Lab Members are first ordered by the Past Member Category order, with Categories at the top of the list appearing first. Within a Past Member Category, entry order is determined by the order they are found in the **Past Lab Members** Entry list.
+  Past Lab Members are first ordered by the Past Member Category order, with Categories at the top of the list appearing first. Within a Past Member Category, entry order is determined by the order they are found in the **Past Lab Members** entry list.
 
 ##### Current Collaborator
 
@@ -230,7 +230,7 @@ Entry types that are responsible for rendering content on the **About** page.
 
 | ![image](https://user-images.githubusercontent.com/45299786/171731655-20ea29be-ee28-4bf3-ba75-75bafbdb8af9.png) | 
 |:--:| 
-| An Example of a back-end **Current Collaborator** entry |
+| An example of a back-end **Current Collaborator** entry |
 
 | ![image](https://user-images.githubusercontent.com/45299786/171731794-1cf945c1-d0c6-4c7e-aa29-36ed3920043c.png) | 
 |:--:| 
@@ -240,14 +240,14 @@ Entry types that are responsible for rendering content on the **About** page.
   
 ### Adding Content
 
-Adding content to the site is very straight forward. To add some content, follow these steps:
+Adding content to the site is very straightforward. To add some content, follow these steps:
 
 1. Navigate to the **Entries* Tab in the back-end.
 2. Select the entry type you wish to add, and click new entry, or select New entry from the drop-down list.
-3. Fill out the Entry Form completely, ensuring that all **Fields** indicated with a * are filled out. If the Entry is not entirely filled out, it cannot be added the site. Incomplete entries will be placed in a draft state, and you can always come back to finish it later.
+3. Fill out the Entry Form completely, ensuring that all **Fields** indicated with a * are filled out. If the entry is not entirely filled out, it cannot be added the site. Incomplete entries will be placed in a draft state, and you can always come back to finish it later.
 4. Once the entry has been filled out, select *Create Entry* at the top right. You must also ensure that the entry is *enabled* for it to appear on the live site. See **Disabling Content (temporary content hiding)** below.
 
-Most **Fields** within an entry are straight forward and have instructions above them. However, certain fields are a little more complex including:
+Most **Fields** within an entry are straightforward and have instructions above them. However, certain fields are a little more complex including:
 
 - **Matrix Blocks**:
   Matrix blocks allow you to select from a variety of pre-set content blocks, and choose the one best suited for your needs or use case. 
@@ -260,13 +260,13 @@ Most **Fields** within an entry are straight forward and have instructions above
 
   After choosing an option from the matrix, you will be given a block to fill out based on your selection. 
   
-  In some cases, you may have the option to add multiple blocks from a matrix, depending on the situation. You may need multiple blocks for your content, and in some cases, the order of the blocks matters In the example above, the order of the blocks determines the order that the project collaborators will be added to the project. If you make a mistake, or need to adjust the order, you can drag/drop the blocks to modify the order.
+  In some cases, you may have the option to add multiple blocks from a matrix, depending on the situation. You may need multiple blocks for your content, and in some cases, the order of the blocks matters. In the example above, the order of the blocks determines the order that the project collaborators will be added to the project. If you make a mistake, or need to adjust the order, you can drag/drop the blocks to modify the order.
 
 - **Assets**
   
   Either Add an asset (that already exists in the back-end) or select Upload a file, which will prompt you to choose an asset to upload from your computer. Image assets will automatically be sized to fit within the front-end. You do not need to worry about properly sizing images, the system will handle the image scaling on its own.
   
- **Note:** Depending where the image will appear, it may be sized differently. For example, the images uploaded to the **Project Background Image** field will fill the entire width of the project panel and will overflow if necessary to avoid distorting the image. Images in this case also have a parallax effect attached to them which will introduce additional cropping on the top and bottom of the image. Conversely, **Lab Member Profile Picture** images will size themselves relative the size of the content that they appear next to, but will not exceed the intrinsic dimensions of the image (i.e., if the image is 500x500 pixels, it will not grow to 900x900 pixels, becoming large and blurry to fill the space).
+ **Note:** Depending on where the image will appear, it may be sized differently. For example, the images uploaded to the **Project Background Image** field will fill the entire width of the project panel and will overflow if necessary to avoid distorting the image. Images in this case also have a parallax effect attached to them which will introduce additional cropping on the top and bottom of the image. Conversely, **Lab Member Profile Picture** images will size themselves relative to the size of the content that they appear next to, but will not exceed the intrinsic dimensions of the image (i.e., if the image is 500x500 pixels, it will not grow to 900x900 pixels, becoming large and blurry to fill the space). Any image sizing of this nature is intended. Sometimes, images will need to be cropped/resized prior to being uploaded to achieve the desired result.
   
 ### Modifying Entry Content
 
@@ -283,7 +283,7 @@ When in the back-end, ensure that entries are sorted in **Structure** order by s
 
 ![image](https://user-images.githubusercontent.com/45299786/170739197-f51f548f-7837-4435-836b-517d038e6e3c.png)
 
-This displays the entries in a list in the same order that they will appear in the front-end. When sorted by **Structure**, entries can be **drag and dropped** into a new order which will subsequently change the order that entries will appear on the live site.
+This displays the entries in a list in the same order that they will appear in the front-end. When sorted by **Structure**, entries can be **dragged and dropped** into a new order which will subsequently change the order that entries will appear on the live site.
 
 ### Modifying Section Order
 
