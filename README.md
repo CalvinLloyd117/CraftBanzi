@@ -106,7 +106,7 @@ General entry types that are not featured on a specific page or in a specific se
 
 ##### Default Publication Image
 
-The **Default Publication Image** entry is a simple single field entry type that accepts an image asset that is used as the **Publication** cover image in cases where no cover image is uploaded to either the **Journal Name** category's **Default Publication Cover Image**, or specific **Publication** entry's **Publication Cover Image** field.
+- The **Default Publication Image** entry is a simple single field entry type that accepts an image asset that is used as the **Publication** cover image in cases where no cover image is uploaded to either the **Journal Name** category's **Default Publication Cover Image**, or specific **Publication** entry's **Publication Cover Image** field.
 
 #### Home/Index Page
 
