@@ -31,11 +31,11 @@ The back-end is what is responsible for modifying content on the site. The back-
 
 ### Dashboard
 
-Contains a list of Recent Entries, optional updates, and news regarding Craft CMS.
+Contains a list of recent entries, optional updates, and news regarding Craft CMS.
 
 | ![image](https://user-images.githubusercontent.com/45299786/171719998-ef8d8574-a1f5-4423-8d44-61656738ec69.png) |
 |:--:| 
-| **Figure 3:** The back-end dashboard |
+| **Figure 3:** The back-end dashboard. |
 
 ### Entries
 
@@ -43,7 +43,7 @@ The **Entries** tab is where the majority of content management will happen. Thi
 
 | ![image](https://user-images.githubusercontent.com/45299786/171720135-c0e99e95-bc1f-4f9e-a702-6b84f6495eb2.png) |
 |:--:| 
-| **Figure 4:** The back-end Entries tab |
+| **Figure 4:** The back-end Entries tab. |
 
 More information on the specific entry types can be found below in the ***Content Management*** section of the README.
 
@@ -63,9 +63,9 @@ There are several categories within the site that perform various functions rela
 
 - **Publication Year:** A year that a publication is published. Also includes an "In Press" category.
   
-  **Note:** Adding a Publication Year category will add a new Section (denoted by the year header) to the **Publications** page (and update the nav dropdown menu) that contains all publications that fall under that **Publication Year** Category. Order of the categories within the back-end is important. More recent years should appear at the top of the list of **Publication Year** categories to enforce the decending order of the publications (i.e more recent publications appear at the top of the page). You will also need to ensure that the _In Press_ category is always at the top of the **Publication Year** category list to ensure that it always appears first.
-- **Publisher:** Category refers to various publishers who publish the Lab's publications.
-- **Journal Name:** The name of a Journal where a paper might be published.
+  **Note:** Adding a Publication Year category will add a new section (denoted by the year header) to the **Publications** page front-end (and update the nav dropdown menu) that contains all publications that fall under that **Publication Year** category. Order of the categories within the back-end is important. More recent years should appear at the top of the list of **Publication Year** categories to enforce the decending order of the publications (i.e more recent publications appear at the top of the page). You will also need to ensure that the _In Press_ category is always at the top of the **Publication Year** category list to ensure that it always appears first.
+- **Publisher:** Category refers to various publishers who publish the lab's publications.
+- **Journal Name:** The name of a journal where a paper might be published.
 
 ##### About
 
@@ -78,7 +78,7 @@ There are several categories within the site that perform various functions rela
 - **Education:** The highest education that a Past Lab Member has achieved.
   e.g. PhD, MSc.
 
-- **Past Member Category:** Categories that make up the Past Lab Member section of the About Page.
+- **Past Member Category:** Categories that make up the **Past Lab Member** section of the About Page.
   **Note:** Order of these categories within the back-end is important, and modifying it (drag and drop) will change the order that content is rendered in the front-end.
 
 ### Assets
@@ -87,7 +87,7 @@ All assets (images) that have been directly uploaded to the back-end. Images tha
 
 ### Sprig
 
-Sprig is the plugin responsible for dynamic rendering of content blocks within the site. This tab includes a sprig coding 'playground' to test code snippets for development. For the most part you should not need to interact with this tab.
+Sprig is the plugin responsible for dynamic rendering of content blocks within the site. This tab includes a Sprig coding 'playground' to test code snippets for development. For the most part you should not need to interact with this tab.
 
 ### Utilities
 
@@ -135,11 +135,11 @@ Entry types that are responsible for rendering content on the **Home/Index** pag
   
 | ![image](https://user-images.githubusercontent.com/45299786/171725955-61300c79-406f-4a8f-bb4a-daadd3373fa6.png) | 
 |:--:| 
-| **Figure 6a:** An Example of a back-end **Home Carousel Entry** |
+| **Figure 6a:** An Example of a back-end **Home Carousel Entry**. |
 
 | ![image](https://user-images.githubusercontent.com/45299786/171726022-9f73ad96-57e9-4b6e-ae0d-1dfc27303e75.png) | 
 |:--:| 
-| **Figure 6b:** **Home Carousel Entry** front-end content generated from the above entry  |
+| **Figure 6b:** **Home Carousel Entry** front-end content generated from the above entry.  |
 
 ##### Project
 
@@ -147,15 +147,15 @@ Entry types that are responsible for rendering content on the **Home/Index** pag
 
 | ![image](https://user-images.githubusercontent.com/45299786/171727451-a530e28a-2c2b-4a42-ad74-3df1a22e1d0b.png) | 
 |:--:| 
-| **Figure 7a:** An Example of a back-end **Project** entry |
+| **Figure 7a:** An Example of a back-end **Project** entry. |
 
 | ![image](https://user-images.githubusercontent.com/45299786/171727563-be32dff1-e8f8-4708-996f-ea1724c2d75d.png) | 
 |:--:| 
-| **Figure 7b:** **Project** front-end content generated from the above entry (minimized view)  |
+| **Figure 7b:** **Project** front-end content generated from the above entry (minimized view).  |
 
 | ![image](https://user-images.githubusercontent.com/45299786/171727809-f7256c79-1a1b-4c3c-b278-627247c101e5.png) | 
 |:--:| 
-| **Figure 7c:** **Project** front-end content generated from the above entry (expanded view)  |
+| **Figure 7c:** **Project** front-end content generated from the above entry (expanded view).  |
 
 ##### Field Site
 
@@ -171,7 +171,7 @@ Entry types that are responsible for rendering content on the **Home/Index** pag
 
 #### Publications Page
 
-Entry type that is responsible for rendering content on the **Publications** page.
+Entry types that are responsible for rendering content on the **Publications** page.
 
 ##### Publication
 
@@ -183,11 +183,11 @@ Entry type that is responsible for rendering content on the **Publications** pag
 
 | ![image](https://user-images.githubusercontent.com/45299786/171729093-e7403a12-c577-4afc-95cb-13841652533b.png) | ![image](https://user-images.githubusercontent.com/45299786/171729223-bdcfbd2a-1afb-47e6-9e1f-3322d7f58ff2.png) |
 |:---------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------:|
-| **Figure 9b:** **Publication** front-end content generated from the above entry (minimized view)                               | **Figure 9c:** **Publication** front-end content generated from the above entry (expanded view)                                |
+| **Figure 9b:** **Publication** front-end content generated from the above entry (minimized view).                               | **Figure 9c:** **Publication** front-end content generated from the above entry (expanded view).                               |
 
-  **Note:** Citations for publications are automatically derived from the fields within a Publication. If you prefer to add a manual citation, you can use the Manual Citation Field in the Publication entry to overide this feature.
+  **Note:** Citations for publications are automatically derived from the fields within a Publication. If you prefer to add a manual citation, you can use the **Manual Citation** field in the Publication entry to overide this feature.
 
-  **Note:** Publications will be ordered based on the **Publication Year** category selected for the entry, with most recent **Publication Years** appearing at the top. Keep in mind that Publication Year order can be modified if needed to enforce this rule. See the **Modifying Section Order** section below. Within a **Publication Year**, entries will be ordered based on the order they are found within The Publication Entries section of the back-end, with the most recent entries (those appearing at the top of the list) appearing first.
+**Publication**s will be ordered based on the **Publication Year** category selected for the entry, with most recent **Publication Years** appearing at the top. Keep in mind that Publication Year order can be modified if needed to enforce this rule. See the **Modifying Section Order** section below. Within a **Publication Year**, entries will be ordered based on the order they are found within The Publication Entries section of the back-end, with the most recent entries (those appearing at the top of the list) appearing first.
 
 #### About Page
 
@@ -205,7 +205,7 @@ Entry types that are responsible for rendering content on the **About** page.
 
 | ![image](https://user-images.githubusercontent.com/45299786/171730308-492f6d01-6dd2-4466-bcd4-fd637de2085e.png) | 
 |:--:| 
-| **Figure 10b:** **About Carousel Entry** front-end content generated from the above entry |
+| **Figure 10b:** **About Carousel Entry** front-end content generated from the above entry. |
 
 ##### Lab Member Profile
 
@@ -213,15 +213,15 @@ Entry types that are responsible for rendering content on the **About** page.
 
 | ![image](https://user-images.githubusercontent.com/45299786/171730637-27475e2b-d68e-41b1-94f3-5bef386b155e.png) | 
 |:--:| 
-| **Figure 11a:** An Example of a back-end **Lab Member Profile** entry |
+| **Figure 11a:** An example of a back-end **Lab Member Profile** entry. |
 
 | ![image](https://user-images.githubusercontent.com/45299786/171731023-1e8ac63b-b660-4b3c-94f2-a5d48ed64845.png) | 
 |:--:| 
-| **Figure 11b:** **Lab Member Profile** front-end content generated from the above entry |
+| **Figure 11b:** **Lab Member Profile** front-end content generated from the above entry. |
   
-  **Lab Member Profiles** are first ordered by the **Lab Member Categories** List, with the categories at the top of the list appearing at the top of the page. Within a Lab Member Category, **Lab Member Profile** entries are placed in the order that they are found in the Lab Member Profile Entry List, with entries at the top appearing first.
+  **Lab Member Profiles** are first ordered by the **Lab Member Categories** List, with the categories at the top of the list appearing at the top of the page. Within a Lab Member Category, **Lab Member Profile** entries are placed in the order that they are found in the **Lab Member Profile** entry list, with entries at the top appearing first.
   
-  **Note:** In the above example, there is an additional tab at the top of the entry form, which has additional fields which support certain edge cases that lab member profiles may want to take advantage of in their profiles. 
+  **Note:** In the above example, there is an additional tab at the top of the entry form, which has additional fields which support certain edge cases that lab members may want to take advantage of in their profiles. 
   
  ** e.g.,** The Preferred Citation Name field exists in case the automatic citation generated by the system does not accurately reflect the citation name appearing in your publications.
 
@@ -231,25 +231,25 @@ Entry types that are responsible for rendering content on the **About** page.
 
 | ![image](https://user-images.githubusercontent.com/45299786/171731299-624ba5d1-4ad1-424c-8024-abce556ed9bb.png) | 
 |:--:| 
-| **Figure 12a:** An Example of a back-end **Past Lab Member** entry |
+| **Figure 12a:** An Example of a back-end **Past Lab Member** entry. |
 
 | ![image](https://user-images.githubusercontent.com/45299786/171731447-d82052f7-09ad-4c0c-8a6b-e99b051e3fc8.png) | 
 |:--:| 
-| **Figure 12b:** **Past Lab Member** front-end content generated from the above entry |
+| **Figure 12b:** **Past Lab Member** front-end content generated from the above entry. |
 
-  Past Lab Members are first ordered by the Past Member Category order, with Categories at the top of the list appearing first. Within a Past Member Category, entry order is determined by the order they are found in the **Past Lab Members** entry list.
+  Past Lab Members are first ordered by the Past Member ategory order, with categories at the top of the list appearing first. Within a **Past Member Category**, entry order is determined by the order they are found in the **Past Lab Members** entry list.
 
 ##### Current Collaborator
 
-- Entries for anyone currently working with the lab on a project/publication, but who is not a full-fledged Lab Member.
+- Entries for anyone currently working with the lab on a project/publication, but who is not a full-fledged lab member.
 
 | ![image](https://user-images.githubusercontent.com/45299786/171731655-20ea29be-ee28-4bf3-ba75-75bafbdb8af9.png) | 
 |:--:| 
-| **Figure 13a:** An example of a back-end **Current Collaborator** entry |
+| **Figure 13a:** An example of a back-end **Current Collaborator** entry. |
 
 | ![image](https://user-images.githubusercontent.com/45299786/171731794-1cf945c1-d0c6-4c7e-aa29-36ed3920043c.png) | 
 |:--:| 
-| **Figure 13b:** **Current Collaborator** front-end content generated from the above entry |
+| **Figure 13b:** **Current Collaborator** front-end content generated from the above entry. |
 
   Current Collaborator order is determined by the order the entries appear in the back-end, with entries at the top of the list appearing first.
   
@@ -268,7 +268,7 @@ Adding content to the site is very straightforward. To add some content, follow 
   
     d.	Alternatively, you can click on the dropdown arrow next to the + New Entry button and select the type of entry you want to add from the dropdown list.
   
-3.	Fill out the Entry Form completely, ensuring that all Fields indicated with a * are filled out. If the entry is not entirely filled out, it cannot be added the site. Incomplete entries will be placed in a draft state, and you can always come back to finish it later.
+3.	Fill out the entry form completely, ensuring that all fields indicated with a * are filled out. If the entry is not entirely filled out, it cannot be added the site. Incomplete entries will be placed in a draft state, and you can always come back to finish it later.
 4.	Once the entry has been filled out, select the red Create Entry button at the top right. 
 a.	The dropdown next to the Create Entry button also provides additional options for the entry and may improve workflow.
 5.	You must also ensure that the entry is enabled for it to appear on the live site. See Disabling Content (temporary content hiding) below.
@@ -279,7 +279,7 @@ Here is some additional information to help with your content creation workflow
 
 ##### Previewing Entries
 
-In Progress entries can be viewed in real time by clicking on either the **Preview** Button (opens the entry within the editing window), or the **View** button (opens the entry in a new tab).
+In Progress entries can be viewed in real time by clicking on either the **Preview** button (opens the entry within the editing window), or the **View** button (opens the entry in a new tab).
 
 | ![image](https://user-images.githubusercontent.com/45299786/171736071-0a08a1c3-bdb4-4300-b9b2-3e98fdf57c7d.png) |
 |:--:| 
@@ -289,13 +289,13 @@ In Progress entries can be viewed in real time by clicking on either the **Previ
 
 ##### Entry Expiration
 
-Sometimes you would like to create an entry that will automatically be disabled after a certain amount of time, for example Carousel entries related to events that will end on a certain day. Fortunately, this feature is built in and can be used easily.
+Sometimes you would like to create an entry that will automatically be disabled after a certain amount of time, for example Carousel entries related to events that will end on a certain day, and talking about them on the site would not make sense after that day. Fortunately, this feature is built in and can be used easily.
 
-When creating an entry, an Expiry Date option can be found on the right-hand side. Select a date and time in this field, and when that time/date is reached, the entry will be automatically disabled. Expired entries are labeled with a red circle next to the entry.
+When creating an entry, an **Expiry Date** option can be found on the right-hand side. Select a date and time in this field, and when that time/date is reached, the entry will be automatically disabled. Expired entries are labeled with a red circle next to the entry.
 
 | ![image](https://user-images.githubusercontent.com/45299786/174126807-38d515f1-8d38-4b57-b1ae-2f259a812682.png) | 
 |:--:| 
-| **Figure 15:** Expiry Date optional field. |
+| **Figure 15:** **Expiry Date** optional field. |
 
 ##### Version Control for Entries
 
@@ -315,10 +315,10 @@ To revert the content of an entry to a previous version, select the button at th
 
 
 #### Entry Fields
-Most **Fields** within an entry are straightforward and have instructions above them. However, certain fields are a little more complex including:
+Most fields within an entry are straightforward and have instructions above them. However, certain fields are a little more complex including:
 
 - **Matrix Blocks**:
-  Matrix blocks allow you to select from a variety of pre-set content blocks, and choose the one best suited for your needs or use case. 
+  **Matrix Blocks** allow you to select from a variety of pre-set content blocks and choose the one best suited for your needs or use case. 
   
   | ![image](https://user-images.githubusercontent.com/45299786/170581987-41edfd2d-7b8f-4b07-a1d3-eb89b27a37f9.png) |
   |:--:| 
@@ -342,7 +342,7 @@ Most **Fields** within an entry are straightforward and have instructions above 
   
 ### Modifying Entry Content
 
-Modifying content is just as easy as adding new content. To modify an existing entry, simply select the entry you wish to edit and adjust the fields within.
+Modifying content is just as easy as adding new content. To modify an existing entry, simply select the entry you wish to edit and adjust the fields within. Please ensure to save your changes by clicking the **Save** button at the top right of the entry.
 
 - Content within Matrix blocks can be changed and blocks themselves may be re-ordered (drag and drop) or removed entirely.
 - Images can be replaced by simply uploading a new image to the asset field.
@@ -361,13 +361,13 @@ This displays the entries in a list in the same order that they will appear in t
 
 ### Modifying Section Order
 
-Section order is controlled by the order of the categories associated with entries on a given page. For example, the **About** page displays the **Lab Members** sections based on the order of the Lab Member Category associated with each **Lab Member** entry.
+Section order is controlled by the order of the categories associated with entries on a given page. For example, the **About** page displays the **Lab Members** sections based on the order of the **Lab Member Category** associated with each **Lab Member** entry.
 
-To modify the order that sections appear in the front-end, select the Categories tab on the Left side of the admin page. Then find the Category governing the order of the sections you wish to modify (described above in **Entries and Entry Types** section) and click it to view those categories. Sort the categories by **Structure** by clicking the sorting button at the top right. Categories can now be re-ordered by dragging and dropping them into new locations within the list.
+To modify the order that sections appear in the front-end, select the Categories tab on the Left side of the admin page. Then find the category governing the order of the sections you wish to modify (described above in **Entries and Entry Types** section) and click it to view those categories. Sort the categories by **Structure** by clicking the sorting button at the top right. Categories can now be re-ordered by dragging and dropping them into new locations within the list.
 
 ### Removing Content
 
-Removing content in Craft CMS is simple. All elements within the CMS (entries, categories, matrix blocks follow the same basic steps to be removed from the CMS. CMS elements can be **deleted**, which will **permanently remove them from the website**, or they can be **Disabled** temporarily and re-enabled at a later date. 
+Removing content in Craft CMS is simple. All elements within the CMS (entries, categories, matrix blocks follow the same basic steps to be removed from the CMS. CMS elements can be **deleted**, which will **permanently remove them from the website**, or they can be **disabled** temporarily and re-enabled at a later date. 
 
 #### Deleting Content
 
@@ -407,8 +407,8 @@ This section contains several helpful tips related to the content management wor
 
 ### Drag and Drop
 
-Drag and Drop functionality for entries, categories, and matrix blocks can be used by left clicking and holding on the _four-dots icon_ and moving the element to a new location and releasing the left click where you would like the element placed. 
+**Drag and Drop** functionality for entries, categories, and matrix blocks can be used by left clicking and holding on the _four-dots icon_ and moving the element to a new location and releasing the left click where you would like the element placed. 
 
 | ![image](https://user-images.githubusercontent.com/45299786/170744893-46599427-8163-48d3-97ea-54ad255abf92.png) |
 |:--:| 
-| **Figure 24:** The four dots-icon that allows drag-and-drop to reorder content. |
+| **Figure 24:** The four-dots icon that allows drag-and-drop to reorder content. |
