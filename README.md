@@ -15,13 +15,17 @@ This README serves to be your guide for the Barrett-Henzi Lab website build in *
 
 The front-end of the website (what a user sees when they visit the website in their browser) consists of three main pages. These pages **Home/Index**, **Publications**, and **About** are templates (blank-slate structures) which are populated by **entries** which can be added, modified, or removed in the back-end. The front-end will dynamically respond to any changes made to the back-end and adjust the stucture accordingly. This means that modifications to the template code that comprises the website is not required in any way.
 
-![image](https://user-images.githubusercontent.com/45299786/171719143-834b99b1-f003-4187-a314-394267756117.png)
+| ![image](https://user-images.githubusercontent.com/45299786/171719143-834b99b1-f003-4187-a314-394267756117.png) |
+|:--:| 
+| **Figure 1:** The front-end of the website's landing page |
 
 ## Back-End
 
 The back-end is what is responsible for modifying content on the site. The back-end is reached by navigating to /admin and logging in using username and password. Once logged in, you will find a series of tabs which are used to manage content.
 
-![image](https://user-images.githubusercontent.com/45299786/171719771-02647ebc-50e3-4eaf-96a7-fd472c995750.png)
+| ![image](https://user-images.githubusercontent.com/45299786/171719771-02647ebc-50e3-4eaf-96a7-fd472c995750.png) |
+|:--:| 
+| **Figure 2:** The front-end of the website's landing page |
 
 ## Back-end Tabs, Navigation, and Overview
 
@@ -29,13 +33,17 @@ The back-end is what is responsible for modifying content on the site. The back-
 
 Contains a list of Recent Entries, optional updates, and news regarding Craft CMS.
 
-![image](https://user-images.githubusercontent.com/45299786/171719998-ef8d8574-a1f5-4423-8d44-61656738ec69.png)
+| ![image](https://user-images.githubusercontent.com/45299786/171719998-ef8d8574-a1f5-4423-8d44-61656738ec69.png) |
+|:--:| 
+| **Figure 3:** The back-end dashboard |
 
 ### Entries
 
 The **Entries** tab is where the majority of content management will happen. This tab contains several entry structures, each of which is responsible for rendering a certain **section** or content element. **Entries** are organized by the page that they are used to populate (Home/Index, Publications, and About). 
 
-![image](https://user-images.githubusercontent.com/45299786/171720135-c0e99e95-bc1f-4f9e-a702-6b84f6495eb2.png)
+| ![image](https://user-images.githubusercontent.com/45299786/171720135-c0e99e95-bc1f-4f9e-a702-6b84f6495eb2.png) |
+|:--:| 
+| **Figure 4:** The back-end Entries tab |
 
 More information on the specific entry types can be found below in the ***Content Management*** section of the README.
 
@@ -43,36 +51,43 @@ More information on the specific entry types can be found below in the ***Conten
 
 There are several categories within the site that perform various functions related to the content, including controlling content ordering, and reducing user input repetition. Certain fields will ask for a category to be added. You can select an existing option from the category, or add a new category. 
 
-![image](https://user-images.githubusercontent.com/45299786/171720213-7c86cda0-b57e-480e-91b5-aaa0325f41fc.png)
+| ![image](https://user-images.githubusercontent.com/45299786/171720213-7c86cda0-b57e-480e-91b5-aaa0325f41fc.png) |
+|:--:| 
+| **Figure 5:** The back-end Categories tab |
 
 **Note:** Spelling and capitalization matter here, so ensure that a category does not already exist with different capitalization/spelling before adding a redundant category.
 
 #### Categories include:
 
-- **Centre:** Refers to a university or equivelent institution.
-- **Department:** A department (eg. Psychology) within a **Centre**
+##### Publications
+
+- **Publication Year:** A year that a publication is published. Also includes an "In Press" category.
+  
+  **Note:** Adding a Publication Year category will add a new Section (denoted by the year header) to the **Publications** page (and update the nav dropdown menu) that contains all publications that fall under that **Publication Year** Category. Order of the categories within the back-end is important. More recent years should appear at the top of the list of **Publication Year** categories to enforce the decending order of the publications (i.e more recent publications appear at the top of the page). You will also need to ensure that the _In Press_ category is always at the top of the **Publication Year** category list to ensure that it always appears first.
+- **Publisher:** Category refers to various publishers who publish the Lab's publications.
 - **Journal Name:** The name of a Journal where a paper might be published.
+
+##### About
+
 - **Lab Member Category:** Categories related to what role/position is held by lab members (eg. Master's Student, Research Assistant, etc.)
   
   **Note:** Adding a Lab Member Category will add an additional section to the *Lab Members* portion of the **About** page (and update the nav button dropdown menu) given that at least one Lab Member entry exists that falls under that category. Lab Member category order within the back-end can be modified (drag and drop) to adjust the order of the Lab Member sections on the **About** page. 
   
-- **Publication Year:** A year that a publication is published. Also includes an "In Press" category.
-  
-  **Note:** Adding a Publication Year category will add a new Section (denoted by the year header) to the **Publications** page (and update the nav dropdown menu) that contains all publications that fall under that **Publication Year** Category. Order of the categories within the back-end is important. More recent years should appear at the top of the list of **Publication Year** categories to enforce the decending order of the publications (i.e more recent publications appear at the top of the page). You will also need to ensure that the _In Press_ category is always at the top of the **Publication Year** category list to ensure that it always appears first.
-  
+- **Centre:** Refers to a university or equivelent institution.
+- **Department:** A department (eg. Psychology) within a **Centre**  
 - **Education:** The highest education that a Past Lab Member has achieved.
-
   e.g. PhD, MSc.
 
 - **Past Member Category:** Categories that make up the Past Lab Member section of the About Page.
-
   **Note:** Order of these categories within the back-end is important, and modifying it (drag and drop) will change the order that content is rendered in the front-end.
-  
-- **Publisher:** Category refers to various publishers who publish the Lab's publications.
 
 ### Assets
 
 All assets (images) that have been directly uploaded to the back-end. Images that are uploaded to an entry may not appear here.
+
+### Sprig
+
+Sprig is the plugin responsible for dynamic rendering of content blocks within the site. This tab includes a sprig coding 'playground' to test code snippets for development. For the most part you should not need to interact with this tab.
 
 ### Utilities
 
@@ -120,11 +135,11 @@ Entry types that are responsible for rendering content on the **Home/Index** pag
   
 | ![image](https://user-images.githubusercontent.com/45299786/171725955-61300c79-406f-4a8f-bb4a-daadd3373fa6.png) | 
 |:--:| 
-| An Example of a back-end **Home Carousel Entry** |
+| **Figure 6a:** An Example of a back-end **Home Carousel Entry** |
 
 | ![image](https://user-images.githubusercontent.com/45299786/171726022-9f73ad96-57e9-4b6e-ae0d-1dfc27303e75.png) | 
 |:--:| 
-| **Home Carousel Entry** front-end content generated from the above entry  |
+| **Figure 6b:** **Home Carousel Entry** front-end content generated from the above entry  |
 
 ##### Project
 
@@ -132,15 +147,15 @@ Entry types that are responsible for rendering content on the **Home/Index** pag
 
 | ![image](https://user-images.githubusercontent.com/45299786/171727451-a530e28a-2c2b-4a42-ad74-3df1a22e1d0b.png) | 
 |:--:| 
-| An Example of a back-end **Project** entry |
+| **Figure 7a:** An Example of a back-end **Project** entry |
 
 | ![image](https://user-images.githubusercontent.com/45299786/171727563-be32dff1-e8f8-4708-996f-ea1724c2d75d.png) | 
 |:--:| 
-| **Project** front-end content generated from the above entry (minimized view)  |
+| **Figure 7b:** **Project** front-end content generated from the above entry (minimized view)  |
 
 | ![image](https://user-images.githubusercontent.com/45299786/171727809-f7256c79-1a1b-4c3c-b278-627247c101e5.png) | 
 |:--:| 
-| **Project** front-end content generated from the above entry (expanded view)  |
+| **Figure 7c:** **Project** front-end content generated from the above entry (expanded view)  |
 
 ##### Field Site
 
@@ -148,11 +163,11 @@ Entry types that are responsible for rendering content on the **Home/Index** pag
 
 | ![image](https://user-images.githubusercontent.com/45299786/171728173-bd8587b2-b332-4a8d-80c3-f84ff8d8f3cc.png) | 
 |:--:| 
-| An Example of a back-end **Field Site** Entry |
+| **Figure 8a:** An Example of a back-end **Field Site** Entry |
 
 | ![image](https://user-images.githubusercontent.com/45299786/171728301-f6689e06-0f06-4ff7-9761-463fa2b0cf33.png) | 
 |:--:| 
-| **Field Site** front-end content generated from the above entry  |
+| **Figure 8b:** **Field Site** front-end content generated from the above entry  |
 
 #### Publications Page
 
@@ -164,11 +179,11 @@ Entry type that is responsible for rendering content on the **Publications** pag
 
 | ![image](https://user-images.githubusercontent.com/45299786/171728813-a5599da9-b078-449e-81f2-f827783dfdb3.png) | 
 |:--:| 
-| An example of a back-end **Publication** Entry |
+| **Figure 9a:** An example of a back-end **Publication** Entry |
 
 | ![image](https://user-images.githubusercontent.com/45299786/171729093-e7403a12-c577-4afc-95cb-13841652533b.png) | ![image](https://user-images.githubusercontent.com/45299786/171729223-bdcfbd2a-1afb-47e6-9e1f-3322d7f58ff2.png) |
 |:---------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------:|
-| **Publication** front-end content generated from the above entry (minimized view)                               | **Publication** front-end content generated from the above entry (expanded view)                                |
+| **Figure 9b:** **Publication** front-end content generated from the above entry (minimized view)                               | **Figure 9c:** **Publication** front-end content generated from the above entry (expanded view)                                |
 
   **Note:** Citations for publications are automatically derived from the fields within a Publication. If you prefer to add a manual citation, you can use the Manual Citation Field in the Publication entry to overide this feature.
 
@@ -186,11 +201,11 @@ Entry types that are responsible for rendering content on the **About** page.
   
 | ![image](https://user-images.githubusercontent.com/45299786/171730142-87cbacf1-a494-4ec3-b4b8-f304f3226aa9.png) | 
 |:--:| 
-| An example of a back-end **About Carousel Entry** |
+| **Figure 10a:** An example of a back-end **About Carousel Entry** |
 
 | ![image](https://user-images.githubusercontent.com/45299786/171730308-492f6d01-6dd2-4466-bcd4-fd637de2085e.png) | 
 |:--:| 
-| **About Carousel Entry** front-end content generated from the above entry |
+| **Figure 10b:** **About Carousel Entry** front-end content generated from the above entry |
 
 ##### Lab Member Profile
 
@@ -198,11 +213,11 @@ Entry types that are responsible for rendering content on the **About** page.
 
 | ![image](https://user-images.githubusercontent.com/45299786/171730637-27475e2b-d68e-41b1-94f3-5bef386b155e.png) | 
 |:--:| 
-| An Example of a back-end **Lab Member Profile** entry |
+| **Figure 11a:** An Example of a back-end **Lab Member Profile** entry |
 
 | ![image](https://user-images.githubusercontent.com/45299786/171731023-1e8ac63b-b660-4b3c-94f2-a5d48ed64845.png) | 
 |:--:| 
-| **Lab Member Profile** front-end content generated from the above entry |
+| **Figure 11b:** **Lab Member Profile** front-end content generated from the above entry |
   
   **Lab Member Profiles** are first ordered by the **Lab Member Categories** List, with the categories at the top of the list appearing at the top of the page. Within a Lab Member Category, **Lab Member Profile** entries are placed in the order that they are found in the Lab Member Profile Entry List, with entries at the top appearing first.
   
@@ -216,11 +231,11 @@ Entry types that are responsible for rendering content on the **About** page.
 
 | ![image](https://user-images.githubusercontent.com/45299786/171731299-624ba5d1-4ad1-424c-8024-abce556ed9bb.png) | 
 |:--:| 
-| An Example of a back-end **Past Lab Member** entry |
+| **Figure 12a:** An Example of a back-end **Past Lab Member** entry |
 
 | ![image](https://user-images.githubusercontent.com/45299786/171731447-d82052f7-09ad-4c0c-8a6b-e99b051e3fc8.png) | 
 |:--:| 
-| **Past Lab Member** front-end content generated from the above entry |
+| **Figure 12b:** **Past Lab Member** front-end content generated from the above entry |
 
   Past Lab Members are first ordered by the Past Member Category order, with Categories at the top of the list appearing first. Within a Past Member Category, entry order is determined by the order they are found in the **Past Lab Members** entry list.
 
@@ -230,11 +245,11 @@ Entry types that are responsible for rendering content on the **About** page.
 
 | ![image](https://user-images.githubusercontent.com/45299786/171731655-20ea29be-ee28-4bf3-ba75-75bafbdb8af9.png) | 
 |:--:| 
-| An example of a back-end **Current Collaborator** entry |
+| **Figure 13a:** An example of a back-end **Current Collaborator** entry |
 
 | ![image](https://user-images.githubusercontent.com/45299786/171731794-1cf945c1-d0c6-4c7e-aa29-36ed3920043c.png) | 
 |:--:| 
-| **Current Collaborator** front-end content generated from the above entry |
+| **Figure 13b:** **Current Collaborator** front-end content generated from the above entry |
 
   Current Collaborator order is determined by the order the entries appear in the back-end, with entries at the top of the list appearing first.
   
@@ -242,22 +257,79 @@ Entry types that are responsible for rendering content on the **About** page.
 
 Adding content to the site is very straightforward. To add some content, follow these steps:
 
-1. Navigate to the **Entries* Tab in the back-end.
-2. Select the entry type you wish to add, and click new entry, or select New entry from the drop-down list.
-3. Fill out the Entry Form completely, ensuring that all **Fields** indicated with a * are filled out. If the entry is not entirely filled out, it cannot be added the site. Incomplete entries will be placed in a draft state, and you can always come back to finish it later.
-4. Once the entry has been filled out, select *Create Entry* at the top right. You must also ensure that the entry is *enabled* for it to appear on the live site. See **Disabling Content (temporary content hiding)** below.
+1.	Navigate to the Entries Tab in the back-end.
+2.	Select the type of entry you would like to add.
 
+    a.	Along the left-hand side of the entries panel, choose the header of the entry type you wish to add.
+  
+    b.	Once selected, all existing entries of that type will be shown. 
+  
+    c.	At the top right, click the red button + New Entry to create a new entry of that type.
+  
+    d.	Alternatively, you can click on the dropdown arrow next to the + New Entry button and select the type of entry you want to add from the dropdown list.
+  
+3.	Fill out the Entry Form completely, ensuring that all Fields indicated with a * are filled out. If the entry is not entirely filled out, it cannot be added the site. Incomplete entries will be placed in a draft state, and you can always come back to finish it later.
+4.	Once the entry has been filled out, select the red Create Entry button at the top right. 
+a.	The dropdown next to the Create Entry button also provides additional options for the entry and may improve workflow.
+5.	You must also ensure that the entry is enabled for it to appear on the live site. See Disabling Content (temporary content hiding) below.
+
+#### Additional Content Creation Tips
+
+Here is some additional information to help with your content creation workflow
+
+##### Previewing Entries
+
+In Progress entries can be viewed in real time by clicking on either the **Preview** Button (opens the entry within the editing window), or the **View** button (opens the entry in a new tab).
+
+| ![image](https://user-images.githubusercontent.com/45299786/171736071-0a08a1c3-bdb4-4300-b9b2-3e98fdf57c7d.png) |
+|:--:| 
+| **Figure 14:** Preview/View buttons found within the entry editing panel. |
+
+**Note:** Certain entries that load dynamically may not work correctly when using the live preview.
+
+##### Entry Expiration
+
+Sometimes you would like to create an entry that will automatically be disabled after a certain amount of time, for example Carousel entries related to events that will end on a certain day. Fortunately, this feature is built in and can be used easily.
+
+When creating an entry, an Expiry Date option can be found on the right-hand side. Select a date and time in this field, and when that time/date is reached, the entry will be automatically disabled. Expired entries are labeled with a red circle next to the entry.
+
+| ![image](https://user-images.githubusercontent.com/45299786/174126807-38d515f1-8d38-4b57-b1ae-2f259a812682.png) | 
+|:--:| 
+| **Figure 15:** Expiry Date optional field. |
+
+##### Version Control for Entries
+
+Each time an entry is modified, a past version of it is cached by the system in case you make a mistake and would like to revert an entry to a previous version. To view previous versions of an entry, first navigate to the entry’s editing panel. You can then select previous versions of the entry from the dropdown menu that can be found next to the entry’s title near the top of the page.
+
+| ![image](https://user-images.githubusercontent.com/45299786/174127081-3cf9043e-ebf2-47b3-801f-4ed0d57e9d08.png) | 
+|:--:| 
+| **Figure 16:** Entry version control dropdown menu. |
+
+Once a previous version of the entry has been selected from the dropdown, the fields of the entry will automatically be repopulated with the previous content. These fields **cannot be modified when viewing a previous version**. 
+
+To revert the content of an entry to a previous version, select the button at the top right labeled **Revert content from this revision**.
+
+| ![image](https://user-images.githubusercontent.com/45299786/174127267-579a8d57-ed91-4afd-a046-b752cf888f1c.png) | 
+|:--:| 
+| **Figure 17:** The **Revert content from this revision** button can be found at the top right of an entry after selecting a revision version from the dropdown. |
+
+
+#### Entry Fields
 Most **Fields** within an entry are straightforward and have instructions above them. However, certain fields are a little more complex including:
 
 - **Matrix Blocks**:
   Matrix blocks allow you to select from a variety of pre-set content blocks, and choose the one best suited for your needs or use case. 
   
-  ![image](https://user-images.githubusercontent.com/45299786/170581987-41edfd2d-7b8f-4b07-a1d3-eb89b27a37f9.png)
+  | ![image](https://user-images.githubusercontent.com/45299786/170581987-41edfd2d-7b8f-4b07-a1d3-eb89b27a37f9.png) |
+  |:--:| 
+  | **Figure 18a:** **Matrix Block** field featuring **Lab Member**, **Current Collaborator**, and **Name Input Field** block types. |
 
   For example, when adding project contributors, you can choose from three options (Lab Member, Current Collaborator, and Name Input Field) to add as a contributor to the project. 
   
-  ![image](https://user-images.githubusercontent.com/45299786/170582197-3a86a46f-c87a-46ad-9805-5a7effe05731.png)
-
+  | ![image](https://user-images.githubusercontent.com/45299786/170582197-3a86a46f-c87a-46ad-9805-5a7effe05731.png) |
+  |:--:| 
+  | **Figure 18b:** **Lab Member** Matrix block type after selecting **Lab Member** in **Figure 18a's** Matrix |
+  
   After choosing an option from the matrix, you will be given a block to fill out based on your selection. 
   
   In some cases, you may have the option to add multiple blocks from a matrix, depending on the situation. You may need multiple blocks for your content, and in some cases, the order of the blocks matters. In the example above, the order of the blocks determines the order that the project collaborators will be added to the project. If you make a mistake, or need to adjust the order, you can drag/drop the blocks to modify the order.
@@ -281,7 +353,9 @@ Modifying the order that entries appear within a section is as easy as dragging 
 
 When in the back-end, ensure that entries are sorted in **Structure** order by selecting the entry sort button at the top right, and selecting **Structure**. 
 
-![image](https://user-images.githubusercontent.com/45299786/170739197-f51f548f-7837-4435-836b-517d038e6e3c.png)
+| ![image](https://user-images.githubusercontent.com/45299786/170739197-f51f548f-7837-4435-836b-517d038e6e3c.png) |
+|:--:| 
+| **Figure 19:** The entry sort dropdown menu, which can be used to select **Structure** to drag and drop entries to modify the order of the entries. |
 
 This displays the entries in a list in the same order that they will appear in the front-end. When sorted by **Structure**, entries can be **dragged and dropped** into a new order which will subsequently change the order that entries will appear on the live site.
 
@@ -299,21 +373,29 @@ Removing content in Craft CMS is simple. All elements within the CMS (entries, c
 
 Content Elements are **deleted** by navigating to the appropriate tab on the /admin page, and selecting each element you wish to delete with the checkbox on the left side of the element. 
 
-![image](https://user-images.githubusercontent.com/45299786/170762994-987b8329-3bf5-4154-961b-66a35d686fae.png)
+| ![image](https://user-images.githubusercontent.com/45299786/170762994-987b8329-3bf5-4154-961b-66a35d686fae.png) |
+|:--:| 
+| **Figure 20:** Checkbox used to select multiple entries for deletion. |
 
 Once any number of elements are selected, they can be permanently deleted by selecting the gear icon at the top of the page and selecting **delete**.
 
-![image](https://user-images.githubusercontent.com/45299786/170763182-6514c624-fee8-4681-89d6-c09a15138de2.png)
+| ![image](https://user-images.githubusercontent.com/45299786/170763182-6514c624-fee8-4681-89d6-c09a15138de2.png) |
+|:--:| 
+| **Figure 21:** Interface demonstrating deletion. |
 
 #### Disabling Content (temporary content hiding)
 
 Content elements can be disabled temporarily at any time by navigating to the element you wish to disable and clicking to edit the element. Once inside the editing interface, you will find a switch to disable the element on the right hand side.
 
-![image](https://user-images.githubusercontent.com/45299786/170763776-d6842441-17f7-464c-a841-b18f59ba350f.png)
+| ![image](https://user-images.githubusercontent.com/45299786/170763776-d6842441-17f7-464c-a841-b18f59ba350f.png) |
+|:--:| 
+| **Figure 22:** Switch found in the entry editing panel that can be used to enable/disable the entry. |
 
 Alternatively, you can disable multiple elements at the same time by navigating to the entries section you wish to modify, and selecting multiple elements with their checkboxes on the left side of the entry list, and clicking **Set Status** and choosing enable/disable.
 
-![image](https://user-images.githubusercontent.com/45299786/171670925-30193d03-6555-4012-9c35-2ae9c2e13385.png)
+| ![image](https://user-images.githubusercontent.com/45299786/171670925-30193d03-6555-4012-9c35-2ae9c2e13385.png) |
+|:--:| 
+| **Figure 23:** Enabling/disabling multiple entries through the Set status dropdown. |
 
 When disabled, the element will still exist in the database but will not be visible in the front-end of the site. Disabled elements can be re-enabled by clicking their enable/disable switch again.
 
@@ -327,15 +409,6 @@ This section contains several helpful tips related to the content management wor
 
 Drag and Drop functionality for entries, categories, and matrix blocks can be used by left clicking and holding on the _four-dots icon_ and moving the element to a new location and releasing the left click where you would like the element placed. 
 
-![image](https://user-images.githubusercontent.com/45299786/170744893-46599427-8163-48d3-97ea-54ad255abf92.png)
-
-### Previewing Entries
-
-In Progress entries can be viewed in real time by clicking on either the **Preview** Button (opens the entry within the editing window), or the **View** button (opens the entry in a new tab).
-
-![image](https://user-images.githubusercontent.com/45299786/171736071-0a08a1c3-bdb4-4300-b9b2-3e98fdf57c7d.png)
-
-**Note:** Certain entries that load dynamically may not work correctly when using the live preview.
-
-
-
+| ![image](https://user-images.githubusercontent.com/45299786/170744893-46599427-8163-48d3-97ea-54ad255abf92.png) |
+|:--:| 
+| **Figure 24:** The four dots-icon that allows drag-and-drop to reorder content. |
