@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 1000 1294" width="1000" height="1294">
+  <title>New Project</title>
+  <defs>
+    <image width="1000" height="1294" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA+gAAAUOAQMAAADUoIsCAAAAAXNSR0IB2cksfwAAAANQTFRFDw8PuwF7uQAAALRJREFUeJztwQEBAAAAgiD/r25IQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjwZ9AgABwlR4ZgAAAABJRU5ErkJggg=="></image>
+  </defs>
+  <style>
+		tspan { white-space:pre } 
+		.t0 { font-size: 50px;fill: #ffffff;font-weight: 400;font-family: "Skia", "Skia" } 
+		.s1 { fill: #222121 } 
+		.s2 { fill: #0f0f0f } 
+	</style>
+  <use id="Background" href="#img1" x="0" y="0"></use>
+  <text id="" style="transform: matrix(1,0,0,1,381,331)">
+	</text>
+  <text id="the banzi-lab" style="transform: matrix(1,0,0,1,349.484,663.716)">
+    <tspan x="0" y="0" class="t0">t</tspan>
+    <tspan y="0" class="t0">h</tspan>
+    <tspan y="0" class="t0">e</tspan>
+    <tspan y="0" class="t0"> </tspan>
+    <tspan y="0" class="t0">b</tspan>
+    <tspan y="0" class="t0">a</tspan>
+    <tspan y="0" class="t0">n</tspan>
+    <tspan y="0" class="t0">z</tspan>
+    <tspan y="0" class="t0">i</tspan>
+    <tspan y="0" class="t0">-</tspan>
+    <tspan y="0" class="t0">l</tspan>
+    <tspan y="0" class="t0">a</tspan>
+    <tspan y="0" class="t0">b
+</tspan>
+  </text>
+  <path id="Shape 1" class="s1" d="m66 101h151v371h-151z"></path>
+  <path id="Shape 2" class="s2" d="m141.8 379.1l125.1 125.1-125.1 125.2-125.2-125.2z"></path>
+</svg>

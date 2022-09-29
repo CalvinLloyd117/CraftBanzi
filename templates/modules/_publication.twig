@@ -1,10 +1,12 @@
 {% set visible = visible|default(false) %}
+{% set defaultCoverPhoto = craft.entries.section('defaultPublicationImage').with(['defaultPublicationImage']).one|default(null) %}
 <div class="publication">
 {% if visible == true %}
 {% set publication = craft.entries.section('publication').id(publicationID).with(['publicationCoverImage']).one() %}
 {% set publicationAuthors = publication.authors %}
 <div>
 {% set img = publication.publicationCoverImage[0] ?? null %}
+{% set defaultImg = defaultCoverPhoto.defaultPublicationImage[0] ?? null %}
   {% if img %}
     {# {% for img in publication.publicationCoverImage.all %} #}
     <img loading="lazy" alt="cover photo." src="{{ img.url }}" onclick="togglePublicationInfo('{{ publication.slug }}')"/>
@@ -15,6 +17,8 @@
         {% for img in j.defaultPublicationCoverImage.all %}
           <img alt="cover photo." src="{{ img.url }}" />
         {% endfor %}
+      {% elseif not defaultCoverPhoto == null %}
+        <img alt="cover photo." src="{{defaultImg.url}}" />
       {% else %}
         <img alt="cover photo."
           src="assets/Images/Publications/NoCover.svg"

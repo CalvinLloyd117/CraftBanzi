@@ -10,7 +10,7 @@
       {% for project in currentProjects %}
         {{
           sprig(
-            'modules/_project',
+            'modules/project',
             {
               projectID: project.id,
               projectSlug: project.slug

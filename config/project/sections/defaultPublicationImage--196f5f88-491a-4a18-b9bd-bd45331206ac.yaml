@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: defaultPublicationImage
+name: 'Default Publication Image'
+propagationMethod: all
+siteSettings:
+  c7ed12fe-7739-44e3-accd-f279f495d152: # banzi-lab
+    enabledByDefault: true
+    hasUrls: true
+    template: default-publication-image/_entry
+    uriFormat: 'default-publication-image/{slug}'
+type: channel

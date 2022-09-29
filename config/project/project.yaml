@@ -1,4 +1,4 @@
-dateModified: 1653601514
+dateModified: 1655397313
 email:
   fromEmail: calvin.lloyd@uleth.ca
   fromName: banzi-lab
@@ -30,6 +30,7 @@ meta:
     3dc3c38e-60a7-412d-95ca-fc02ead5f8b7: 'Field Site' # Field Site
     3fd9d9ff-b43e-4111-8a4c-89c469bf59cd: Global # Global
     4dff7f16-feaa-4e4c-b73f-661e4b851c6d: 'Lab Member Category' # Lab Member Category
+    4ecedb11-b9b1-4c7e-af6b-fa883ec77b49: 'Default Publication Image' # Default Publication Image
     4fd85cbf-0550-46eb-93e0-69d06831e29d: 'Carousel Entry' # Carousel Entry
     5a2f5a57-27e4-4a54-864d-371675912777: 'List Item Text' # List Item Text
     5a459a8a-83ed-4cb0-a0b2-fa9f83ab144f: Project # Project
@@ -94,6 +95,7 @@ meta:
     135c1e00-7e1f-4252-b411-90819ab248d9: 'Field Site Detailed Description' # Field Site Detailed Description
     153a493e-d05f-46fb-9c1f-22ea82959a9f: 'Field Site' # Field Site
     162f0ec4-9993-4179-87d2-2884e28871ed: 'Paragraph Text' # Paragraph Text
+    196f5f88-491a-4a18-b9bd-bd45331206ac: 'Default Publication Image' # Default Publication Image
     200c21e2-55e3-43bc-b31c-e24b8c35dea6: Editors # Editors
     201dba49-d121-4bce-b664-fcbe117ca0f2: 'Text with Image' # Text with Image
     270ea06a-fdfe-47e1-b6ab-aa6641ae34d9: Subheader # Subheader
@@ -177,6 +179,7 @@ meta:
     cd2b6a4e-9696-4536-92be-180e6303f89f: Centre # Centre
     ced9ebe6-9130-453c-9358-58b6e1809ff7: Project # Project
     d0fe22dd-8711-49df-bf40-c209647781ca: Image # Image
+    d7c40c65-5c9c-40aa-a11f-e2e2c51d0169: Default # Default
     d8a0851f-70ca-4a2b-b54d-36eb4bab2ed1: 'Last Name' # Last Name
     d9e3215c-14d5-42fa-a9b1-3dd9dfd53c42: 'Lab Member Department' # Lab Member Department
     d60c02ae-5b29-4899-85f9-9a111c66e884: University # University
@@ -225,8 +228,9 @@ system:
   edition: solo
   live: true
   name: banzi-lab
+  retryDuration: null
   schemaVersion: 3.7.33
-  timeZone: America/Los_Angeles
+  timeZone: America/Edmonton
 users:
   allowPublicRegistration: false
   defaultGroup: null
