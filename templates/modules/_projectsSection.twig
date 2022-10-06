@@ -7,7 +7,9 @@
       </h1>
     </div>
     <div class="currentProjects">
+      
       {% for project in currentProjects %}
+      <div id="{{project.slug}}">
         {{
           sprig(
             'modules/project',
@@ -17,6 +19,7 @@
             }
           )
         }}
+        <div>
         {# {{ sprig.script }} #}
       {% endfor %}
     </div>

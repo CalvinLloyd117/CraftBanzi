@@ -1,5 +1,5 @@
 {% set visible = visible|default(false) %}
-<div class="project" id="{{projectSlug}}">
+<div class="project" id="{{projectSlug}}_info">
   {% if visible == true %}
     {% set project = craft.entries.section('project').id(projectID).with(['projectBackgroudImage']).one %}
     {% set img = project.projectBackgroundImage[0] ?? null %}

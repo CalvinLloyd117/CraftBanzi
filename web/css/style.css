@@ -23,9 +23,10 @@
 ::-webkit-scrollbar-thumb:hover {
   background-color: rgba(80, 80, 80, 0.8);
 }
-/* html {
-  max-height: 100% !important;
-} */
+html {
+  /* max-height: 100% !important; */
+  scroll-behavior: smooth;
+}
 body {
   background-attachment: fixed;
   width: 100%;
@@ -1216,7 +1217,7 @@ div.currentPublications .publication .publicationInfo .visible {
 
 div.currentPublications .publication .publicationInfo.minimized {
   width: 100%;
-  height: calc(max-content + 10px) !important;
+  height: max-content;
   /* max-height: 50%; */
   position: absolute;
   bottom: 0px;
@@ -1279,7 +1280,7 @@ div.currentPublications .publication .publicationInfo.maximized {
   width: 100%;
   overflow-y: auto;
   display: block;
-  height: calc(100% + 100px);
+  height: 100%;
   max-height: 100%;
 }
 

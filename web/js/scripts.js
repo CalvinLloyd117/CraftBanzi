@@ -296,7 +296,6 @@ function initialize()
 function openProjectInfo(id)
 {
   var target = document.getElementById(id).children[1]
-
   target.classList.replace('minimized', 'maximized')
 
   // if taget has no children, do not loop.
@@ -327,7 +326,8 @@ function openProjectInfo(id)
  *****************************************************************/
 function expandProjectInfo(id)
 {
-  openProjectInfo(id)
+  var projectCode = id + "_info"
+  openProjectInfo(projectCode)
   window.history.pushState(
     {},
     document.title,
@@ -349,8 +349,8 @@ function expandProjectInfo(id)
  *****************************************************************/
 function collapseProjectInfo(id)
 {
-  var target = document.getElementById(id).children[1]
-
+  var projectCode = id + "_info"
+  var target = document.getElementById(projectCode).children[1]
   target.classList.replace('maximized', 'minimized')
   if (target.hasChildNodes())
   {
@@ -383,6 +383,7 @@ function collapseProjectInfo(id)
  *****************************************************************/
 function togglePublicationInfo(id)
 {
+
   var target = document.getElementById(id)
   if (target.classList.contains('minimized'))
   {
@@ -410,7 +411,7 @@ function openPublicationInfoOnLoad()
     }
     // else if (target.classList.contains('maximized'))
     // {
-    //   collapsePublicationInfo(section)
+    //   collapsePublicationInfo(section)publicationInfo
     // }
     else
     {
@@ -422,7 +423,6 @@ function openPublicationInfoOnLoad()
 function pauseAllYTPlayback()
 {
   var node = Array.from(document.getElementsByTagName('iframe'))
-  console.log(node)
   for (var i = 0; i < node.length; i++)
   {
     var ytSrc = node[i].getAttribute('src')
@@ -510,7 +510,7 @@ function collapsePublicationInfo(id)
 function toggleProjectInfo(id)
 {
 
-  var target = document.getElementById(id).children[1]
+  var target = document.getElementById(id).children[0].firstElementChild.children[1]
   var proj = document.getElementById(id + "_intro")
   if (target.classList.contains('minimized'))
   {
@@ -620,10 +620,9 @@ function scrollToSection(target)
 {
   var elem = document.getElementById(target)
   var classes = elem.classList
-
+  elem.scrollIntoView({ behavior: "smooth", block: "start", inline: "start" })
   if (elem !== null)
   {
-    console.log("Scroll Target: ", classes)
     //Works for index projects and fieldsites
     //Also works for About individuals on desktop and mobile.
     if (classes !== undefined)
@@ -641,12 +640,15 @@ function scrollToSection(target)
       {
         elem.scrollIntoView({ behavior: "smooth", block: "start", inline: "start" })
       }
+      else
+      {
+        elem.scrollIntoView({ behavior: "smooth", block: "start", inline: "start" })
+      }
     }
     // works for desktop and mobile publications sections only.
     // also works for about sections on desktop and mobile
     else if (elem.tagName === 'SECTION')
     {
-      console.log("calling section")
       elem.scrollIntoView({ behavior: "smooth", block: "start", inline: "start" })
     }
     else
@@ -811,7 +813,6 @@ const IO = new IntersectionObserver((entries) =>
 const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
 const elements = document.querySelectorAll(`.Loading`)
 
-console.log("IO Elems: ", elements)
 elements.forEach(animation =>
 {
   IO.observe(animation);

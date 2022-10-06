@@ -24,9 +24,15 @@
       <div class="dropdown-content">
         {% if publicationYears %}
           {% for year in publicationYears.all() %}
-            <a onclick="toggleHamburger()" href="/publications#{{ year.slug }}">
-              {{ year }}
-            </a>
+            {% set sectionPublications =
+              craft.entries.section('publication').relatedTo(year)
+            %}
+            {% if sectionPublications.count > 0 %}
+              <a onclick="toggleHamburger()"
+                href="/publications#{{ year.slug }}">
+                {{ year }}
+              </a>
+            {% endif %}
           {% endfor %}
         {% endif %}
       </div>

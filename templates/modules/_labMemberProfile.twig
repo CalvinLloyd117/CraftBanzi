@@ -6,7 +6,7 @@
 {% if visible == true %}
   <div class="profilePic">
     {% set image = labMember.labMemberProfilePicture[0] ?? null %}
-        <img alt="Default profile photo." class="parallax" src={{image.url|default("/assets/images/defaultProfile.svg")}}>
+        <img alt="Default profile photo." class="parallax" src={{image.url|default("/assets/Images/defaultProfile.svg")}}>
     </div>
     <div class="labMemberInfo right">
         <div class="inner intro">
