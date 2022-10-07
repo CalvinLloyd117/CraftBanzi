@@ -519,7 +519,6 @@ function scrollToSection(target)
 
   if (elem !== null)
   {
-    console.log("Scroll Target: ", classes)
     //Works for index projects and fieldsites
     //Also works for About individuals on desktop and mobile.
     if (classes !== undefined)
