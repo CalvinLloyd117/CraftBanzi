@@ -420,6 +420,28 @@ function openPublicationInfoOnLoad()
   }
 }
 
+function openProjectInfoOnLoad()
+{
+  if (window.location.href.indexOf('#') != -1)
+  {
+
+    var section = window.location.href.split('#').pop()
+    var target = document.getElementById(`${section}_info`).children[1]
+    if (target.classList.contains('minimized'))
+    {
+      toggleProjectInfo(section)
+    }
+    // else if (target.classList.contains('maximized'))
+    // {
+    //   collapsePublicationInfo(section)publicationInfo
+    // }
+    else
+    {
+      return
+    }
+  }
+}
+
 function pauseAllYTPlayback()
 {
   var node = Array.from(document.getElementsByTagName('iframe'))
@@ -592,6 +614,7 @@ function navigateTo(url)
 {
   if (window.location.href.indexOf('#') != -1)
   {
+
     var section = window.location.href.split('#').pop()
     // openContentWindow(section)
     scrollToSection(section)

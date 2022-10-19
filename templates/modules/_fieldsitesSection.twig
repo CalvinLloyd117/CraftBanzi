@@ -8,15 +8,17 @@
     </div>
     <div class="currentProjects">
       {% for fieldSite in currentFieldSites %}
-        {{
-          sprig(
-            'modules/_FieldSite',
-            {
-              fieldSiteID: fieldSite.id,
-              fieldSiteSlug: fieldSite.slug
-            }
-          )
-        }}
+        <div id="{{ fieldSite.slug }}">
+          {{
+            sprig(
+              'modules/_FieldSite',
+              {
+                fieldSiteID: fieldSite.id,
+                fieldSiteSlug: fieldSite.slug
+              }
+            )
+          }}
+        </div>
         {# {{ sprig.script }} #}
       {% endfor %}
     </div>

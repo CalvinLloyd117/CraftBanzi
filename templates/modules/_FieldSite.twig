@@ -1,5 +1,5 @@
 {% set visible = visible|default(false) %}
-<div class="project" id="{{fieldSiteSlug}}">
+<div class="project" id="{{fieldSiteSlug}}_info">
   {% if visible == true %}
     {% set fieldSite = craft.entries.section('fieldSite').id(fieldSiteID).with(['fieldSiteBackgroudImage']).one %}
     {% set img = fieldSite.fieldSiteBackgroundImage[0] ?? null %}
@@ -107,6 +107,7 @@
     <script>
        parallaxify()
     </script>
+    <script>openProjectInfoOnLoad()</script>
     {% else %}
     <div style="height: 100%;" class="Loading paused" sprig s-trigger="intersect threshold:0.25 consume" s-val:visible={{true}}>
       <div class="inner">
